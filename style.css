@@ -8,11 +8,7 @@ body {
 
 nav {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    align-self: left;
-}
-
-h1 {
-    color: goldenrod;
+    align-items: center;
 }
 
 /* button {
