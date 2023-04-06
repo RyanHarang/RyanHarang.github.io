@@ -1,32 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Ryan Harang</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Selecao Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!--Vendor Bootstrap CSS Files-->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
 </head>
 <body>
-    <header>
-        <h2 id="name">Ryan Harang</h2>
-    </header>
-    <!--End of Header-->
-    <nav id="personalLinks">
-        <a href="https://github.com/RyanHarang" target="_blank"><b>Github</b></a>
-        <a href="https://www.linkedin.com/in/ryan-harang-a4461320a/" target="_blank"><b>Linkedin</b>    </a>
 
-    </nav>
-    <!--End of Nav-->
-    
-    <p id="intro">
-        Hi, I'm Ryan and this is my portfolio. It is mostly bare for now, but I will be progressively updating and adding to my portfolio as I finish projects and tune my skills.
-    </p>
-    
-    <footer>
+  <!--Header-->
+  <header id="header" class="fixed-top d-flex align-items-center  header-transparent ">
+    <div class="container d-flex align-items-center justify-content-between">
 
-    </footer>
-    <!--End of Footer-->
+      <div class="logo">
+        <h1><a href="index.html">Ryan Harang</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#projects">Projects</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <!--End of Nav-->
+
+    </div>
+  </header>
+  <!--End of Header-->
+
+  <!--Hero-->
+  <section id="hero" class="d-flex flex-column justify-content-end align-items-center">
+    <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+      <div class="carousel-item active">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">Welcome to <span>my portfolio</span></h2>
+          <p class="animate__animated fanimate__adeInUp">While it is quite bare at the moment, I will be updating and adding to it as a finish projects and tune my skills. </p>
+          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+        </div>
+      </div>
+
+    </div>
+
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+      </g>
+    </svg>
+
+  </section>
+  <!--End Hero-->
+
+  <main id="main">
+
+    <!--About-->
+    <section id="projects" class="features">
+      <div class="container">
+
+        <div class="section-title" data-aos="zoom-out">
+          <h2>About</h2>
+        </div>
+
+        <div class="row content" data-aos="fade-up">
+          <div class="col-lg-6">
+            <p>
+              I an a sophmore computer science major attending Western Washington University.
+            </p>
+            <ul>
+              <li> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+              <li> Duis aute irure dolor in reprehenderit in voluptate velit</li>
+              <li> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              My biggest hobbies outside of computer science are board games, working out, and spending time outdoors.
+            </p>
+          </div>
+        </div>
+      </div>
+   <!-- </section> -->
+    <!--End About-->
+
+    <!--Features-->
+    <!-- <section id="projects" class="features"> -->
+      <div class="container">
+
+        <ul class="nav nav-tabs row d-flex">
+          <li class="nav-item col-3" data-aos="zoom-in">
+            <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">
+              <i class="ri-gps-line"></i>
+              <h4 class="d-none d-lg-block">Button 1</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="100">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-2">
+              <i class="ri-body-scan-line"></i>
+              <h4 class="d-none d-lg-block">Button 2</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="200">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-3">
+              <i class="ri-sun-line"></i>
+              <h4 class="d-none d-lg-block">Button 3</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="300">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-4">
+              <i class="ri-store-line"></i>
+              <h4 class="d-none d-lg-block">Button 4</h4>
+            </a>
+          </li>
+        </ul>
+
+        <div class="tab-content" data-aos="fade-up">
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>This could be a good spot to put project summaries</h3>
+                <p>
+                  Paragraph here
+                </p>
+                <p class="fst-italic">
+                  italics here
+                </p>
+              </div>
+              <!--<div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-1.png" alt="" class="img-fluid">
+              </div>-->
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-2">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>project name</h3>
+                <p>
+                  Paragraph here
+                </p>
+                <p class="fst-italic">
+                  italics here
+                </p>
+              </div>
+              <!--<div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-2.png" alt="" class="img-fluid">
+              </div>-->
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-3">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>project summary</h3>
+                <p>
+                  paragraph here
+                </p>
+                <p class="fst-italic">
+                  italics here
+                </p>
+              </div>
+              <!--<div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-3.png" alt="" class="img-fluid">
+              </div>-->
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-4">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>summary 4m</h3>
+                <p>
+                  paragraph
+                </p>
+                <p class="fst-italic">
+                  italics
+                </p>
+              </div>
+              <!--<div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-4.png" alt="" class="img-fluid">
+              </div>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End Features-->
+
+    <!--Contact-->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title" data-aos="zoom-out">
+          <h2>Contact</h2>
+          <p>Contact Me</p>
+        </div>
+
+        <!--<div class="row mt-5">-->
+
+          <!--<div class="col-lg-4" data-aos="fade-right">-->
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>1211 Jersey Street, Bellingham, Washington 98225</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>harangryan@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Phone:</h4>
+                <p>+1 425-229-8206</p>
+              </div>
+
+            </div>
+          </div>
+        <!--</div>-->
+
+      <!--</div>-->
+    </section>
+    <!--End Contact-->
+
+  </main>
+  <!--End #main-->
+
+  <!--Footer-->
+  <footer id="footer">
+    <div class="container">
+      <h3>Footer thingy</h3>
+      <p>Thanks for checking out my page!</p>
+      <div class="social-links">
+        <a href="https://github.com/RyanHarang" class="github">G</a>
+        <a href="https://www.linkedin.com/in/ryan-harang-a4461320a/" class="linkedin">L</a>
+      </div>
+    </div>
+  </footer>
+  <!--End Footer-->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!--Vendor JS Files-->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!--Template Main JS File-->
+  <script src="assets/js/main.js"></script>
+
 </body>
-<!--End of Body-->
 </html>
