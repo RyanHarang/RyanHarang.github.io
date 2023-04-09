@@ -316,22 +316,18 @@ h1, h2, h3, h4, h5, h6 {
   height: 60px;
   position: relative;
 }
-
 .wave1 use {
   animation: move-forever1 10s linear infinite;
   animation-delay: -2s;
 }
-
 .wave2 use {
   animation: move-forever2 8s linear infinite;
   animation-delay: -2s;
 }
-
 .wave3 use {
   animation: move-forever3 6s linear infinite;
   animation-delay: -2s;
 }
-
 @keyframes move-forever1 {
   0% {
     transform: translate(85px, 0%);
@@ -340,7 +336,6 @@ h1, h2, h3, h4, h5, h6 {
     transform: translate(-90px, 0%);
   }
 }
-
 @keyframes move-forever2 {
   0% {
     transform: translate(-90px, 0%);
@@ -349,7 +344,6 @@ h1, h2, h3, h4, h5, h6 {
     transform: translate(85px, 0%);
   }
 }
-
 @keyframes move-forever3 {
   0% {
     transform: translate(-90px, 0%);
@@ -523,6 +517,22 @@ section {
   margin-bottom: 0;
 }
 
+/* My Github and Linkedin links */
+.links {
+  border: 1px solid #d4d6df;
+  color: black;
+  background-color: #ffffff;
+  padding: 10px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px 5px;
+}
+.links:hover {
+  color: #ef6603;
+}
+
 /* --- # Contact --- */
 /* The small area directly around contact information */
 .contact .info {
@@ -654,32 +664,4 @@ section {
   font-style: italic;
   padding: 0;
   margin: 0 0 40px 0;
-}
-
-/* Margins surrounding bottom buttons */
-#footer .social-links {
-  margin: 0 0 0 0;
-}
-
-/* Buttons at Bottom */
-#footer .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #ef6603;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-}
-
-/* Hover effect for buttons at bottom */
-#footer .social-links a:hover {
-  background: #bd5102;
-  color: #fff;
-  text-decoration: none;
 }
