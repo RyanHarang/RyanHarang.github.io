@@ -241,7 +241,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* --- # Hero Section --- */
-#hero {
+#home {
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -250,7 +250,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Top dark part */
-#hero .carousel-container {
+#home .carousel-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -262,7 +262,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Main Header */
-#hero h2 {
+#home h2 {
   color: #fff;
   margin-bottom: 30px;
   font-size: 48px;
@@ -270,7 +270,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Sub Text under Main Header */
-#hero p {
+#home p {
   width: 80%;
   animation-delay: 0.4s;
   margin: 0 auto 30px auto;
@@ -278,7 +278,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Read More Button */
-#hero .btn-get-started {
+#home .btn-get-started {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -295,7 +295,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Hover characteristics for Read More Button */
-#hero .btn-get-started:hover {
+#home .btn-get-started:hover {
   background: #ef6603;
   color: #fff;
   text-decoration: none;
@@ -309,7 +309,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Controls Height of wave effect */
-.hero-waves {
+.home-waves {
   display: block;
   width: 100%;
   height: 60px;
