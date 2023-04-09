@@ -303,7 +303,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* nothing? */
 @media (max-width: 768px) {
-  #hero .carousel-container {
+  #home .carousel-container {
     height: 90vh;
   }
 }
