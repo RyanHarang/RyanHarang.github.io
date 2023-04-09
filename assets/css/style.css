@@ -535,6 +535,10 @@ section {
 
 /* --- # Contact --- */
 /* The small area directly around contact information */
+.contact {
+  position: static;
+}
+
 .contact .info {
   width: 100%;
   background: #ffffff;
