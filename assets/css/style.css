@@ -135,7 +135,6 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* Mobile Navigation */
-
 .mobile-nav-toggle {
   color: #fff;
   font-size: 28px;
@@ -496,21 +495,6 @@ section {
 .features .tab-pane h3 {
   font-weight: 600;
   font-size: 26px;
-}
-
-.features .tab-pane ul {
-  list-style: none;
-  padding: 0;
-}
-
-.features .tab-pane ul li {
-  padding-bottom: 10px;
-}
-
-.features .tab-pane ul i {
-  font-size: 20px;
-  padding-right: 4px;
-  color: #ef6603;
 }
 
 .features .tab-pane p:last-child {
