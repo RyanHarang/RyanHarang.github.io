@@ -156,7 +156,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-mobile {
   position: fixed;
-  /*overflow: hidden;*/
+  overflow: hidden;
   top: 0;
   right: 0;
   left: 0;
@@ -356,7 +356,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Padding between About paragraph and buttons */
 section {
   padding: 40px 0;
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
 /* Padding between about and about paragraph */
 .section-title {
