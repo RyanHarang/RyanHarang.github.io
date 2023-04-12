@@ -521,7 +521,7 @@ section {
 /* The small area directly around contact information */
 .contact {
   position: static;
-  padding: 10% 0;
+  padding: 20% 0;
 }
 
 .contact .info {
