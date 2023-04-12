@@ -356,7 +356,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Padding between About paragraph and buttons */
 section {
   padding: 40px 0;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 /* Padding between about and about paragraph */
 .section-title {
