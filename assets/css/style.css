@@ -528,6 +528,10 @@ section {
   background: #ffffff;
 }
 
+.mid {
+  font-size: 20px;
+}
+
 /* Contact Info Buttons */
 .contact .info i {
   font-size: 20px;
