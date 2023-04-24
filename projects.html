@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ryan Harang</title>
 
     <!--Google Fonts-->
@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
     <!--CSS-->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <link href="assets/css/style.css" rel="stylesheet">
     <!--JS-->
     <script type="text/javascript" script src="assets/js/script.js"></script>
@@ -33,9 +32,9 @@
 
         <nav id="navbar" class="navbar navRight">            
             <ul>
-                <li><a class="active nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="index.html">Home</a></li>
                 <li><a class="nav-link" href="about.html">About</a></li>
-                <li><a class="nav-link" href="projects.html">Projects</a></li>
+                <li><a class="active nav-link" href="projects.html">Projects</a></li>
                 <li><a class="nav-link" href="index.html">More</a></li>
                 <li><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
@@ -45,13 +44,7 @@
     </header>
     <!--End of Header-->
 
-    <section id="home">
-        <div class="carousel-container">
-            <h2>Welcome to <span>my portfolio</span></h2>
-            <p>While it is quite bare at the moment, I will be updating and adding to it as a finish projects and tune my skills. </p>
-            <a href="about.html" class="btn-get-started">Read More</a>
-        </div>
-
+    <section id="projects-home" class="projects-home">
         <svg class="home-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
             <defs>
                 <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
@@ -69,18 +62,33 @@
     </section>
     <!--End of Home-->
 
-    <!--Footer-->
-    <footer id="footer">
-        <div class="container">
-            <h3>Thanks for checking out my page!</h3>
-            <p>Thanks for checking out my page!</p>
-            <div class="social-links">
-                <a href="https://github.com/RyanHarang" target="_blank"><button class="links">Github</button></a>
-                <a href="https://www.linkedin.com/in/ryan-harang-a4461320a/" target="_blank"><button class="links">Linkedin</button></a>
+    <main id="main" class="about">
+        <section class="features">
+            <div class="container">
+                <div class="section-title" data-aos="zoom-out">
+                    <h2>About</h2>
+                </div>
+      
+                <div class="row content aboutLeft" data-aos="fade-up">
+                    <p>
+                        I am a sophmore majoring in computer at Western Washington University. 
+                    </p>
+                    <ul>
+                        <li> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+                        <li> Duis aute irure dolor in reprehenderit in voluptate velit</li>
+                        <li> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+                    </ul>
+                </div>
+                <div class="aboutRight">
+                    <p>
+                      My biggest hobbies outside of computer science are board games, working out, and spending time outdoors.
+                    </p>
+                </div>
             </div>
-        </div>
-    </footer>
-    <!--End Footer-->
+            <div class="clear"></div>
+        </section>
+
+    </main>
 </body>
 <!--End of Body-->
 

@@ -1,659 +1,353 @@
-/* --- # General --- */
+/*
+Author: Ryan Harang
+Version: HTML5, CSS3
+Date: 4/16/2023
+Website: Ryan Harang's Portfolio
+*/
+
+/*
+Table of Contents
+1. Base + Header
+2. Navigation Bar
+3. Home
+4. Waves
+5. Section + About
+6. Footer
+*/
+
+html{
+	scroll-behavior: smooth;
+}
+
+.clear {
+ clear: both;
+}
+
 body {
-  font-family: "Open Sans", sans-serif;
-  color: #444444;
+	background-color: #0a1828;
 }
 
-a {
-  color: #ef6603;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #fc8129;
-  text-decoration: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
-}
-
-/* --- # Back to top button --- */
-.back-to-top {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: 15px;
-  z-index: 996;
-  background: #ef6603;
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  transition: all 0.4s;
-}
-
-.back-to-top i {
-  font-size: 28px;
-  color: #fff;
-  line-height: 0;
-}
-
-.back-to-top:hover {
-  background: #fc7c1f;
-  color: #fff;
-}
-
-/* .back-to-top.active {
-  visibility: visible;
-  opacity: 1;
-} */
-
-/* --- # Disable AOS delay on mobile --- */
-@media screen and (max-width: 768px) {
-  [data-aos-delay] {
-    transition-delay: 0.1ms !important;
-  }
-}
-
-/* --- # Header --- */
 #header {
-  height: 70px;
-  transition: all 0.5s;
-  z-index: 997;
-  transition: all 0.5s;
-  background: rgba(42, 44, 57, 0.9);
+	/* 
+	To make the top bar stick at the top uncomment these lines
+	position: sticky;
+	top: 0;
+	*/
+	/* This exact amount of bottom padding allows the gradient to be maintained when the page is at its smallest size*/
+	padding: 2px 0 72px 0;
+	height: 50px;
+	transition: all 0.5s;
+	z-index: 997;
+	transition: all 0.5s;
+	background: rgba(42, 44, 57, 0.9);
 }
 
 #header.header-transparent {
-  background: transparent;
-}
-
-#header.header-scrolled {
-  background: rgba(42, 44, 57, 0.9);
+	background: transparent;
 }
 
 #header .logo h1 {
-  font-size: 28px;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  font-weight: 700;
-  letter-spacing: 1px;
+	font-family: "Raleway", sans-serif;
+	color: #fff;
+	font-size: 28px;
+	margin: 0;
+	padding: 8px 0px 0px 8px;
+	line-height: 1;
+	font-weight: 700;
+	letter-spacing: 1px;
 }
 
-#header .logo h1 a,
-#header .logo h1 a:hover {
-  color: #ffffff;
-  text-decoration: none;
+.navLeft {
+	width: 20%;
+    padding-left: 20px;
+	float: left;
 }
 
-#header .logo img {
-  padding: 0;
-  margin: 0;
-  max-height: 40px;
+.navRight {
+	/*width: 40%;*/
+    float: right;
 }
-
-/* --- # Navigation Menu --- */
-/* Desktop Navigation */
+  
 .navbar {
-  padding: 0;
+	font-family: "Raleway", sans-serif;
+	margin: 0 0 1em 0;
+	padding: 0;
 }
 
 .navbar ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  list-style: none;
-  align-items: center;
+	list-style: none;
+	width: auto;
+	align-items: center;
+	display: flex;
+	margin: 0;
 }
 
 .navbar li {
-  position: relative;
+	position: relative;
+	padding: 1px 10px;
 }
 
-.navbar a,
-.navbar a:focus {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5px 15px 7px 15px;
-  margin-left: 5px;
-  font-size: 14px;
-  color: #ffffff;
-  white-space: nowrap;
-  transition: .4s;
-  border-radius: 50px;
+.navbar li a {
+	width: auto;
+	border-radius: 50px;
+	display: block;
+	padding: 8px 15px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+	color: #178582;
 }
 
-.navbar a:hover,
-.navbar .active,
-.navbar .active:focus,
-.navbar li:hover>a {
-  background: #ef6603;
+.navbar li a.active{
+	background-color: #fff;
 }
 
-/* Mobile Navigation */
-.mobile-nav-toggle {
-  color: #ffffff;
-  font-size: 28px;
-  cursor: pointer;
-  display: none;
-  line-height: 0;
-  transition: 0.5s;
+.navbar li a:hover {
+	background-color: #fff;
+	transition: 0.5s;
 }
-
-@media (max-width: 991px) {
-  .mobile-nav-toggle {
-    display: block;
-  }
-
-  .navbar ul {
-    display: none;
-  }
-}
-
-.navbar-mobile {
-  position: fixed;
-  overflow: hidden;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background: rgba(20, 21, 28, 0.9);
-  transition: 0.3s;
-  z-index: 999;
-}
-
-.navbar-mobile .mobile-nav-toggle {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-}
-
-.navbar-mobile ul {
-  display: block;
-  position: absolute;
-  top: 55px;
-  right: 15px;
-  bottom: 15px;
-  left: 15px;
-  padding: 10px 0;
-  border-radius: 10px;
-  background-color: #fff;
-  overflow-y: auto;
-  transition: 0.3s;
-}
-
-.navbar-mobile a,
-.navbar-mobile a:focus {
-  padding: 10px 20px;
-  margin: 5px;
-  font-size: 15px;
-  color: #2a2c39;
-}
-
-.navbar-mobile a:hover,
-.navbar-mobile .active,
-.navbar-mobile li:hover>a {
-  color: #fff;
-}
-
-.navbar-mobile .getstarted,
-.navbar-mobile .getstarted:focus {
-  margin: 15px;
-}
-
-.navbar-mobile .dropdown ul {
-  position: static;
-  display: none;
-  margin: 10px 20px;
-  padding: 10px 0;
-  z-index: 99;
-  opacity: 1;
-  visibility: visible;
-  background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-}
-
-.navbar-mobile .dropdown ul li {
-  min-width: 200px;
-}
-
-.navbar-mobile .dropdown ul a {
-  padding: 10px 20px;
-}
-
-.navbar-mobile .dropdown ul a i {
-  font-size: 12px;
-}
-
-.navbar-mobile .dropdown ul a:hover,
-.navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover>a {
-  color: #ffffff;
-}
-
-.navbar-mobile .dropdown>.dropdown-active {
-  display: block;
-}
-
 
 /* --- # Home Section --- */
 #home {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  background: linear-gradient(0deg, rgb(42, 44, 57) 0%, rgb(51, 54, 74) 100%);
-  padding: 0;
+	font-family: "Raleway", sans-serif;
+	width: 100%;
+	overflow: auto;
+	position: relative;
+	background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(42, 44, 57) 90%);
+	/*background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(23, 133, 130) 100%);
+	/*background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(32, 43, 102) 100%);*/
+	padding: 0;
 }
 
-/* Top dark part */
-#home .carousel-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  position: relative;
-  height: 60vh;
-  padding-top: 50px;
-}
-
-/* Main Header */
 #home h2 {
-  color: #fff;
-  margin-bottom: 30px;
-  font-size: 48px;
-  font-weight: 700;
+	color: #fff;
+	margin-bottom: 30px;
+	font-size: 48px;
+	font-weight: 700;
 }
-
+  
 /* Sub Text under Main Header */
 #home p {
-  width: 80%;
-  animation-delay: 0.4s;
-  margin: 0 auto 30px auto;
-  color: #fff;
+	width: 80%;
+	animation-delay: 0.4s;
+	margin: 0 auto 30px auto;
+	color: #fff;
+}
+
+
+#home .carousel-container {
+	width: 100%;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	position: relative;
+	height: 50vh;
+	padding-top: 20px;
 }
 
 /* Read More Button */
 #home .btn-get-started {
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 32px;
-  border-radius: 50px;
-  transition: 0.5s;
-  line-height: 1;
-  margin: 10px;
-  color: #fff;
-  animation-delay: 0.8s;
-  border: 2px solid #ef6603;
+	font-family: "Raleway", sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	letter-spacing: 1px;
+	display: inline-block;
+	padding: 12px 32px;
+	border-radius: 50px;
+	transition: 0.5s;
+	line-height: 1;
+	margin: 10px;
+	color: #fff;
+	animation-delay: 0.8s;
+	border: 2px solid #178582;
+	text-decoration: none;
 }
-
 /* Hover characteristics for Read More Button */
 #home .btn-get-started:hover {
-  background: #ef6603;
-  color: #fff;
-  text-decoration: none;
+	background: #178582;
+	color: #fff;
 }
 
-/* nothing? */
-@media (max-width: 768px) {
-  #home .carousel-container {
-    height: 90vh;
-  }
+#about-home, #contact-home, #projects-home {
+	font-family: "Raleway", sans-serif;
+	width: 100%;
+	overflow: auto;
+	position: relative;
+	background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(42, 44, 57) 90%);
+	/*background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(23, 133, 130) 100%);
+	/*background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(32, 43, 102) 100%);*/
+	padding: 0;
 }
 
 /* Controls Height of wave effect */
 .home-waves {
-  display: block;
-  width: 100%;
-  height: 60px;
-  position: relative;
+	display: block;
+	width: 100%;
+	height: 60px;
+	position: relative;
 }
 .wave1 use {
-  animation: move-forever1 10s linear infinite;
-  animation-delay: -2s;
+	animation: move-forever1 10s linear infinite;
+	/*animation: move-forever1 80s linear infinite;*/
+	animation-delay: -2s;
 }
 .wave2 use {
-  animation: move-forever2 8s linear infinite;
-  animation-delay: -2s;
+	/*animation: move-forever1 30s linear infinite;*/
+	animation: move-forever2 8s linear infinite;
+	animation-delay: -2s;
 }
 .wave3 use {
-  animation: move-forever3 6s linear infinite;
-  animation-delay: -2s;
+	/*animation: move-forever1 20s linear infinite;*/
+	animation: move-forever3 6s linear infinite;
+	animation-delay: -2s;
 }
 @keyframes move-forever1 {
-  0% {
-    transform: translate(85px, 0%);
-  }
-  100% {
-    transform: translate(-90px, 0%);
-  }
+	0% {
+	  transform: translate(85px, 0%);
+	}
+	100% {
+	  transform: translate(-90px, 0%);
+	}
 }
 @keyframes move-forever2 {
-  0% {
-    transform: translate(-90px, 0%);
-  }
-  100% {
-    transform: translate(85px, 0%);
-  }
+	0% {
+	  transform: translate(-90px, 0%);
+	}
+	100% {
+	  transform: translate(85px, 0%);
+	}
 }
 @keyframes move-forever3 {
-  0% {
-    transform: translate(-90px, 0%);
-  }
-  100% {
-    transform: translate(85px, 0%);
-  }
+	0% {
+	  transform: translate(-90px, 0%);
+	}
+	100% {
+	  transform: translate(85px, 0%);
+	}
+}  
+
+#main {
+	background-color: #fff;
 }
 
 /* --- # Sections General --- */
-/* Padding between About paragraph and buttons */
 section {
-  padding: 40px 0;
-  overflow: hidden;
+	padding: 40px 40px;
+	overflow: hidden;
 }
-/* Padding between about and about paragraph */
 .section-title {
-  padding-bottom: 40px;
+	padding-bottom: 40px;
 }
-
-/* About Word */
+  
 .section-title h2 {
-  font-size: 14px;
-  font-weight: 50;
-  padding: 0;
-  line-height: 1px;
-  margin: 0 0 5px 0;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #aaaaaa;
-  font-family: "Poppins", sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	padding: 0;
+	line-height: 1px;
+	margin: 0 0 5px 0;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #178582;
+	font-family: "Poppins", sans-serif;
 }
-
-/* Contact Me */
+  
 .section-title p {
-  margin: 0;
-  margin: 0;
-  font-size: 36px;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  color: #2a2c39;
+	margin: 0;
+	margin: 0;
+	font-size: 36px;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-family: "Poppins", sans-serif;
+	color: #2a2c39;
 }
-
+  
 /* --- # About --- */
-/* Padding from Dark intro section to about */
 .about {
-  padding-top: 80px;
+	font-family: "Raleway", sans-serif;
+	padding-top: 30px;
 }
-
-.about .content h3 {
-  font-weight: 600;
-  font-size: 26px;
-}
-
+    
 .about .content ul {
-  list-style: none;
-  padding: 0;
+	list-style: none;
+	padding: 0;
 }
-
+  
 .about .content ul li {
-  padding-left: 28px;
-  position: relative;
+	font-family: "Raleway", sans-serif;
+	font-weight: 100;
+	padding-left: 28px;
+	margin-top: 10px;
+	position: relative;
 }
 
-.about .content ul li+li {
-  margin-top: 10px;
+.aboutLeft {
+    width: 50%;
+    float: left;
 }
 
-.about .content ul i {
-  position: absolute;
-  left: 0;
-  top: 2px;
-  font-size: 20px;
-  color: #ef6603;
-  line-height: 1;
+.aboutRight {
+    width: 50%;
+    float: right;
 }
-
-.about .content p:last-child {
-  margin-bottom: 0;
-}
-
-/* .about .content .btn-learn-more {
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 32px;
-  border-radius: 5px;
-  transition: 0.3s;
-  line-height: 1;
-  color: #ef6603;
-  animation-delay: 0.8s;
-  margin-top: 6px;
-  border: 2px solid #ef6603;
-}
-
-.about .content .btn-learn-more:hover {
-  background: #ef6603;
-  color: #fff;
-  text-decoration: none;
-} */
-
-/* --- # Buttons --- */
-.features .nav-tabs {
-  border: 0;
-}
-
-/* Project Buttons */
-.features .nav-link {
-  border: 1px solid #d4d6df;
-  padding: 15px;
-  transition: 0.3s;
-  color: #2a2c39;
-  border-radius: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.features .nav-link i {
-  padding-right: 15px;
-  font-size: 48px;
-}
-
-/* font on buttons */
-.features .nav-link h4 {
-  font-size: 10px;
-  font-weight: 600;
-  margin: 0;
-}
-
-.features .nav-link:hover {
-  color: #ef6603;
-}
-
-.features .nav-link.active {
-  background: #ef6603;
-  color: #ffffff;
-  border-color: #ef6603;
-}
-
-/* Space between button and text below */
-.features .tab-content {
-  margin-top: 30px;
-}
-
-/* Width of text below buttons */
-.features .tab-pane h3 {
-  font-weight: 600;
-  font-size: 26px;
-}
-
-.features .tab-pane p:last-child {
-  margin-bottom: 0;
-}
-
-/* My Github and Linkedin links */
-.links {
-  border: 1px solid #d4d6df;
-  color: black;
-  background-color: #ffffff;
-  padding: 10px 50px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 5px 5px;
-}
-.links:hover {
-  color: #ef6603;
-}
-
-/* --- # Contact --- */
-/* The small area directly around contact information */
-.contact {
-  position: static;
-  padding: 20% 0;
-}
-
-.contact .info {
-  width: 100%;
-  background: #ffffff;
-}
-
-.mid {
-  font-size: 20px;
-}
-
-/* Contact Info Buttons */
-.contact .info i {
-  font-size: 20px;
-  color: #ef6603;
-  float: left;
-  width: 44px;
-  height: 44px;
-  background: #ffecde;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out;
-}
-
-/* Titles of each type of contact info: Location, Email, Phone */
-.contact .info h4 {
-  padding: 0 0 0 60px;
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 5px;
-  color: #2a2c39;
-}
-
-/* Words under type of contact info */
-.contact .info p {
-  padding: 0 0 0 60px;
-  margin-bottom: 20px;
-  font-size: 14px;
-  color: #555974;
-}
-
-.contact .info .email,
-.contact .info .phone {
-  margin-top: 40px;
-}
-
-.contact .info .email:hover i,
-.contact .info .address:hover i,
-.contact .info .phone:hover i {
-  background: #ef6603;
-  color: #ffffff;
-}
-
-/* --- # Breadcrumbs --- */
-
-.bredcrumbs {
-  padding: 15px 0;
-  margin-top: 70px;
-  background: #f7f8f9;
-  min-height: 40px;
-}
-
-.breadcrumbs h2 {
-  font-size: 28px;
-  font-weight: 400;
-  margin: 0;
-}
-
-.breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 14px;
-}
-
-@media (max-width: 992px) {
-  .breadcrumbs ol {
-    margin-top: 10px;
-  }
-}
-
-.breadcrumbs ol li+li {
-  padding-left: 10px;
-}
-
-.breadcrumbs ol li+li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: #404356;
-  content: "/";
-}
-
-@media (max-width: 768px) {
-  .breadcrumbs .d-flex {
-    display: block !important;
-  }
-
-  .breadcrumbs ol {
-    display: block;
-  }
-
-  .breadcrumbs ol li {
-    display: inline-block;
-  }
-}
-
 
 /* --- # Footer --- */
 #footer {
-  background: #14151c;
-  color: #fff;
-  font-size: 14px;
-  text-align: center;
-  padding: 30px 0;
-}
-
+	background: #fff;
+	color: #2A2C39;
+	text-align: center;
+	padding: 20px 0;
+ }
+  
 #footer h3 {
-  font-size: 36px;
-  font-weight: 700;
-  color: #fff;
-  position: relative;
-  font-family: "Poppins", sans-serif;
-  padding: 0;
-  margin: 0 0 15px 0;
+	font-size: 20px;
+	font-weight: 700;
+	color: #000;
+	position: relative;
+	font-family: "Poppins", sans-serif;
+	padding: 0;
+	margin: 0 0 15px 0;
+}
+  
+#footer p {
+	font-size: 14px;
+	font-style: italic;
+	padding: 0;
+	margin: 0 0 20px 0;
 }
 
-#footer p {
-  font-size: 15px;
-  font-style: italic;
-  padding: 0;
-  margin: 0 0 40px 0;
+.links {
+	font-size: 10px;
+	border-radius: 35px;
+	font-family: "Raleway", sans-serif;
+	letter-spacing: 1px;
+	width: 100px;
+	padding: 12px;
+	transition: 0.5s;
+	line-height: 1;
+	margin: 5px;
+	background-color: #2A2C39;
+	color: #fff;
+	animation-delay: 0.8s;
+	border: 2px solid #178582;
+	text-decoration: none;
+}
+
+/* Hover characteristics for Read More Button */
+.links:hover {
+	background: #178582;
+	color: #fff;
+}
+  
+.contact-table th, td {
+	padding: 5px 10px;
+	/*border-style: double;
+	border-color: #000;*/
+}
+
+#contact-me {
+	padding: 5px 10px;
+	font-family: "Raleway", sans-serif;
 }
