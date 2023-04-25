@@ -7,9 +7,7 @@ Website: Ryan Harang's Portfolio
 
 /*
 Current List of Fixes in Progress:
-- Fix the header/navbar spacing
 - Get the header/navbar to space properly (on the page) when the window is shrunk
-- Fix about page by getting it to a two column layout
 */
 
 /*
@@ -26,10 +24,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.clear {
-  clear: both;
-}
-
 body {
   background-color: #0a1828;
 }
@@ -40,40 +34,45 @@ body {
 	position: sticky;
 	top: 0;
 	*/
-  /* This exact amount of bottom padding allows the gradient to be maintained when the page is at its smallest size*/
   display: grid;
   grid-template-columns: auto auto;
+  /* This is one way to make the right navbar portion sit on the portion of the screen I want it at.
+ It doesn't help when the page is resized however  
+ column-gap: 45%;
+ */
   padding: 2px 0 20px 0;
-  height: 50px;
+  height: auto;
   transition: all 0.5s;
-  z-index: 997;
-  transition: all 0.5s;
+  /*z-index: 997;*/
   background: rgba(42, 44, 57, 0.9);
 }
 
-#header.header-transparent {
+/* This portion might only do something on a page with scrolling capabilities */
+/* #header.header-transparent {
   background: transparent;
-}
+} */
 
 #header .logo h1 {
   font-family: "Raleway", sans-serif;
   color: #fff;
   font-size: 28px;
   margin: 0;
-  padding: 8px 0px 0px 8px;
+  padding: 20px 0px 0px 20px;
   line-height: 1;
   font-weight: 700;
   letter-spacing: 1px;
 }
 
-.navLeft {
+/* .navLeft {
   padding-left: 20px;
-}
-
-/* .navRight {
 } */
 
+/*.navRight {
+  
+}*/
+
 .navbar {
+  align-self: stretch;
   font-family: "Raleway", sans-serif;
   margin: 0 0 1em 0;
   padding: 8px 0px 0px 8px;
@@ -82,14 +81,14 @@ body {
 .navbar ul {
   list-style: none;
   width: auto;
-  align-items: center;
+  /*align-items: right;
+  */
   display: flex;
   margin: 0;
 }
 
 .navbar li {
-  position: relative;
-  padding: 1px 10px;
+  padding: 10px 10px;
 }
 
 .navbar li a {
