@@ -36,7 +36,6 @@ body {
   /* This exact amount of bottom padding allows the gradient to be maintained when the page is at its smallest size*/
   display: grid;
   grid-template-columns: auto auto;
-  column-gap: 35%;
   padding: 2px 0 20px 0;
   height: 50px;
   transition: all 0.5s;
@@ -266,6 +265,8 @@ section {
 
 /* --- # About --- */
 .about {
+  display: grid;
+  grid-template-columns: auto auto;
   font-family: "Raleway", sans-serif;
   padding-top: 30px;
 }
@@ -284,15 +285,11 @@ section {
 }
 
 .aboutLeft {
-  display: flex;
-  /*width: 50%;*/
-  /*float: left;*/
+  grid-column-start: 1;
 }
 
 .aboutRight {
-  display: flex;
-  /*width: 50%;*/
-  /*float: right;*/
+  grid-column-start: 3;
 }
 
 /* --- # Footer --- */
