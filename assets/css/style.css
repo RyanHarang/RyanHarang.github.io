@@ -6,6 +6,13 @@ Website: Ryan Harang's Portfolio
 */
 
 /*
+Current List of Fixes in Progress:
+- Fix the header/navbar spacing
+- Get the header/navbar to space properly (on the page) when the window is shrunk
+- Fix about page by getting it to a two column layout
+*/
+
+/*
 Table of Contents
 1. Base + Header
 2. Navigation Bar
@@ -265,8 +272,6 @@ section {
 
 /* --- # About --- */
 .about {
-  display: grid;
-  grid-template-columns: auto auto;
   font-family: "Raleway", sans-serif;
   padding-top: 30px;
 }
@@ -281,7 +286,11 @@ section {
   font-weight: 100;
   padding-left: 28px;
   margin-top: 10px;
-  position: relative;
+}
+
+.aboutCols {
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
 .aboutLeft {
@@ -289,7 +298,7 @@ section {
 }
 
 .aboutRight {
-  grid-column-start: 3;
+  grid-column-start: 2;
 }
 
 /* --- # Footer --- */
