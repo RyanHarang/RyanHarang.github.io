@@ -72,7 +72,6 @@ body {
 }*/
 
 .navbar {
-  align-self: stretch;
   font-family: "Raleway", sans-serif;
   margin: 0 0 1em 0;
   padding: 8px 0px 0px 8px;
@@ -358,4 +357,24 @@ td {
 #contact-me {
   padding: 5px 10px;
   font-family: "Raleway", sans-serif;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .navbar {
+    font-family: "Raleway", sans-serif;
+    margin: 0 0 1em 0;
+    padding: 8px 0px 0px 8px;
+  }
+
+  .navbar ul {
+    list-style: none;
+    width: auto;
+    display: block;
+    margin: 0;
+  }
+
+  .navbar li {
+    padding: 10px 10px;
+  }
 }
