@@ -40,7 +40,8 @@ body {
   padding: 2px 0 20px 0;
   height: auto;
   transition: all 0.5s;
-  background: rgba(42, 44, 57, 0.9);
+  background: linear-gradient(0deg, rgb(42, 44, 57) 90%, rgb(0, 0, 0) 0%);
+  /*background: rgba(42, 44, 57, 0.9);*/
 }
 
 /* This portion might only do something on a page with scrolling capabilities */
