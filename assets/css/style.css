@@ -18,6 +18,7 @@ Table of Contents
 4. Waves
 5. Section + About
 6. Footer
+7. Responsive Layout
 */
 
 html {
@@ -388,5 +389,12 @@ td {
     margin-bottom: 20px;
     font-size: 38px;
     font-weight: 600;
+  }
+
+  .aboutLeft {
+    font-size: 13px;
+  }
+  .aboutRight {
+    font-size: 13px;
   }
 }
