@@ -36,14 +36,9 @@ body {
 	*/
   display: grid;
   grid-template-columns: auto auto;
-  /* This is one way to make the right navbar portion sit on the portion of the screen I want it at.
- It doesn't help when the page is resized however  
- column-gap: 45%;
- */
   padding: 2px 0 20px 0;
   height: auto;
   transition: all 0.5s;
-  /*z-index: 997;*/
   background: rgba(42, 44, 57, 0.9);
 }
 
@@ -358,7 +353,7 @@ td {
 @media (max-width: 750px) {
   .navbar {
     font-family: "Raleway", sans-serif;
-    margin: 0 0 1em 0;
+    margin: 0;
   }
   .navbar ul {
     list-style: none;
@@ -377,6 +372,15 @@ td {
     font-size: 18px;
     color: #178582;
     margin: 0;
+  }
+
+  #header {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 2px 0 0 0;
+    height: auto;
+    transition: all 0.5s;
+    background: rgba(42, 44, 57, 0.9);
   }
 
   #home h2 {
