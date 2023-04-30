@@ -7,7 +7,7 @@ Website: Ryan Harang's Portfolio
 
 /*
 Current List of Fixes in Progress:
-- Get the header/navbar to space properly (on the page) when the window is shrunk
+- Get header to be transparent and not either delete little black bar at top or put it on all edges of site
 */
 
 /*
@@ -18,7 +18,8 @@ Table of Contents
 4. Waves
 5. Section + About
 6. Footer
-7. Responsive Layout
+7. img Testing
+8. Responsive Layout
 */
 
 html {
@@ -26,28 +27,23 @@ html {
 }
 
 body {
-  background-color: #0a1828;
+  /*background-color: #0a1828;*/
+  /*background-color: #fff;*/
+  background: linear-gradient(0deg, rgb(42, 44, 57) 90%, rgb(42, 44, 57) 0%);
 }
 
+/*--- # Header Section ---*/
 #header {
-  /* 
-	To make the top bar stick at the top uncomment these lines
-	position: sticky;
-	top: 0;
-	*/
+  position: sticky;
+  top: 0;
   display: grid;
   grid-template-columns: auto auto;
-  padding: 2px 0 20px 0;
+  /*padding: 0 0 0 0;*/
   height: auto;
   transition: all 0.5s;
-  background: linear-gradient(0deg, rgb(42, 44, 57) 90%, rgb(0, 0, 0) 0%);
-  /*background: rgba(42, 44, 57, 0.9);*/
+  z-index: 1000;
+  background-color: rgba(44, 42, 57, 0.75);
 }
-
-/* This portion might only do something on a page with scrolling capabilities */
-/* #header.header-transparent {
-  background: transparent;
-} */
 
 #header .logo h1 {
   font-family: "Raleway", sans-serif;
@@ -60,6 +56,7 @@ body {
   letter-spacing: 1px;
 }
 
+/*--- # Navbar Section ---*/
 .navbar {
   font-family: "Raleway", sans-serif;
   margin: 0 0 1em 0;
@@ -113,7 +110,6 @@ body {
   font-weight: 700;
 }
 
-/* Sub Text under Main Header */
 #home p {
   width: 80%;
   animation-delay: 0.4s;
@@ -151,7 +147,7 @@ body {
   border: 2px solid #178582;
   text-decoration: none;
 }
-/* Hover characteristics for Read More Button */
+
 #home .btn-get-started:hover {
   background: #178582;
   color: #fff;
@@ -165,8 +161,6 @@ body {
   overflow: auto;
   position: relative;
   background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(42, 44, 57) 90%);
-  /*background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(23, 133, 130) 100%);
-	/*background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(32, 43, 102) 100%);*/
   padding: 0;
 }
 
@@ -179,16 +173,13 @@ body {
 }
 .wave1 use {
   animation: move-forever1 10s linear infinite;
-  /*animation: move-forever1 80s linear infinite;*/
   animation-delay: -2s;
 }
 .wave2 use {
-  /*animation: move-forever1 30s linear infinite;*/
   animation: move-forever2 8s linear infinite;
   animation-delay: -2s;
 }
 .wave3 use {
-  /*animation: move-forever1 20s linear infinite;*/
   animation: move-forever3 6s linear infinite;
   animation-delay: -2s;
 }
@@ -273,6 +264,7 @@ section {
 .aboutCols {
   display: grid;
   grid-template-columns: auto auto;
+  column-gap: 2%;
 }
 
 .aboutLeft {
@@ -341,6 +333,21 @@ td {
 #contact-me {
   padding: 5px 10px;
   font-family: "Raleway", sans-serif;
+}
+
+#selfPic {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  column-gap: 20%;
+  margin-left: 5%;
+  margin-right: 5%;
+  box-sizing: border-box;
+  width: 90%;
+
+  border: 2px dashed rgba(114, 186, 94, 0.35);
+}
+.test {
+  width: 100%;
 }
 
 /* Mobile */
