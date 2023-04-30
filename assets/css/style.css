@@ -7,7 +7,7 @@ Website: Ryan Harang's Portfolio
 
 /*
 Current List of Fixes in Progress:
-- Get header to be transparent and not either delete little black bar at top or put it on all edges of site
+- Light mode? or high contrast mode?
 */
 
 /*
@@ -92,6 +92,11 @@ body {
 .navbar li a:hover {
   background-color: #fff;
   transition: 0.5s;
+}
+
+.mode-button {
+  width: auto;
+  border-radius: 50%;
 }
 
 /* --- # Home Section --- */
@@ -412,4 +417,9 @@ td {
     margin-right: 0;
     width: 110%;
   }
+}
+
+.light-mode {
+  background-color: #fff;
+  color: #000;
 }
