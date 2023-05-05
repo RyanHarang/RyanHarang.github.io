@@ -7,7 +7,7 @@ Website: Ryan Harang's Portfolio
 
 /*
 Current List of Fixes in Progress:
-- Light mode? or high contrast mode?
+- Turn Menu on mobile into hamburger menu using javascript
 */
 
 /*
@@ -132,7 +132,7 @@ body {
   text-align: center;
   position: relative;
   height: 50vh;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
 /* Read More Button */
@@ -348,10 +348,9 @@ td {
   margin-right: 5%;
   box-sizing: border-box;
   width: 90%;
-
   border: 2px dashed rgba(114, 186, 94, 0.35);
 }
-.test {
+.mainPics {
   width: 100%;
 }
 
@@ -405,7 +404,10 @@ td {
     text-align: center;
     position: relative;
     height: 50vh;
-    padding-top: 0;
+    padding-top: 5%;
+  }
+  #selfPic {
+    margin-top: 10%;
   }
 
   .aboutLeft {
@@ -417,9 +419,4 @@ td {
     margin-right: 0;
     width: 110%;
   }
-}
-
-.light-mode {
-  background-color: #fff;
-  color: #000;
 }
