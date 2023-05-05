@@ -348,8 +348,7 @@ td {
 .mainPics {
   width: 100%;
 }
-
-.mobileDrop {
+.dropdown {
   display: none;
 }
 
@@ -360,20 +359,31 @@ td {
     margin: 0;
   }
 
+  .hamburger {
+    padding: 20px 5px;
+    position: static;
+  }
+
   .mobileDrop {
     display: none;
   }
 
+  .dropdown {
+    display: block;
+  }
+
   .dropdown button {
-    margin: 0;
-    width: auto;
+    display: block;
+  }
+
+  .dropdown button img {
+    padding: auto auto;
   }
 
   .dropdown ul {
     text-align: center;
     list-style: none;
     width: auto;
-    /*margin: 0;*/
   }
 
   .dropdown li {
@@ -388,7 +398,6 @@ td {
     font-weight: bold;
     font-size: 18px;
     color: #178582;
-    /*margin: 0;*/
   }
 
   .dropdown li a.active {
@@ -401,13 +410,13 @@ td {
   }
 
   .show {
-    display: block;
+    display: inherit;
   }
 
   #header {
     display: grid;
     grid-template-columns: auto auto;
-    padding: 2px 0 10% 0;
+    padding: 2px 0 1% 0;
     height: auto;
     transition: all 0.5s;
     background: rgba(42, 44, 57, 0.9);
