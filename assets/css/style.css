@@ -94,11 +94,6 @@ body {
   transition: 0.5s;
 }
 
-.mode-button {
-  width: auto;
-  border-radius: 50%;
-}
-
 /* --- # Home Section --- */
 #home {
   font-family: "Raleway", sans-serif;
@@ -354,35 +349,65 @@ td {
   width: 100%;
 }
 
+.mobileDrop {
+  display: none;
+}
+
 /* Mobile */
 @media (max-width: 780px) {
   .navbar {
-    font-family: "Raleway", sans-serif;
+    display: none;
     margin: 0;
   }
-  .navbar ul {
+
+  .mobileDrop {
+    display: none;
+  }
+
+  .dropdown button {
+    margin: 0;
+    width: auto;
+  }
+
+  .dropdown ul {
+    text-align: center;
     list-style: none;
     width: auto;
-    text-align: center;
-    display: block;
-    margin: 0;
+    /*margin: 0;*/
   }
-  .navbar li a {
+
+  .dropdown li {
+    padding: 10px 10px;
+  }
+
+  .dropdown li a {
     width: auto;
     border-radius: 50px;
-    display: block;
     padding: 5px 9px;
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
     color: #178582;
-    margin: 0;
+    /*margin: 0;*/
+  }
+
+  .dropdown li a.active {
+    background-color: #fff;
+  }
+
+  .dropdown li a:hover {
+    background-color: #fff;
+    transition: 0.5s;
+  }
+
+  .show {
+    display: block;
   }
 
   #header {
     display: grid;
     grid-template-columns: auto auto;
-    padding: 2px 0 0 0;
+    padding: 2px 0 10% 0;
     height: auto;
     transition: all 0.5s;
     background: rgba(42, 44, 57, 0.9);
@@ -394,6 +419,7 @@ td {
     font-size: 38px;
     font-weight: 600;
   }
+
   #home .carousel-container {
     width: 100%;
     color: #fff;
@@ -406,6 +432,7 @@ td {
     height: 50vh;
     padding-top: 5%;
   }
+
   #selfPic {
     margin-top: 10%;
   }
