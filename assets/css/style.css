@@ -368,8 +368,9 @@ td {
   }
 
   .hamburger {
-    padding: 20px 0;
-    position: static;
+    padding: 10px 0;
+    margin-top: 0.6em;
+    /*position: static;*/
   }
 
   .mobileDrop {
@@ -419,13 +420,13 @@ td {
   }
 
   .show {
-    display: inherit;
+    display: block;
   }
 
   #header {
     display: grid;
     grid-template-columns: auto auto;
-    padding: 2px 0 1% 0;
+    padding: 2px 0 4% 5%;
     height: auto;
     transition: all 0.5s;
     background: rgba(42, 44, 57, 0.9);
