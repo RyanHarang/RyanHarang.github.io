@@ -368,12 +368,13 @@ td {
   }
 
   .hamburger {
-    padding: 20px 5px;
+    padding: 20px 0;
     position: static;
   }
 
   .mobileDrop {
     display: none;
+    margin-right: 43px;
   }
 
   .dropdown {
@@ -395,7 +396,7 @@ td {
   }
 
   .dropdown li {
-    padding: 10px 10px;
+    padding: 10px 0;
   }
 
   .dropdown li a {
