@@ -345,15 +345,17 @@ td {
 
 #selfPic {
   display: grid;
-  grid-template-columns: 40% 40%;
-  column-gap: 20%;
-  margin-left: 5%;
-  margin-right: 5%;
+  grid-template-columns: 42% 42%;
+  column-gap: 16%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
   box-sizing: border-box;
-  width: 90%;
+  width: 95%;
   border: 2px dashed rgba(114, 186, 94, 0.35);
+  /*overflow: hidden;*/
 }
 .mainPics {
+  /*height: 10%;*/
   width: 100%;
 }
 .dropdown {
@@ -368,9 +370,8 @@ td {
   }
 
   .hamburger {
-    padding: 10px 0;
+    padding: 7px 0;
     margin-top: 0.6em;
-    /*position: static;*/
   }
 
   .mobileDrop {
@@ -431,6 +432,9 @@ td {
     transition: all 0.5s;
     background: rgba(42, 44, 57, 0.9);
   }
+  #header .logo h1 {
+    font-size: 24px;
+  }
 
   #home h2 {
     color: #fff;
@@ -449,11 +453,11 @@ td {
     text-align: center;
     position: relative;
     height: 50vh;
-    padding-top: 5%;
+    padding-top: 150px;
   }
 
   #selfPic {
-    margin-top: 10%;
+    margin-top: 30%;
   }
 
   .aboutLeft {
