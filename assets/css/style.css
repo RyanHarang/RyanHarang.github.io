@@ -302,10 +302,10 @@ section {
 
 .links {
   font-size: 10px;
-  border-radius: 35px;
+  border-radius: 50%;
   font-family: "Raleway", sans-serif;
   letter-spacing: 1px;
-  width: 100px;
+  width: 80px;
   padding: 12px;
   transition: 0.5s;
   line-height: 1;
@@ -316,14 +316,10 @@ section {
   border: 2px solid #178582;
   text-decoration: none;
 }
-/*
-.linkedin {
-  background-image: url("/assets/images/linkedin.png");
+
+.imageLink {
+  max-width: 100%;
 }
-.github {
-  background-image: url("/assets/images/github.png");
-}
-*/
 
 /* Hover characteristics for Read More Button */
 .links:hover {
