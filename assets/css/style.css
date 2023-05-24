@@ -342,16 +342,15 @@ td {
 #selfPic {
   display: grid;
   grid-template-columns: 42% 42%;
-  column-gap: 16%;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
+  column-gap: 10%;
+  margin-left: 5.5%;
+  margin-right: 5.5%;
   box-sizing: border-box;
   width: 95%;
-  border: 2px dashed rgba(114, 186, 94, 0.35);
-  /*overflow: hidden;*/
+  height: 50em;
+  overflow: hidden;
 }
 .mainPics {
-  /*height: 10%;*/
   width: 100%;
 }
 .dropdown {
