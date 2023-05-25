@@ -339,19 +339,19 @@ td {
   font-family: "Raleway", sans-serif;
 }
 
-#selfPic {
+#selfPics {
   display: grid;
-  grid-template-columns: 42% 42%;
-  column-gap: 10%;
-  margin-left: 5.5%;
-  margin-right: 5.5%;
-  box-sizing: border-box;
-  width: 95%;
-  height: 46em;
+  grid-template-columns: 44% 44%;
+  column-gap: 5%;
+  margin-left: 3.5%;
+  margin-right: 3.5%;
+  width: 100%;
+  height: 40%;
   overflow: hidden;
 }
 .mainPics {
   width: 100%;
+  border-radius: 10%;
 }
 .dropdown {
   display: none;
@@ -449,10 +449,15 @@ td {
     position: relative;
     height: 50vh;
     padding-top: 150px;
+    margin-bottom: 30%;
   }
 
   #selfPic {
-    margin-top: 30%;
+    /*margin-top: 100em;*/
+    overflow: hidden;
+  }
+  .mainPics {
+    width: 100%;
   }
 
   .aboutLeft {
