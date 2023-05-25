@@ -261,20 +261,6 @@ section {
   margin-top: 10px;
 }
 
-.aboutCols {
-  display: grid;
-  grid-template-columns: auto auto;
-  column-gap: 2%;
-}
-
-.aboutLeft {
-  grid-column-start: 1;
-}
-
-.aboutRight {
-  grid-column-start: 2;
-}
-
 /* --- # Footer --- */
 #footer {
   background: #fff;
@@ -439,21 +425,11 @@ td {
   }
 
   #home .carousel-container {
-    width: 100%;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    position: relative;
-    height: 50vh;
     padding-top: 150px;
     margin-bottom: 30%;
   }
 
   #selfPic {
-    /*margin-top: 100em;*/
     overflow: hidden;
   }
   .mainPics {
@@ -461,12 +437,12 @@ td {
   }
 
   .aboutLeft {
-    font-size: 13px;
+    font-size: 12px;
     padding-right: 20px;
   }
   .aboutRight {
-    font-size: 13px;
+    font-size: 12px;
     margin-right: 0;
-    width: 110%;
+    width: 114%;
   }
 }
