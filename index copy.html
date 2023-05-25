@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
     <title>Ryan Harang</title>
 
     <!--Google Fonts-->
@@ -68,8 +71,8 @@
         >
           <img src="assets/images/hamburger.png" />
           <ul class="mobileDrop" id="mobileDrop">
-            <li><a class="nav-link" href="index.html">Home</a></li>
-            <li><a class="active nav-link" href="about.html">About</a></li>
+            <li><a class="active nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="about.html">About</a></li>
             <li><a class="nav-link" href="projects.html">Projects</a></li>
             <li><a class="nav-link" href="index.html">More</a></li>
             <li><a class="nav-link" href="contact.html">Contact</a></li>
@@ -77,20 +80,37 @@
         </button>
       </div>
 
-      <nav id="navbar" class="navbar justify-content-end">
+      <div id="navbar" class="navbar justify-content-end">
         <ul>
-          <li><a class="nav-link" href="index.html">Home</a></li>
-          <li><a class="active nav-link" href="about.html">About</a></li>
+          <li><a class="active nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
           <li><a class="nav-link" href="projects.html">Projects</a></li>
           <li><a class="nav-link" href="index.html">More</a></li>
           <li><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
-      </nav>
-      <!--End of Nav-->
+      </div>
+      <!--End of Navbar-->
     </header>
     <!--End of Header-->
 
-    <section id="about-home" class="about-home">
+    <section id="home">
+      <div class="carousel-container">
+        <h2>Welcome to my Portfolio</h2>
+        <p>
+          This is where I'll be adding projects and skills as I continue my
+          Computer Science journey. I'm always looking for new opportunities to
+          improve my skills and gain experience, and am looking to land a CS
+          related internship for the Summer of 2024. This page is one of many
+          projects I hope to complete to show off my capabilities.
+        </p>
+        <a href="about.html" class="btn-get-started">Read More</a>
+      </div>
+
+      <div id="selfPics" data-aos="fade-up">
+        <img id="picLeft" src="assets/images/3May2023.jpg" class="mainPics" />
+        <img id="picRight" src="assets/images/2May2023.jpg" class="mainPics" />
+      </div>
+
       <svg
         class="home-waves"
         xmlns="http://www.w3.org/2000/svg"
@@ -127,56 +147,26 @@
     </section>
     <!--End of Home-->
 
-    <main id="main" class="about">
-      <section class="features">
-        <div class="aboutCols">
-          <div class="section-title" data-aos="zoom-out">
-            <h2>About</h2>
-          </div>
-
-          <div class="content" data-aos="fade-up">
-            <p>
-              I'm Ryan and I'm a sophmore at Western Washington University
-              majoring in Computer Science. I've been interested in Computer
-              Science since I took AP CS in highschool, and my interest has
-              continued to grow as I delve deeper into the field. Recently as I
-              have begun to take major courses and get more involved on campus
-              my interests have been centered around front end design, with
-              things like HTML and React, as well as object oriented design with
-              java.
-            </p>
-          </div>
-          <div class="content">
-            <p>
-              While I spend a lot of my time on computer science related topics,
-              I like to try and keep a balanced life. Some of my hobbies
-              include:
-            </p>
-            <ul>
-              <li>
-                Playing board games: For a long time I've been heavily invested
-                in board games, and have even designed a board game with friends
-                during highschool. My interest in board games often leads me to
-                make projects related to them, furthered by the fact that board
-                games often create interesting computer science projects. I plan
-                to design and create more in the future!
-              </li>
-              <li>
-                Spending time outdoors: I like taking breaks by getting outside.
-                Spending time outdoors with others and going on hikes are some
-                of my favorite ways to get out.
-              </li>
-              <li>
-                Working out: Since my sophmore year in college I've spent a lot
-                of time and effort making my lifestyle more healthy. One of the
-                core ways I've gone about this is by working out regularly. I
-                like the way it clears my mind and gives me time to myself.
-              </li>
-            </ul>
-          </div>
+    <!--Footer-->
+    <footer id="footer">
+      <div class="container">
+        <h3>Thanks for checking out my page!</h3>
+        <p>Find more of my content:</p>
+        <div class="social-links">
+          <a href="https://github.com/RyanHarang" target="_blank"
+            ><button class="links">
+              <img class="imageLink" src="assets/images/github.png" /></button
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/ryan-harang-a4461320a/"
+            target="_blank"
+            ><button class="links">
+              <img class="imageLink" src="assets/images/linkedin.png" /></button
+          ></a>
         </div>
-      </section>
-    </main>
+      </div>
+    </footer>
+    <!--End Footer-->
   </body>
   <!--End of Body-->
 </html>
