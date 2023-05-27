@@ -7,7 +7,7 @@ Website: Ryan Harang's Portfolio
 
 /*
 Current List of Fixes in Progress:
-- Turn Menu on mobile into hamburger menu using javascript
+- Make projects sections
 */
 
 /*
@@ -17,9 +17,10 @@ Table of Contents
 3. Home
 4. Waves
 5. Section + About
-6. Footer
-7. img Testing
-8. Responsive Layout
+6. Projects
+7. Footer
+8. img Testing
+9. Responsive Layout
 */
 
 html {
@@ -219,6 +220,32 @@ body {
 #about,
 #contact {
   background-color: #fff;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 50% 45%;
+  column-gap: 5%;
+  flex-direction: column;
+  color: #fff;
+}
+
+.projImg {
+  border: solid #178582 5px;
+  margin-bottom: 1%;
+}
+
+.projImg img {
+  width: 100%;
+}
+
+.description {
+  width: 100%;
+}
+
+.description a {
+  color: #178582;
+  font-weight: bold;
 }
 
 /* --- # Sections General --- */
