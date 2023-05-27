@@ -39,11 +39,10 @@ body {
   top: 0;
   display: grid;
   grid-template-columns: auto auto;
-  /*padding: 0 0 0 0;*/
   height: auto;
   transition: all 0.5s;
   z-index: 1000;
-  background-color: rgba(44, 42, 57, 0.75);
+  background-color: rgba(44, 42, 57, 0.85);
 }
 
 #header .logo h1 {
@@ -347,6 +346,10 @@ section {
 .links:hover {
   background: #178582;
   color: #fff;
+}
+
+.contact {
+  display: block;
 }
 
 .contact-table th,
