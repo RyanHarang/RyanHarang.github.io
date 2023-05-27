@@ -111,8 +111,9 @@ body {
 }
 
 #home p {
-  width: 60%;
+  width: 70%;
   animation-delay: 0.4s;
+  font-size: 19px;
   margin: 0 auto 30px auto;
   color: #fff;
 }
@@ -212,23 +213,25 @@ body {
 
 .projects {
   display: grid;
-  grid-template-columns: 50% 45%;
-  column-gap: 5%;
+  grid-template-columns: 53% 45%;
+  column-gap: 2%;
   flex-direction: column;
   color: #fff;
 }
 
 .projImg {
-  border: solid #178582 5px;
   margin-bottom: 1%;
 }
 
 .projImg img {
   width: 100%;
+  border: solid #178582 5px;
 }
 
 .description {
   width: 100%;
+  font-size: 20px;
+  margin-bottom: 2%;
 }
 
 .description a {
@@ -271,6 +274,7 @@ section {
 .about {
   font-family: "Raleway", sans-serif;
   padding-top: 30px;
+  font-size: 16.5px;
 }
 
 .about .content ul {
