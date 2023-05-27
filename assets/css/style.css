@@ -153,17 +153,6 @@ body {
   color: #fff;
 }
 
-#about-home,
-#contact-home,
-#projects-home {
-  font-family: "Raleway", sans-serif;
-  width: 100%;
-  overflow: auto;
-  position: relative;
-  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(42, 44, 57) 90%);
-  padding: 0;
-}
-
 /* Controls Height of wave effect */
 .home-waves {
   display: block;
