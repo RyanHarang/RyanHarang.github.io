@@ -496,4 +496,11 @@ section {
   .projImg {
     display: none;
   }
+
+  .contact-me {
+    font-size: 35px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
