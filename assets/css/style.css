@@ -460,19 +460,15 @@ section {
   }
 
   #header {
-    display: grid;
-    grid-template-columns: auto auto;
     padding: 2px 0 4% 5%;
     height: auto;
     transition: all 0.5s;
-    background: rgba(42, 44, 57, 0.9);
   }
   #header .logo h1 {
     font-size: 24px;
   }
 
   #home h2 {
-    color: #fff;
     margin-bottom: 20px;
     font-size: 38px;
     font-weight: 600;
@@ -483,8 +479,14 @@ section {
     margin-bottom: 30%;
   }
 
+  /* Read More Button */
+  #home .btn-get-started {
+    margin-bottom: 75px;
+  }
+
   #selfPics {
     height: 12em;
+    margin-bottom: 15px;
   }
 
   .projects {
