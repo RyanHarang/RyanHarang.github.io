@@ -342,23 +342,29 @@ section {
 }
 
 .contact {
-  display: block;
   text-align: center;
+  display: block;
+  padding: 5% 0;
 }
 .contact-table {
-  margin: auto;
+  table-layout: fixed;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
 }
 
-.contact-table th,
-td {
-  padding: 5px 10px;
-  /*border-style: double;
-	border-color: #000;*/
+.contact-table td {
+  width: 175px;
+}
+.contact-img {
+  max-width: 25%;
 }
 
 #contact-me {
   padding: 5px 10px;
   font-family: "Raleway", sans-serif;
+  margin-right: 35%;
+  margin-left: 35%;
 }
 
 #selfPics {
