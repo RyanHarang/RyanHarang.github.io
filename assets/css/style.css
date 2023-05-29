@@ -233,9 +233,13 @@ body {
   margin-bottom: 2%;
 }
 
-.description a {
+.text-link {
   color: #178582;
   font-weight: bold;
+}
+.text-link:hover {
+  color: #178582;
+  text-decoration: none;
 }
 
 /* --- # Sections General --- */
@@ -340,11 +344,15 @@ section {
   color: #fff;
 }
 
+.resume {
+  background-color: #fff;
+}
+
 .contact {
   text-align: center;
   display: block;
   padding: 5% 0;
-  background-color: #fff;
+  background-color: #2a2c39;
 }
 
 .contact-table {
@@ -352,6 +360,7 @@ section {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
+  color: #fff;
 }
 
 .contact-table td {
@@ -367,6 +376,7 @@ section {
   font-family: "Raleway", sans-serif;
   margin-right: 35%;
   margin-left: 35%;
+  color: #fff;
 }
 
 #selfPics {
