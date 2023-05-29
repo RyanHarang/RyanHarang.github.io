@@ -154,7 +154,7 @@ body {
   color: #fff;
 }
 
-/* Controls Height of wave effect */
+/* Controls Wave Effects */
 .home-waves {
   display: block;
   width: 100%;
@@ -179,6 +179,18 @@ body {
 .wave3 use {
   animation: move-forever3 6s linear infinite;
   animation-delay: -2s;
+}
+.wave4 use {
+  animation: move-forever1 9s linear infinite;
+  animation-delay: -2.1s;
+}
+.wave5 use {
+  animation: move-forever2 7s linear infinite;
+  animation-delay: -2.2s;
+}
+.wave6 use {
+  animation: move-forever3 5s linear infinite;
+  animation-delay: -2.3s;
 }
 
 @keyframes move-forever1 {
