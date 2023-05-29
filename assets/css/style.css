@@ -343,6 +343,10 @@ section {
 
 .contact {
   display: block;
+  text-align: center;
+}
+.contact-table {
+  margin: auto;
 }
 
 .contact-table th,
@@ -463,5 +467,13 @@ td {
 
   #selfPics {
     height: 12em;
+  }
+
+  .projects {
+    display: block;
+    font-size: 14px;
+  }
+  .projImg {
+    display: none;
   }
 }
