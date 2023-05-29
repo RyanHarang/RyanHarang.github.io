@@ -348,6 +348,15 @@ section {
   background-color: #fff;
 }
 
+.skills-list {
+  display: flex;
+  list-style: none;
+}
+
+.skills-list li {
+  padding-right: 1em;
+}
+
 .contact {
   text-align: center;
   display: block;
@@ -495,6 +504,10 @@ section {
   }
   .projImg {
     display: none;
+  }
+  .skills-list {
+    display: block;
+    padding-left: 0;
   }
 
   .contact-me {
