@@ -206,8 +206,7 @@ body {
   }
 }
 
-#about,
-#contact {
+#about {
   background-color: #fff;
 }
 
@@ -345,7 +344,9 @@ section {
   text-align: center;
   display: block;
   padding: 5% 0;
+  background-color: #fff;
 }
+
 .contact-table {
   table-layout: fixed;
   margin-right: auto;
@@ -361,7 +362,7 @@ section {
   margin: 3%;
 }
 
-#contact-me {
+.contact-me {
   padding: 5px 10px;
   font-family: "Raleway", sans-serif;
   margin-right: 35%;
