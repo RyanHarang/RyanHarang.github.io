@@ -31,8 +31,10 @@
       crossorigin="anonymous"
     />
     <link href="assets/css/style.css" rel="stylesheet" />
-    <!--JS-->
-    <script type="text/javascript" script src="assets/js/script.js"></script>
+    <link
+      href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"
+      rel="stylesheet"
+    />
 
     <!--Favicon-->
     <link
@@ -106,7 +108,7 @@
         <a href="#about" class="btn-get-started">Read More</a>
       </div>
 
-      <div id="selfPics" data-aos="fade-up">
+      <div id="selfPics">
         <img id="picLeft" src="assets/images/3May2023.jpg" class="mainPics" />
         <img id="picRight" src="assets/images/2May2023.jpg" class="mainPics" />
       </div>
@@ -412,7 +414,7 @@
     </svg>
     <!--End of Project Waves-->
 
-    <div id="contact" class="contact">
+    <div id="contact" class="contact" data-aos="fade-up">
       <h1 id="contact-me" class="contact-me">Contact Me</h1>
       <table class="contact-table">
         <tr>
@@ -503,6 +505,12 @@
       </div>
     </footer>
     <!--End Footer-->
+    <!--JS-->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script type="text/javascript" script src="assets/js/script.js"></script>
   </body>
   <!--End of Body-->
 </html>
