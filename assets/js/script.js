@@ -12,7 +12,25 @@ anime({
   scale: {
     value: 1.1,
     duration: 1000,
-    delay: 100,
+    delay: 1000,
     easing: "easeInOutQuart",
+  },
+});
+
+anime({
+  targets: ".btn-get-started",
+  scale: {
+    value: 1.5,
+    duration: 700,
+    delay: 100,
+  },
+});
+
+anime({
+  targets: ".nav-link",
+  scale: {
+    value: 1.1,
+    duration: 700,
+    delay: 100,
   },
 });
