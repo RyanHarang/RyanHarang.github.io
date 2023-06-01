@@ -8,6 +8,11 @@ anime({
 });
 
 anime({
-  targets: ".",
-  translateX: 30,
+  targets: ".links",
+  scale: {
+    value: 1.1,
+    duration: 1000,
+    delay: 100,
+    easing: "easeInOutQuart",
+  },
 });
