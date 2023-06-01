@@ -461,6 +461,10 @@ section {
 
 /* Mobile */
 @media (max-width: 780px) {
+  body {
+    overflow: hidden;
+  }
+
   .navbar {
     display: none;
     margin: 0;
@@ -478,6 +482,7 @@ section {
 
   .dropdown {
     display: block;
+    overflow: hidden;
   }
 
   .dropdown button {
