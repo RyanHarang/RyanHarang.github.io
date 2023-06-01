@@ -38,7 +38,7 @@ anime({
 anime({
   targets: ".contact-method",
   scale: {
-    value: 1.5,
+    value: 1.1,
     duration: 700,
     delay: 200,
   },
