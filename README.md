@@ -1,2 +1,2 @@
 # RyanHarang.github.io
-This repository is for hosting my portoflio as a website through Github.
+This repository is for hosting my portoflio through Github.
