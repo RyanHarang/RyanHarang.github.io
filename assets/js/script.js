@@ -8,16 +8,6 @@ anime({
 });
 
 anime({
-  targets: ".links",
-  scale: {
-    value: 1.1,
-    duration: 1000,
-    delay: 1000,
-    easing: "easeInOutQuart",
-  },
-});
-
-anime({
   targets: ".btn-get-started",
   scale: {
     value: 1.3,
