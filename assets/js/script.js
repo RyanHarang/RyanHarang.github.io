@@ -19,6 +19,12 @@ anime({
 });
 
 anime({
+  targets: ".mainPics",
+  borderRadius: ["100%", "5%"],
+  easing: "easeInOutQuad",
+});
+
+anime({
   targets: ".btn-get-started",
   scale: {
     value: 1.3,
