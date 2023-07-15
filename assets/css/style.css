@@ -111,9 +111,8 @@ body {
   font-weight: 700;
 }
 
-#home p {
+.intro {
   width: 70%;
-  animation-delay: 0.4s;
   font-size: 19px;
   margin: 0 auto 30px auto;
   color: #fff;

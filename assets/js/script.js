@@ -8,6 +8,17 @@ anime({
 });
 
 anime({
+  targets: ".logo",
+  translateY: 5,
+});
+
+anime({
+  targets: ".intro",
+  width: ["60%", "80%"],
+  easing: "easeInOutQuad",
+});
+
+anime({
   targets: ".btn-get-started",
   scale: {
     value: 1.3,
