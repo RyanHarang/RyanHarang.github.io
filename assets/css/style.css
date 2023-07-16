@@ -402,29 +402,16 @@ section {
 }
 
 .contact {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  margin: 2% 10% 2% 20%;
   text-align: center;
-  display: block;
-  padding: 5% 0;
-  background-color: #2a2c39;
-  /*background-color: #2c3531;*/
-  /*background-color: #d9b08c;*/
-  /*background-color: #d1e8e2;*/
-}
-
-.contact-table {
-  table-layout: fixed;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
+  font-size: 20px;
   color: #fff;
 }
 
-.contact-table td {
-  width: 200px;
-}
 .contact-img {
-  max-width: 25%;
-  margin: 3%;
+  max-width: 10%;
 }
 
 #selfPics {
