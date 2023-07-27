@@ -421,7 +421,7 @@ section {
   margin-left: 3.5%;
   margin-right: 3.5%;
   width: 100%;
-  height: 40em;
+  height: 49vw;
   overflow: hidden;
 }
 .mainPics {
@@ -546,13 +546,13 @@ section {
   }
 
   #home .carousel-container {
-    padding-top: 150px;
+    padding-top: 350px;
     margin-bottom: 30%;
   }
 
   /* Read More Button */
   #home .btn-get-started {
-    margin-bottom: 75px;
+    margin-bottom: 52vw;
   }
 
   #selfPics {
@@ -570,5 +570,20 @@ section {
   .skills-list {
     display: block;
     padding-left: 0;
+  }
+}
+
+/* Large Screen */
+@media (min-width: 1300px) {
+  #selfPics {
+    height: 49vw;
+  }
+
+  .description {
+    font-size: 1.25vw;
+  }
+
+  .description h3 {
+    font-size: 2vw;
   }
 }
