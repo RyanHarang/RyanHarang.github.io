@@ -14,7 +14,7 @@ Table of Contents
 5. Section + About
 6. Projects
 7. Footer
-8. img Testing
+8. Images
 9. Responsive Layout
 */
 
@@ -539,6 +539,10 @@ section {
     font-size: 24px;
   }
 
+  #home .carousel-container {
+    height: 60vh;
+  }
+
   #home h2 {
     margin-bottom: 20px;
     font-size: 38px;
@@ -546,13 +550,13 @@ section {
   }
 
   #home .carousel-container {
-    padding-top: 350px;
+    padding-top: 100%;
     margin-bottom: 30%;
   }
 
   /* Read More Button */
   #home .btn-get-started {
-    margin-bottom: 52vw;
+    margin-bottom: 70%;
   }
 
   #selfPics {
