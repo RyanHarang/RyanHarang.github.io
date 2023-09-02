@@ -267,62 +267,43 @@
 
     <section class="projects" id="projects">
       <div class="projImg" data-aos="fade-right">
-        <img src="assets/images/parser.png" alt="Parser example" />
+        <a href="https://weather-application-4245c.web.app/" target="_blank"
+          ><img src="assets/images/weather-app.png" alt="Weather-App"
+        /></a>
       </div>
       <div class="description" data-aos="fade-left">
-        <h3>Racket Parser & Evaluator</h3>
-        This project was a part of Formal Languages and Functional Programming
-        (CS301) and aimed to create a parser and evaluator working together to
-        evaluate expressions in the procedure-first format utilized by Racket.
-
-        <ul>
-          <li>
-            Initially, I developed an evaluator capable of handling various
-            operations, from simple ones like addition, subtraction,
-            multiplication, and division, to more complex ones like
-            conditionals, mapping, and even lambdas.
-          </li>
-          <li>
-            Following the evaluator's creation, I created a parser that could
-            parse strings using a context-free grammar to properly format the
-            equations.
-          </li>
-          <li>
-            The parser provided the formatted equations to the evaluator which
-            would then map the characters to functions and process them to reach
-            a final answer.
-          </li>
-        </ul>
-        To explore the entire code and delve into the project's specifics, you
-        can visit my
+        <h3>Weather-App</h3>
+        To enhance my proficiency in web development and React, I focused on a
+        project to design a weather data application. Initially, I leveraged the
+        <a href="https://openweathermap.org/" target="_blank" class="text-link"
+          >OpenWeatherMap</a
+        >
+        API to access global weather data for cities around the world.
+        Simultaneously, I accessed data from
+        <a href="http://www.geonames.org/" target="_blank" class="text-link"
+          >GeoNames</a
+        >
+        , which supplied a comprehensive text file containing the names of
+        cities worldwide with populations of at least 15,000. From here I parsed
+        the file to extract pertinent data and constructed the list of cities
+        that users can select for weather information. Given the vast amount of
+        initial data, I implemented a filtering mechanism, resulting in the
+        creation of a refined city list. This curated list exclusively included
+        cities with populations of at least 85,000, optimizing the user
+        experience. Furthermore, I employed virtualization techniques to enhance
+        the application's loading speed, ensuring swift and seamless
+        interactions. Throughout the development process, I utilized conditional
+        rendering to mitigate unnecessary resource consumption. Finally, I
+        deployed the application using Firebase, making it accessible to anyone
         <a
-          href="https://github.com/RyanHarang/projects/tree/main/interpreter"
+          href="https://weather-application-4245c.web.app/"
           target="_blank"
           class="text-link"
-          >Github</a
-        >
-        repository where I have uploaded everything, including a test file with
-        example inputs and their corresponding expected outputs.
-      </div>
-      <div class="projImg" data-aos="fade-right">
-        <img src="assets/images/deadwood.png" alt="Deadwood GUI" />
-      </div>
-      <div class="description" data-aos="fade-left">
-        <h3>Deadwood</h3>
-        In this project, my partner and I collaborated to implement a board game
-        called Deadwood in Java. We began by creating a text-user-interface and
-        later expanded it to include a graphical-user-interface using JavaFX.
-        Our work on the GUI involved leveraging JavaFX to deliver a seamless
-        user experience. Throughout the project, we practiced essential design
-        patterns like singleton, adapter, and observer, while honing our
-        teamwork abilities. Deadwood proved to be a significant catalyst for
-        enhancing my coding skills, as it reinforced crucial object-oriented
-        design principles, including SOLID principles. To ensure a comprehensive
-        approach, we created complete use-case diagrams, write-ups, sequence
-        diagrams, and class responsibility diagrams. A notable part of this
-        project was developing an XML Parser that converted XML data into game
-        objects. Overall, the project was both interesting and enjoyable,
-        especially given my passion for board games.
+          >here</a
+        >. This project served as a valuable opportunity to expand my skill set,
+        encompassing API integration, data parsing, performance optimization,
+        and deployment, culminating in a functional and efficient weather data
+        application.
       </div>
       <div class="projImg" data-aos="fade-right">
         <a href="https://pente-31410.web.app/" target="_blank"
@@ -353,45 +334,61 @@
         abilities, and serves as a testament to my progress in recent months.
       </div>
       <div class="projImg" data-aos="fade-right">
-        <a href="https://weather-application-4245c.web.app/" target="_blank"
-          ><img src="assets/images/weather-app.png" alt="Weather-App"
-        /></a>
+        <img src="assets/images/deadwood.png" alt="Deadwood GUI" />
       </div>
       <div class="description" data-aos="fade-left">
-        <h3>Weather-App</h3>
-        To enhance my proficiency in web development and React, I focused on a
-        project to design a weather data application. Reaching my goal required
-        the acquisition of new skills and their integration with my existing
-        knowledge. Initially, I leveraged the
-        <a href="https://openweathermap.org/" target="_blank" class="text-link"
-          >OpenWeatherMap</a
-        >
-        API to access global weather data for cities around the world.
-        Simultaneously, I accessed data from
-        <a href="http://www.geonames.org/" target="_blank" class="text-link"
-          >GeoNames</a
-        >
-        , which supplied a comprehensive text file containing the names of
-        cities worldwide with populations of at least 15,000. From here I parsed
-        the file to extract pertinent data and constructed the list of cities
-        that users can select for weather information. Given the vast amount of
-        initial data, I implemented a filtering mechanism, resulting in the
-        creation of a refined city list. This curated list exclusively included
-        cities with populations of at least 85,000, optimizing the user
-        experience. Furthermore, I employed virtualization techniques to enhance
-        the application's loading speed, ensuring swift and seamless
-        interactions. Throughout the development process, I utilized conditional
-        rendering to mitigate unnecessary resource consumption. Finally, I
-        deployed the application using Firebase, making it accessible to anyone
+        <h3>Deadwood</h3>
+        In this project, my partner and I collaborated to implement a board game
+        called Deadwood in Java. We began by creating a text-user-interface and
+        later expanded it to include a graphical-user-interface using JavaFX.
+        Our work on the GUI involved leveraging JavaFX to deliver a seamless
+        user experience. Throughout the project, we practiced essential design
+        patterns like singleton, adapter, and observer, while honing our
+        teamwork abilities. Deadwood proved to be a significant catalyst for
+        enhancing my coding skills, as it reinforced crucial object-oriented
+        design principles, including SOLID principles. To ensure a comprehensive
+        approach, we created complete use-case diagrams, write-ups, sequence
+        diagrams, and class responsibility diagrams. A notable part of this
+        project was developing an XML Parser that converted XML data into game
+        objects. Overall, the project was both interesting and enjoyable,
+        especially given my passion for board games.
+      </div>
+      <div class="projImg" data-aos="fade-right">
+        <img src="assets/images/parser.png" alt="Parser example" />
+      </div>
+      <div class="description" data-aos="fade-left">
+        <h3>Racket Parser & Evaluator</h3>
+        This project was a part of Formal Languages and Functional Programming
+        (CS301) and aimed to create a parser and evaluator working together to
+        evaluate expressions in the procedure-first format utilized by Racket.
+        <ul>
+          <li>
+            Initially, I developed an evaluator capable of handling various
+            operations, from simple ones like addition, subtraction,
+            multiplication, and division, to more complex ones like
+            conditionals, mapping, and even lambdas.
+          </li>
+          <li>
+            Following the evaluator's creation, I created a parser that could
+            parse strings using a context-free grammar to properly format the
+            equations.
+          </li>
+          <li>
+            The parser provided the formatted equations to the evaluator which
+            would then map the characters to functions and process them to reach
+            a final answer.
+          </li>
+        </ul>
+        To explore the entire code and delve into the project's specifics, you
+        can visit my
         <a
-          href="https://weather-application-4245c.web.app/"
+          href="https://github.com/RyanHarang/projects/tree/main/interpreter"
           target="_blank"
           class="text-link"
-          >here</a
-        >. This project served as a valuable opportunity to expand my skill set,
-        encompassing API integration, data parsing, performance optimization,
-        and deployment, ultimately culminating in a functional and efficient
-        weather data application.
+          >Github</a
+        >
+        repository where I have uploaded everything, including a test file with
+        example inputs and their corresponding expected outputs.
       </div>
     </section>
 
