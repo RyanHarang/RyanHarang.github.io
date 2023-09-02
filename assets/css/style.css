@@ -23,8 +23,6 @@ html {
 }
 
 body {
-  /*background-color: #0a1828;*/
-  /*background-color: #fff;*/
   background: linear-gradient(0deg, rgb(42, 44, 57) 90%, rgb(42, 44, 57) 0%);
 }
 
@@ -43,7 +41,6 @@ body {
 #header .logo h1 {
   font-family: "Raleway", sans-serif;
   color: #fff;
-  /*color: #d1e8e2;*/
   font-size: 28px;
   margin: 0;
   padding: 20px 0px 0px 20px;
@@ -79,18 +76,14 @@ body {
   font-weight: bold;
   font-size: 20px;
   color: #178582;
-  /*color: #116466;*/
-  /*color: #d9b08c;*/
 }
 
 .navbar li a.active {
   background-color: #fff;
-  /*background-color: #d1e8e2;*/
 }
 
 .navbar li a:hover {
   background-color: #fff;
-  /*background-color: #d1e8e2;*/
   transition: 0.5s;
 }
 
@@ -105,7 +98,6 @@ body {
 
 #home h2 {
   color: #fff;
-  /*color: #d1e8e2;*/
   margin-bottom: 30px;
   font-size: 48px;
   font-weight: 700;
@@ -116,13 +108,11 @@ body {
   font-size: 19px;
   margin: 0 auto 30px auto;
   color: #fff;
-  /*color: #d1e8e2;*/
 }
 
 #home .carousel-container {
   width: 100%;
   color: #fff;
-  /*color: #d1e8e2;*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -146,20 +136,14 @@ body {
   line-height: 1;
   margin: 10px;
   color: #fff;
-  /*color: #d1e8e2;*/
   animation-delay: 0.8s;
   border: 2px solid #178582;
-  /*border: 2px solid #116466;*/
-  /*border: 2px solid #d9b08c;*/
   text-decoration: none;
 }
 
 #home .btn-get-started:hover {
   background: #178582;
-  /*background: #116466;*/
-  /*background: #d9b08c;*/
   color: #fff;
-  /*color: #d1e8e2;*/
 }
 
 /* Controls Wave Effects */
@@ -228,7 +212,6 @@ body {
 
 #about {
   background-color: #fff;
-  /*background-color: #d1e8e2;*/
 }
 
 .projects {
@@ -237,7 +220,6 @@ body {
   column-gap: 2%;
   flex-direction: column;
   color: #fff;
-  /*color: #d1e8e2;*/
 }
 
 .projImg {
@@ -247,8 +229,6 @@ body {
 .projImg img {
   width: 100%;
   border: solid #178582 5px;
-  /*border: solid #116466 5px;*/
-  /*border: solid #d9b08c 5px;*/
 }
 
 .description {
@@ -259,14 +239,10 @@ body {
 
 .text-link {
   color: #178582;
-  /*color: #116466;*/
-  /*color: #d9b08c;*/
   font-weight: bold;
 }
 .text-link:hover {
   color: #178582;
-  /*color: #116466;*/
-  /*color: #d9b08c;*/
   text-decoration: none;
 }
 
@@ -288,8 +264,6 @@ section {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #178582;
-  /*color: #116466;*/
-  /*color: #d9b08c;*/
   font-family: "Poppins", sans-serif;
 }
 
@@ -326,9 +300,6 @@ section {
 #footer {
   background: #fff;
   color: #2a2c39;
-  /*color: #2c3531;*/
-  /*color: #d9b08c;*/
-  /*color: #d1e8e2;*/
   text-align: center;
   padding: 20px 0;
 }
@@ -361,14 +332,9 @@ section {
   line-height: 1;
   margin: 5px;
   background-color: #2a2c39;
-  /*background-color: #2c3531;*/
-  /*background-color: #d9b08c;*/
   color: #fff;
-  /*color: #d1e8e2;*/
   animation-delay: 0.8s;
   border: 2px solid #178582;
-  /*border: 2px solid #116466;*/
-  /*border: 2px solid #d9b08c;*/
   text-decoration: none;
 }
 
@@ -379,26 +345,21 @@ section {
 /* Hover characteristics for Read More Button */
 .links:hover {
   background: #178582;
-  /*background: #116466;*/
-  /*background: #d9b08c;*/
   color: #fff;
-  /*color: #d1e8e2;*/
+}
+
+.experience {
+  margin-left: 40px;
 }
 
 .resume {
   background-color: #fff;
-  /*background-color: #d1e8e2;*/
   font-size: 19px;
 }
 
 .skills-list {
-  display: flex;
-  list-style: none;
-}
-
-.skills-list li {
-  padding-right: 1em;
-  font-size: 18px;
+  font-size: 20px;
+  margin-left: 40px;
 }
 
 .contact {
@@ -511,18 +472,14 @@ section {
     font-weight: bold;
     font-size: 18px;
     color: #178582;
-    /*color: #116466;*/
-    /*color: #d9b08c;*/
   }
 
   .dropdown li a.active {
     background-color: #fff;
-    /*background-color: #d1e8e2;*/
   }
 
   .dropdown li a:hover {
     background-color: #fff;
-    /*background-color: #d1e8e2;*/
     transition: 0.5s;
   }
 
