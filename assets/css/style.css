@@ -430,9 +430,6 @@ section {
     max-width: 780px;
     overflow-x: hidden;
   }
-  /*body {
-    position: relative;
-  }*/
 
   .navbar {
     display: none;
@@ -468,7 +465,6 @@ section {
   .face-photos {
     height: 100%;
     margin-top: 50vw;
-    /*margin-bottom: 15px;*/
   }
 
   .projects {
@@ -496,6 +492,7 @@ section {
     max-width: 30%;
   }
 
+  /* --- Hamburger Menu --- */
   .hamburger {
     padding: 7px 0;
     margin-top: 0.6em;
