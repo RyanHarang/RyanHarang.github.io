@@ -442,10 +442,6 @@ section {
     transition: all 0.5s;
   }
 
-  .logo h1 {
-    font-size: 24px;
-  }
-
   .home-content {
     height: 45vh;
     margin-bottom: 30%;
