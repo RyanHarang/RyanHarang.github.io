@@ -362,8 +362,32 @@ section {
   margin-left: 40px;
 }
 
+.toggleButton {
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px;
+  border-radius: 40px;
+  transition: 0.4s;
+  line-height: 1;
+  color: #fff;
+  background-color: #2a2c39;
+  border: 2px solid #178582;
+}
+
+.toggleButton:hover {
+  background: #178582;
+}
+
 #pdfIframe {
   display: none;
+  transition: 0.5s;
+  margin: 10px;
+  animation-delay: 0.8s;
+  border: 5px solid #178582;
 }
 
 .contact {
