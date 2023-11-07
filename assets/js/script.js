@@ -4,7 +4,7 @@ function dropDown() {
 
 document.addEventListener("DOMContentLoaded", function () {
   const toggleButton = document.getElementById("toggleButton");
-  const pdfIframe = document.getElementById("pdfIframe");
+  const pdfIframe = document.getElementById("pdf-iframe");
   let isVisible = false;
 
   toggleButton.addEventListener("click", function () {

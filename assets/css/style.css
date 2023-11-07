@@ -239,7 +239,7 @@ section {
 }
 
 .about-title h2 {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 500;
   padding: 0;
   line-height: 1px;
@@ -253,7 +253,7 @@ section {
 .about {
   font-family: "Raleway", sans-serif;
   padding-top: 30px;
-  font-size: 16.5px;
+  font-size: 18px;
   background-color: #fff;
 }
 
@@ -391,7 +391,7 @@ section {
   background: #178582;
 }
 
-#pdfIframe {
+.pdf-iframe {
   display: none;
   transition: 0.5s;
   margin: 10px;
