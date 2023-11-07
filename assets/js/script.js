@@ -42,7 +42,7 @@ anime({
 });
 
 anime({
-  targets: ".btn-get-started",
+  targets: ".read-more",
   scale: {
     value: 1.3,
     duration: 700,
