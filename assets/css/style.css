@@ -362,6 +362,10 @@ section {
   margin-left: 40px;
 }
 
+#pdfIframe {
+  display: none;
+}
+
 .contact {
   display: grid;
   grid-template-columns: 40% 40%;

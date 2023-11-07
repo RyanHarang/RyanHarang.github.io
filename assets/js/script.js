@@ -2,6 +2,23 @@ function dropDown() {
   document.getElementById("mobileDrop").classList.toggle("show");
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleButton = document.getElementById("toggleButton");
+  const pdfIframe = document.getElementById("pdfIframe");
+  let isVisible = false;
+
+  toggleButton.addEventListener("click", function () {
+    if (isVisible) {
+      pdfIframe.style.display = "none";
+      toggleButton.textContent = "Show PDF";
+    } else {
+      pdfIframe.style.display = "block";
+      toggleButton.textContent = "Hide PDF";
+    }
+    isVisible = !isVisible;
+  });
+});
+
 anime({
   targets: ".dropdown",
   translateX: 30,
