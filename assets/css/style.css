@@ -320,20 +320,15 @@ section {
 
 /* --- Links --- */
 .footer-links {
-  font-size: 10px;
   border-radius: 50%;
-  font-family: "Raleway", sans-serif;
-  letter-spacing: 1px;
   width: 80px;
   padding: 12px;
   transition: 0.5s;
-  line-height: 1;
   margin: 5px;
   background-color: #2a2c39;
   color: #fff;
   animation-delay: 0.8s;
   border: 2px solid #178582;
-  text-decoration: none;
 }
 
 .footer-links:hover {
@@ -417,6 +412,7 @@ section {
   display: none;
 }
 
+/*MOVE*/
 .bar {
   display: block;
   width: 25px;
@@ -434,13 +430,57 @@ section {
     max-width: 780px;
     overflow-x: hidden;
   }
-  body {
+  /*body {
     position: relative;
-  }
+  }*/
 
   .navbar {
     display: none;
     margin: 0;
+  }
+
+  .header {
+    padding: 2px 0 4% 5%;
+    height: auto;
+    transition: all 0.5s;
+  }
+
+  .logo h1 {
+    font-size: 24px;
+  }
+
+  .home-content {
+    height: 45vh;
+    margin-bottom: 30%;
+  }
+
+  .home h2 {
+    margin-bottom: 10px;
+    font-size: 38px;
+    font-weight: 600;
+  }
+
+  /* Read More Button */
+  .read-more {
+    margin-top: 0;
+  }
+
+  .face-photos {
+    height: 100%;
+    margin-top: 50vw;
+    /*margin-bottom: 15px;*/
+  }
+
+  .projects {
+    display: block;
+    font-size: 14px;
+  }
+  .proj-img {
+    display: none;
+  }
+  .skills-list {
+    display: block;
+    padding-left: 0;
   }
 
   .contact {
@@ -510,54 +550,11 @@ section {
   .show {
     display: block;
   }
-
-  .header {
-    padding: 2px 0 4% 5%;
-    height: auto;
-    transition: all 0.5s;
-  }
-  .logo h1 {
-    font-size: 24px;
-  }
-
-  .home-content {
-    height: 60vh;
-    padding-top: 100%;
-    margin-bottom: 30%;
-  }
-
-  .home h2 {
-    margin-bottom: 20px;
-    font-size: 38px;
-    font-weight: 600;
-  }
-
-  /* Read More Button */
-  .read-more {
-    margin-bottom: 70%;
-  }
-
-  #selfPics {
-    height: 12em;
-    margin-bottom: 15px;
-  }
-
-  .projects {
-    display: block;
-    font-size: 14px;
-  }
-  .projImg {
-    display: none;
-  }
-  .skills-list {
-    display: block;
-    padding-left: 0;
-  }
 }
 
 /* Large Screen */
 @media (min-width: 1300px) {
-  #selfPics {
+  .face-photos {
     height: 49vw;
   }
 
