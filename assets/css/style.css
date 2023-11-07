@@ -156,6 +156,21 @@ section {
   color: #fff;
 }
 
+/* --- Pictures --- */
+.self-pics {
+  display: grid;
+  grid-template-columns: 30% 30%;
+  column-gap: 15%;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  width: 100%;
+  overflow: hidden;
+}
+.main-pics {
+  width: 100%;
+  border-radius: 5%;
+}
+
 /* --- Control Wave Effects --- */
 .home-waves {
   display: block;
@@ -401,20 +416,6 @@ section {
   max-width: 10%;
 }
 
-/* --- Pictures --- */
-#selfPics {
-  display: grid;
-  grid-template-columns: 30% 30%;
-  column-gap: 15%;
-  margin-left: 12.5%;
-  margin-right: 12.5%;
-  width: 100%;
-  overflow: hidden;
-}
-.mainPics {
-  width: 100%;
-  border-radius: 5%;
-}
 .dropdown {
   display: none;
 }
