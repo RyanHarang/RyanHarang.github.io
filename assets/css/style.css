@@ -221,39 +221,6 @@ section {
 }
 /* End Wave Effects */
 
-/* --- Projects --- */
-.projects {
-  display: grid;
-  grid-template-columns: 53% 45%;
-  column-gap: 2%;
-  flex-direction: column;
-  color: #fff;
-}
-
-.projImg {
-  margin-bottom: 1%;
-}
-
-.projImg img {
-  width: 100%;
-  border: solid #178582 5px;
-}
-
-.description {
-  width: 100%;
-  font-size: 20px;
-  margin-bottom: 2%;
-}
-
-.text-link {
-  color: #178582;
-  font-weight: bold;
-}
-.text-link:hover {
-  color: #178582;
-  text-decoration: none;
-}
-
 /* --- About --- */
 .about-title {
   padding-bottom: 40px;
@@ -278,27 +245,51 @@ section {
   background-color: #fff;
 }
 
-.about .content ul {
+.about-content ul {
   list-style: none;
   padding: 0;
 }
 
-.about .content ul li {
+.about-content ul li {
   font-family: "Raleway", sans-serif;
   font-weight: 100;
   padding-left: 28px;
   margin-top: 10px;
 }
 
+/* --- Projects --- */
+.projects {
+  display: grid;
+  grid-template-columns: 53% 45%;
+  column-gap: 2%;
+  flex-direction: column;
+  color: #fff;
+}
+
+.proj-img {
+  margin-bottom: 1%;
+}
+
+.proj-img img {
+  width: 100%;
+  border: solid #178582 5px;
+}
+
+.proj-description {
+  width: 100%;
+  font-size: 20px;
+  margin-bottom: 2%;
+}
+
 /* --- Footer --- */
-#footer {
+.footer {
   background: #fff;
   color: #2a2c39;
   text-align: center;
   padding: 20px 0;
 }
 
-#footer h3 {
+.footer h3 {
   font-size: 20px;
   font-weight: 700;
   color: #000;
@@ -308,7 +299,7 @@ section {
   margin: 0 0 15px 0;
 }
 
-#footer p {
+.footer p {
   font-size: 14px;
   font-style: italic;
   padding: 0;
@@ -316,7 +307,7 @@ section {
 }
 
 /* --- Links --- */
-.links {
+.footer-links {
   font-size: 10px;
   border-radius: 50%;
   font-family: "Raleway", sans-serif;
@@ -333,13 +324,23 @@ section {
   text-decoration: none;
 }
 
-.imageLink {
-  max-width: 100%;
-}
-
-.links:hover {
+.footer-links:hover {
   background: #178582;
   color: #fff;
+}
+
+.text-link {
+  color: #178582;
+  font-weight: bold;
+}
+
+.text-link:hover {
+  color: #178582;
+  text-decoration: none;
+}
+
+.image-link {
+  max-width: 100%;
 }
 
 .experience {
