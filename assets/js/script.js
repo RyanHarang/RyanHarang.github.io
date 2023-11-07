@@ -36,7 +36,7 @@ anime({
 });
 
 anime({
-  targets: ".main-pics",
+  targets: ".home-pics",
   borderRadius: ["100%", "5%"],
   easing: "easeInOutQuad",
 });

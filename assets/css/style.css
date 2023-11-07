@@ -154,7 +154,7 @@ section {
 }
 
 /* --- Pictures --- */
-.self-pics {
+.face-photos {
   display: grid;
   grid-template-columns: 30% 30%;
   column-gap: 15%;
@@ -163,7 +163,7 @@ section {
   width: 100%;
   overflow: hidden;
 }
-.main-pics {
+.home-pics {
   width: 100%;
   border-radius: 5%;
 }
