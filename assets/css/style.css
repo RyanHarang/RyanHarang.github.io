@@ -11,7 +11,7 @@ Table of Contents
 2. Navigation Bar
 3. Home
 4. Waves
-5. Section + About
+5. About
 6. Projects
 7. Footer
 8. Images
@@ -25,6 +25,11 @@ html {
 
 body {
   background: linear-gradient(0deg, rgb(42, 44, 57) 90%, rgb(42, 44, 57) 0%);
+}
+
+section {
+  padding: 40px 40px;
+  overflow: hidden;
 }
 
 /* --- Header --- */
@@ -146,6 +151,7 @@ body {
 }
 
 .read-more:hover {
+  text-decoration: none;
   background: #178582;
   color: #fff;
 }
@@ -248,16 +254,12 @@ body {
   text-decoration: none;
 }
 
-/* --- # Sections General --- */
-section {
-  padding: 40px 40px;
-  overflow: hidden;
-}
-.section-title {
+/* --- About --- */
+.about-title {
   padding-bottom: 40px;
 }
 
-.section-title h2 {
+.about-title h2 {
   font-size: 18px;
   font-weight: 500;
   padding: 0;
@@ -269,17 +271,6 @@ section {
   font-family: "Poppins", sans-serif;
 }
 
-.section-title p {
-  margin: 0;
-  margin: 0;
-  font-size: 36px;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  color: #2a2c39;
-}
-
-/* --- About --- */
 .about {
   font-family: "Raleway", sans-serif;
   padding-top: 30px;
@@ -324,6 +315,7 @@ section {
   margin: 0 0 20px 0;
 }
 
+/* --- Links --- */
 .links {
   font-size: 10px;
   border-radius: 50%;
@@ -345,7 +337,6 @@ section {
   max-width: 100%;
 }
 
-/* Hover characteristics for Read More Button */
 .links:hover {
   background: #178582;
   color: #fff;
@@ -365,6 +356,7 @@ section {
   margin-left: 40px;
 }
 
+/* --- PDF Frame --- */
 .toggleButton {
   width: 100%;
   font-family: "Raleway", sans-serif;
@@ -393,6 +385,7 @@ section {
   border: 5px solid #178582;
 }
 
+/* --- Contact --- */
 .contact {
   display: grid;
   grid-template-columns: 40% 40%;
@@ -406,6 +399,7 @@ section {
   max-width: 10%;
 }
 
+/* --- Pictures --- */
 #selfPics {
   display: grid;
   grid-template-columns: 30% 30%;
@@ -433,7 +427,7 @@ section {
   background-color: #fff;
 }
 
-/* Mobile */
+/* --- Mobile --- */
 @media (max-width: 780px) {
   html,
   body {
@@ -517,12 +511,12 @@ section {
     display: block;
   }
 
-  #header {
+  .header {
     padding: 2px 0 4% 5%;
     height: auto;
     transition: all 0.5s;
   }
-  #header .logo h1 {
+  .logo h1 {
     font-size: 24px;
   }
 
@@ -532,14 +526,14 @@ section {
     margin-bottom: 30%;
   }
 
-  #home h2 {
+  .home h2 {
     margin-bottom: 20px;
     font-size: 38px;
     font-weight: 600;
   }
 
   /* Read More Button */
-  #home .read-more {
+  .read-more {
     margin-bottom: 70%;
   }
 
