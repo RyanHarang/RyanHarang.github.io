@@ -33,12 +33,14 @@ anime({
   targets: ".intro",
   width: ["60%", "80%"],
   easing: "easeInOutQuad",
+  duration: 1100,
 });
 
 anime({
   targets: ".home-pics",
   borderRadius: ["100%", "5%"],
   easing: "easeInOutQuad",
+  duration: 1000,
 });
 
 anime({
