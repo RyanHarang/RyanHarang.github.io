@@ -456,6 +456,8 @@ section {
   /* --- Hamburger Menu --- */
   .hamburger {
     position: sticky;
+    background-color: transparent;
+    border: none;
   }
 
   .mobile-menu {
