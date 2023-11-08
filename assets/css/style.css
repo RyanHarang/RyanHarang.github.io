@@ -7,9 +7,13 @@ Website: Ryan Harang's Portfolio
 
 /*
 Table of Contents
-1. Base + Header
-2. Navigation Bar
-3. Home
+1. Base
+2. Header
+3. Logo
+4. Navbar
+5. Home
+6. Read More Button
+7. Pictures
 4. Waves
 5. About
 6. Projects
@@ -408,11 +412,11 @@ section {
   max-width: 10%;
 }
 
+/* --- Mobile Dropdown --- */
 .dropdown {
   display: none;
 }
 
-/*MOVE*/
 .bar {
   display: block;
   width: 25px;
@@ -545,17 +549,17 @@ section {
   }
 }
 
-/* Large Screen */
+/* --- Wide Screen --- */
 @media (min-width: 1300px) {
-  .face-photos {
-    height: 49vw;
+  .home {
+    height: 100%;
   }
 
-  .description {
+  .proj-description {
     font-size: 1.25vw;
   }
 
-  .description h3 {
+  .proj-description h3 {
     font-size: 2vw;
   }
 }
