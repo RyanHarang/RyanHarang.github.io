@@ -60,12 +60,3 @@ anime({
     delay: 100,
   },
 });
-
-anime({
-  targets: ".contact-method",
-  scale: {
-    value: 1.1,
-    duration: 700,
-    delay: 200,
-  },
-});
