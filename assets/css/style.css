@@ -433,7 +433,7 @@ section {
   html,
   body {
     max-width: 780px;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
   }
 
   .logo {
@@ -442,16 +442,56 @@ section {
 
   .navbar {
     display: none;
-    margin: 0;
   }
 
   .header {
     padding: 2%;
+    display: flex;
     transition: all 0.5s;
     position: sticky;
-    top: 0;
-    z-index: 1000;
     background-color: rgba(44, 42, 57, 0.85);
+    position: sticky;
+  }
+
+  /* --- Hamburger Menu --- */
+  .hamburger {
+    position: sticky;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+  .mobile-menu li {
+    border: #178582 solid 1px;
+  }
+
+  .dropdown {
+    width: 100%;
+  }
+
+  .dropdown ul {
+    text-align: center;
+    list-style: none;
+  }
+
+  .dropdown li {
+    padding: 10px 0;
+  }
+
+  .dropdown li a {
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+  }
+
+  .dropdown li:hover {
+    background-color: #178582;
+    transition: 0.5s;
+  }
+
+  .show {
+    display: block;
   }
 
   .home-content {
@@ -498,45 +538,6 @@ section {
 
   .contact-img {
     max-width: 30%;
-  }
-
-  /* --- Hamburger Menu --- */
-  .hamburger {
-  }
-
-  .mobile-menu {
-    display: none;
-    margin-right: 43px;
-    background-color: transparent;
-    width: 100%;
-  }
-  .mobile-menu li {
-    border: #178582 solid 1px;
-  }
-
-  .dropdown ul {
-    text-align: center;
-    list-style: none;
-  }
-
-  .dropdown li {
-    padding: 10px 0;
-  }
-
-  .dropdown li a {
-    font-family: "Raleway", sans-serif;
-    text-decoration: none;
-    font-size: 18px;
-    color: #fff;
-  }
-
-  .dropdown li:hover {
-    background-color: #178582;
-    transition: 0.5s;
-  }
-
-  .show {
-    display: flow-root;
   }
 }
 
