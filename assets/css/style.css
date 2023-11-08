@@ -450,7 +450,6 @@ section {
     transition: all 0.5s;
     position: sticky;
     background-color: rgba(44, 42, 57, 0.85);
-    position: sticky;
   }
 
   /* --- Hamburger Menu --- */
@@ -468,7 +467,7 @@ section {
   }
 
   .dropdown {
-    width: 100%;
+    width: 73%;
   }
 
   .dropdown ul {
