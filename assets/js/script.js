@@ -1,5 +1,5 @@
 function dropDown() {
-  document.getElementById("mobileDrop").classList.toggle("show");
+  document.getElementById("mobile-menu").classList.toggle("show");
 }
 
 document.addEventListener("DOMContentLoaded", function () {

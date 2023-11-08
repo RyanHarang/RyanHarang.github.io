@@ -418,10 +418,6 @@ section {
 }
 
 /* --- Mobile Dropdown --- */
-.dropdown {
-  display: none;
-}
-
 .bar {
   display: block;
   width: 25px;
@@ -440,14 +436,17 @@ section {
     overflow-x: hidden;
   }
 
+  .logo {
+    display: none;
+  }
+
   .navbar {
     display: none;
     margin: 0;
   }
 
   .header {
-    padding: 2px 0 4% 5%;
-    height: auto;
+    padding: 2%;
     transition: all 0.5s;
   }
 
@@ -499,31 +498,21 @@ section {
 
   /* --- Hamburger Menu --- */
   .hamburger {
-    padding: 7px 0;
-    margin-top: 0.6em;
   }
 
-  .mobileDrop {
+  .mobile-menu {
     display: none;
     margin-right: 43px;
+    background-color: transparent;
+    width: 100%;
   }
-
-  .dropdown {
-    display: block;
-  }
-
-  .dropdown button {
-    display: block;
-  }
-
-  .dropdown button img {
-    padding: auto auto;
+  .mobile-menu li {
+    border: #178582 solid 1px;
   }
 
   .dropdown ul {
     text-align: center;
     list-style: none;
-    width: auto;
   }
 
   .dropdown li {
@@ -531,9 +520,6 @@ section {
   }
 
   .dropdown li a {
-    width: auto;
-    border-radius: 50px;
-    padding: 5px 9px;
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
