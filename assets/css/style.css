@@ -46,7 +46,8 @@ section {
   position: sticky;
   top: 0;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 30% 43%;
+  column-gap: 27%;
   height: auto;
   transition: all 0.5s;
   z-index: 1000;
@@ -72,7 +73,7 @@ section {
   padding: 8px 0px 0px 8px;
 }
 
-.navbar ul {
+.nav-links {
   list-style: none;
   width: auto;
   display: flex;
@@ -172,6 +173,7 @@ section {
   width: 100%;
   overflow: hidden;
 }
+
 .home-pics {
   width: 100%;
   border-radius: 5%;
@@ -184,6 +186,7 @@ section {
   height: 60px;
   position: relative;
 }
+
 .project-waves {
   display: block;
   width: 100%;
@@ -191,26 +194,32 @@ section {
   transform: rotate(180deg);
   position: relative;
 }
+
 .wave1 use {
   animation: move-forever1 10s linear infinite;
   animation-delay: -2s;
 }
+
 .wave2 use {
   animation: move-forever2 8s linear infinite;
   animation-delay: -2s;
 }
+
 .wave3 use {
   animation: move-forever3 6s linear infinite;
   animation-delay: -2s;
 }
+
 .wave4 use {
   animation: move-forever1 9s linear infinite;
   animation-delay: -2.1s;
 }
+
 .wave5 use {
   animation: move-forever2 7s linear infinite;
   animation-delay: -2.2s;
 }
+
 .wave6 use {
   animation: move-forever3 5s linear infinite;
   animation-delay: -2.3s;
@@ -220,26 +229,32 @@ section {
   0% {
     transform: translate(85px, 0%);
   }
+
   100% {
     transform: translate(-90px, 0%);
   }
 }
+
 @keyframes move-forever2 {
   0% {
     transform: translate(-90px, 0%);
   }
+
   100% {
     transform: translate(85px, 0%);
   }
 }
+
 @keyframes move-forever3 {
   0% {
     transform: translate(-90px, 0%);
   }
+
   100% {
     transform: translate(85px, 0%);
   }
 }
+
 /* End Wave Effects */
 
 /* --- About --- */
@@ -434,6 +449,7 @@ section {
 
 /* --- Mobile --- */
 @media (max-width: 780px) {
+
   html,
   body {
     max-width: 780px;
@@ -466,6 +482,7 @@ section {
   .mobile-menu {
     display: none;
   }
+
   .mobile-menu li {
     border: #178582 solid 1px;
   }
@@ -525,9 +542,11 @@ section {
     display: block;
     font-size: 14px;
   }
+
   .proj-img {
     display: none;
   }
+
   .skills-list {
     display: block;
     padding-left: 0;

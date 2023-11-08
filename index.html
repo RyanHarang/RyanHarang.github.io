@@ -1,619 +1,455 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-    />
-    <title>Ryan Harang</title>
 
-    <!--Google Fonts-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <title>Ryan Harang</title>
 
-    <!--CSS-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link href="assets/css/style.css" rel="stylesheet" />
-    <link
-      href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"
-      rel="stylesheet"
-    />
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet" />
 
-    <!--Favicon-->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/favicon_io/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/favicon_io/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/favicon_io/favicon-16x16.png"
-    />
-    <link rel="manifest" href="assets/favicon_io/site.webmanifest" />
-  </head>
-  <!--End of Head-->
+  <!--CSS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet" />
 
-  <body>
-    <!--Header-->
-    <header class="header">
-      <div class="logo">
-        <h1>Ryan Harang</h1>
-      </div>
-      <!--Dropdown-->
-      <div class="dropdown">
-        <button class="hamburger" onclick="dropDown()">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </button>
-        <ul class="mobile-menu" id="mobile-menu">
-          <li>
-            <a class="nav-link" href="#home" onclick="dropDown()">Home</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#about" onclick="dropDown()">About</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#projects" onclick="dropDown()"
-              >Projects</a
-            >
-          </li>
-          <li>
-            <a class="nav-link" href="#resume" onclick="dropDown()">Resume</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#contact" onclick="dropDown()">Contact</a>
-          </li>
-        </ul>
-      </div>
-      <!--End of Dropdown-->
+  <!--Favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png" />
+  <link rel="manifest" href="assets/favicon_io/site.webmanifest" />
+</head>
+<!--End of Head-->
 
-      <div class="navbar justify-content-end">
-        <ul>
-          <li><a class="nav-link" href="#home">Home</a></li>
-          <li><a class="nav-link" href="#about">About</a></li>
-          <li><a class="nav-link" href="#projects">Projects</a></li>
-          <li><a class="nav-link" href="#resume">Resume</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-      <!--End of Navbar-->
-    </header>
-    <!--End of Header-->
+<body>
+  <!--Header-->
+  <header class="header">
+    <div class="logo">
+      <h1>Ryan Harang</h1>
+    </div>
+    <!--Dropdown-->
+    <div class="dropdown">
+      <button class="hamburger" onclick="dropDown()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="mobile-menu" id="mobile-menu">
+        <li>
+          <a class="nav-link" href="#home" onclick="dropDown()">Home</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#about" onclick="dropDown()">About</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#projects" onclick="dropDown()">Projects</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#resume" onclick="dropDown()">Resume</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#contact" onclick="dropDown()">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <!--End of Dropdown-->
 
-    <!--Home-->
-    <section class="home" id="home">
-      <div class="home-content">
-        <h2 class="home-header">Welcome to my Portfolio</h2>
-        <p class="intro">
-          This is where I'll be showcasing various projects and skills as I
-          continue my journey in the field. Actively seeking opportunities to
-          enhance my abilities and gain valuable experience, I aim to secure a
-          related internship for the Summer of 2024. This page is one of many
-          projects I hope to complete to show off my capabilities and passion
-          for Computer Science.
-        </p>
-        <a href="#about" class="read-more">Read More</a>
-      </div>
+    <div class="navbar">
+      <ul class="nav-links">
+        <li><a class="nav-link" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#resume">Resume</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <!--End of Navbar-->
+  </header>
+  <!--End of Header-->
 
-      <div class="face-photos">
-        <img class="home-pics left-pic" src="assets/images/3May2023Short.jpg" />
-        <img
-          class="home-pics right-pic"
-          src="assets/images/2May2023Short.jpg"
-        />
-      </div>
+  <!--Home-->
+  <section class="home" id="home">
+    <div class="home-content">
+      <h2 class="home-header">Welcome to my Portfolio</h2>
+      <p class="intro">
+        This is where I'll be showcasing various projects and skills as I
+        continue my journey in the field. Actively seeking opportunities to
+        enhance my abilities and gain valuable experience, I aim to secure a
+        related internship for the Summer of 2024. This page is one of many
+        projects I hope to complete to show off my capabilities and passion
+        for Computer Science.
+      </p>
+      <a href="#about" class="read-more">Read More</a>
+    </div>
 
-      <!--Home Waves-->
-      <svg
-        class="home-waves"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        viewBox="0 24 150 28 "
-        preserveAspectRatio="none"
-      >
-        <defs>
-          <path
-            id="wave-path"
-            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
-          ></path>
-        </defs>
-        <g class="wave1">
-          <use
-            xlink:href="#wave-path"
-            x="50"
-            y="3"
-            fill="rgba(255,255,255, .1)"
-          ></use>
-        </g>
-        <g class="wave2">
-          <use
-            xlink:href="#wave-path"
-            x="50"
-            y="0"
-            fill="rgba(255,255,255, .2)"
-          ></use>
-        </g>
-        <g class="wave3">
-          <use xlink:href="#wave-path" x="50" y="9" fill="#fff"></use>
-        </g>
-      </svg>
-      <!--End of Home Waves-->
-    </section>
-    <!--End of Home-->
-
-    <main class="about" id="about">
-      <section>
-        <div class="aboutCols">
-          <div class="about-title">
-            <h2>About</h2>
-          </div>
-
-          <div class="about-content">
-            <p>
-              Hi, I'm Ryan, currently a junior at Western Washington University
-              majoring in Computer Science. My passion for Computer Science
-              sparked during my high school days when I took AP CS, and since
-              then it has only grown as I delve further into the field. Lately,
-              as I've progressed into major courses and become more active on
-              campus, my focus has revolved around front-end design, including
-              HTML and React, as well as object-oriented design using Java.
-            </p>
-          </div>
-          <div class="about-content">
-            <p>
-              While I spend a lot of my time on computer science related topics,
-              I like to try and lead a balanced life. Some of my hobbies
-              include:
-            </p>
-            <ul>
-              <li>
-                Playing board games: My deep interest in board games has driven
-                me to design one with friends during high school. This passion
-                often inspires me to undertake related projects, as board games
-                provide intriguing opportunities for computer science
-                applications. I am eager to continue designing and creating more
-                board games in the future!
-              </li>
-              <li>
-                Spending time outdoors: To take breaks and rejuvenate, I enjoy
-                venturing outdoors. Going on hikes and spending quality time
-                with others amidst nature are some of my favorite ways to unwind
-                and appreciate the world around me.
-              </li>
-              <li>
-                Working out: Since highschool, I have made significant efforts
-                to lead a healthier lifestyle. Regular workouts have become an
-                essential part of my routine, as they not only contribute to my
-                well-being but also provide a mental escape and valuable
-                personal time.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-    </main>
-    <!--End of About-->
-
-    <!--Project Waves-->
-    <svg
-      class="project-waves"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      viewBox="0 24 150 28 "
-      preserveAspectRatio="none"
-    >
-      <defs>
-        <path
-          id="wave-path"
-          d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
-        ></path>
-      </defs>
-      <g class="wave4">
-        <use
-          xlink:href="#wave-path"
-          x="50"
-          y="3"
-          fill="rgba(255,255,255, .1)"
-        ></use>
-      </g>
-      <g class="wave2">
-        <use
-          xlink:href="#wave-path"
-          x="50"
-          y="0"
-          fill="rgba(255,255,255, .2)"
-        ></use>
-      </g>
-      <g class="wave6">
-        <use xlink:href="#wave-path" x="50" y="9" fill="#fff"></use>
-      </g>
-    </svg>
-    <!--End of Project Waves-->
-
-    <section class="projects" id="projects">
-      <div class="proj-img" data-aos="fade-right">
-        <a href="https://weather-application-4245c.web.app/" target="_blank"
-          ><img src="assets/images/weather-app.png" alt="Weather-App"
-        /></a>
-      </div>
-      <div class="proj-description" data-aos="fade-left">
-        <h3>Weather-App</h3>
-        To enhance my proficiency in web development and React, I focused on a
-        project to design a weather data application. Initially, I leveraged the
-        <a href="https://openweathermap.org/" target="_blank" class="text-link"
-          >OpenWeatherMap</a
-        >
-        API to access global weather data for cities around the world.
-        Simultaneously, I accessed data from
-        <a href="http://www.geonames.org/" target="_blank" class="text-link"
-          >GeoNames</a
-        >
-        , which supplied a comprehensive text file containing the names of
-        cities worldwide with populations of at least 15,000. From here I parsed
-        the file to extract pertinent data and constructed the list of cities
-        that users can select for weather information. Given the vast amount of
-        initial data, I implemented a filtering mechanism, resulting in the
-        creation of a refined city list. This curated list exclusively included
-        cities with populations of at least 85,000, optimizing the user
-        experience. Furthermore, I employed virtualization techniques to enhance
-        the application's loading speed, ensuring swift and seamless
-        interactions. Throughout the development process, I utilized conditional
-        rendering to mitigate unnecessary resource consumption. Finally, I
-        deployed the application using Firebase, making it accessible to anyone
-        <a
-          href="https://weather-application-4245c.web.app/"
-          target="_blank"
-          class="text-link"
-          >here</a
-        >. This project served as a valuable opportunity to expand my skill set,
-        encompassing API integration, data parsing, performance optimization,
-        and deployment, culminating in a functional and efficient weather data
-        application.
-      </div>
-      <div class="proj-img" data-aos="fade-right">
-        <a href="https://pente-31410.web.app/" target="_blank"
-          ><img src="assets/images/pente.png" alt="Pente Board"
-        /></a>
-      </div>
-      <div class="proj-description" data-aos="fade-left">
-        <h3>Pente</h3>
-        Pente is an abstract strategy game for two players, bearing many
-        similarities to the popular game Go. In Pente, players take turns
-        placing stones onto a grid, aiming to achieve either five stones in a
-        row or capture five pairs of their opponents' stones for victory. For
-        this project, I initially implemented Pente in Java as a
-        text-user-interface. It served as an excellent starting point to build
-        my foundational Java skills while providing a project to showcase. As I
-        pushed further into my programming journey, I embraced React and saw an
-        opportunity to take my Pente project to the next level. I recreated the
-        entire game as a graphical-user-interface through React JSX, elevating
-        the game's presentation and accessibility. Moreover, I enhanced the
-        game's playability by adding restart and undo functionalities. These
-        features allow players to modify the game state by resetting the board
-        or undoing their moves, contributing to a more engaging and enjoyable
-        experience. Most recently I utilized Firebase to host the app, allowing
-        anyone to play it
-        <a href="https://pente-31410.web.app/" target="_blank" class="text-link"
-          >here</a
-        >. Pente has been an invaluable project in bolstering my programming
-        abilities, and serves as a testament to my progress in recent months.
-      </div>
-      <div class="proj-img" data-aos="fade-right">
-        <img src="assets/images/deadwood.png" alt="Deadwood GUI" />
-      </div>
-      <div class="proj-description" data-aos="fade-left">
-        <h3>Deadwood</h3>
-        In this project, my partner and I collaborated to implement a board game
-        called Deadwood in Java. We began by creating a text-user-interface and
-        later expanded it to include a graphical-user-interface using JavaFX.
-        Our work on the GUI involved leveraging JavaFX to deliver a seamless
-        user experience. Throughout the project, we practiced essential design
-        patterns like singleton, adapter, and observer, while honing our
-        teamwork abilities. Deadwood proved to be a significant catalyst for
-        enhancing my coding skills, as it reinforced crucial object-oriented
-        design principles, including SOLID principles. To ensure a comprehensive
-        approach, we created complete use-case diagrams, write-ups, sequence
-        diagrams, and class responsibility diagrams. A notable part of this
-        project was developing an XML Parser that converted XML data into game
-        objects. Overall, the project was both interesting and enjoyable,
-        especially given my passion for board games.
-      </div>
-      <div class="proj-img" data-aos="fade-right">
-        <img src="assets/images/parser.png" alt="Parser example" />
-      </div>
-      <div class="proj-description" data-aos="fade-left">
-        <h3>Racket Parser & Evaluator</h3>
-        This project was a part of Formal Languages and Functional Programming
-        (CS301) and aimed to create a parser and evaluator working together to
-        evaluate expressions in the procedure-first format utilized by Racket.
-        <ul>
-          <li>
-            Initially, I developed an evaluator capable of handling various
-            operations, from simple ones like addition, subtraction,
-            multiplication, and division, to more complex ones like
-            conditionals, mapping, and even lambdas.
-          </li>
-          <li>
-            Following the evaluator's creation, I created a parser that could
-            parse strings using a context-free grammar to properly format the
-            equations.
-          </li>
-          <li>
-            The parser provided the formatted equations to the evaluator which
-            would then map the characters to functions and process them to reach
-            a final answer.
-          </li>
-        </ul>
-        To explore the entire code and delve into the project's specifics, you
-        can visit my
-        <a
-          href="https://github.com/RyanHarang/projects/tree/main/interpreter"
-          target="_blank"
-          class="text-link"
-          >Github</a
-        >
-        repository where I have uploaded everything, including a test file with
-        example inputs and their corresponding expected outputs.
-      </div>
-    </section>
+    <div class="face-photos">
+      <img class="home-pics left-pic" src="assets/images/3May2023Short.jpg" />
+      <img class="home-pics right-pic" src="assets/images/2May2023Short.jpg" />
+    </div>
 
     <!--Home Waves-->
-    <svg
-      class="home-waves"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      viewBox="0 24 150 28 "
-      preserveAspectRatio="none"
-    >
+    <svg class="home-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28 " preserveAspectRatio="none">
       <defs>
-        <path
-          id="wave-path"
-          d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
-        ></path>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
       </defs>
       <g class="wave1">
-        <use
-          xlink:href="#wave-path"
-          x="50"
-          y="3"
-          fill="rgba(255,255,255, .1)"
-        ></use>
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)"></use>
       </g>
       <g class="wave2">
-        <use
-          xlink:href="#wave-path"
-          x="50"
-          y="0"
-          fill="rgba(255,255,255, .2)"
-        ></use>
-      </g>
-      <g class="wave3">
-        <use xlink:href="#wave-path" x="50" y="9" fill="#fff"></use>
-      </g>
-    </svg>
-    <!--End Home Waves-->
-
-    <!-- Resume -->
-    <section class="resume" id="resume">
-      <h1>Work Experience</h1>
-      <div class="experience">
-        <div class="research-assistant">
-          <h4>Research Assistant</h4>
-          <p>
-            Since May 2023, I have been working as a research assistant for
-            <a
-              href="https://index-in-bounds-research-lab.gitlab.io/plain-html/"
-              class="text-link"
-              target="_blank"
-              >Index Inbounds Lab</a
-            >
-            at Western Washington University. My focus has primarily been on
-            front-end related tasks, where I've been actively involved in
-            transferring the website's content to React.
-          </p>
-        </div>
-        <div class="ladder-intern">
-          <h4>Internship</h4>
-          <p>
-            From June to July of 2023, I interned at
-            <a
-              href="https://uk.linkedin.com/company/the-ladder-rr"
-              class="text-link"
-              target="_blank"
-              >The Ladder</a
-            >, a non-profit based in Redruth, UK. During this time, we
-            collaborated on an audio-based project involving Cornish lore. The
-            project involved utilizing hyperaudio to enable vocal navigation of
-            interfaces through Alexa.
-          </p>
-        </div>
-        <div class="pca">
-          <h4>Personal Care Assistant</h4>
-          <p>
-            From September 2022 to May 2023, I worked as a personal care
-            assistant for an individual with cerebral palsy. During this period,
-            I provided assistance with tasks such as cooking, cleaning, and
-            exercise.
-          </p>
-        </div>
-        <div class="mod-pizza">
-          <h4>MOD Pizza Squad Member</h4>
-          <p>
-            During the summers of 2021 and 2022, from June to September, I
-            worked as a squad member at MOD Pizza for 30 to 40 hours a week. As
-            a squad member, my primary responsibility was to provide excellent
-            customer service and ensure a quality experience.
-          </p>
-        </div>
-      </div>
-      <div class="technical-skills">
-        <h1>Technical Skills</h1>
-        <p class="skills-list" data-aos="fade-down">
-          <b>Languages</b>: Java, Python, JavaScript, JavaFX, HTML/CSS, SQL,
-          LaTex, Assembly, Racket, XML, C, R <br />
-          <b>Frameworks</b>: React, Node.js, Bootstrap, Tailwind CSS <br />
-          <b>Developer Tools</b>: Git, Google Firebase, VS Code, Visual Studio,
-          jGrasp, Linux, WSL, MongoDB, EMACS
-        </p>
-      </div>
-      <button id="toggleButton" class="toggleButton">Show Resume PDF</button>
-      <iframe
-        id="pdf-iframe"
-        class="pdf-iframe"
-        src="assets/pdf/Ryan_Harang_resume.pdf"
-        width="100%"
-        height="700"
-      >
-        <p>
-          It appears you don't have a PDF plugin for this browser. You can
-          <a href="assets/pdf/Ryan_Harang_resume.pdf"
-            >click here to download my resume as a PDF file.</a
-          >
-        </p>
-      </iframe>
-    </section>
-    <!-- End Resume -->
-
-    <!--Project Waves-->
-    <svg
-      class="project-waves"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      viewBox="0 24 150 28 "
-      preserveAspectRatio="none"
-    >
-      <defs>
-        <path
-          id="wave-path"
-          d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
-        ></path>
-      </defs>
-      <g class="wave4">
-        <use
-          xlink:href="#wave-path"
-          x="50"
-          y="3"
-          fill="rgba(255,255,255, .1)"
-        ></use>
-      </g>
-      <g class="wave5">
-        <use
-          xlink:href="#wave-path"
-          x="50"
-          y="0"
-          fill="rgba(255,255,255, .2)"
-        ></use>
-      </g>
-      <g class="wave6">
-        <use xlink:href="#wave-path" x="50" y="9" fill="#fff"></use>
-      </g>
-    </svg>
-    <!--End of Project Waves-->
-
-    <div class="contact" id="contact" data-aos="fade-up">
-      <h2>
-        Phone
-        <img src="assets/images/phone.svg" alt="phone" class="contact-img" />
-      </h2>
-      <h2>
-        E-mail
-        <img src="assets/images/email.png" alt="email" class="contact-img" />
-      </h2>
-      <div class="contact-method">
-        <a href="tel:4252298206" class="text-link">(425) - 229 - 8206</a>
-      </div>
-      <div class="contact-method">
-        <a href="mailto: harangryan@gmail.com" class="text-link"
-          >harangryan@gmail.com</a
-        >
-      </div>
-    </div>
-    <svg
-      class="home-waves"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      viewBox="0 24 150 28 "
-      preserveAspectRatio="none"
-    >
-      <defs>
-        <path
-          id="wave-path"
-          d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
-        ></path>
-      </defs>
-      <g class="wave1">
-        <use
-          xlink:href="#wave-path"
-          x="50"
-          y="3"
-          fill="rgba(255,255,255, .1)"
-        ></use>
-      </g>
-      <g class="wave2">
-        <use
-          xlink:href="#wave-path"
-          x="50"
-          y="0"
-          fill="rgba(255,255,255, .2)"
-        ></use>
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)"></use>
       </g>
       <g class="wave3">
         <use xlink:href="#wave-path" x="50" y="9" fill="#fff"></use>
       </g>
     </svg>
     <!--End of Home Waves-->
+  </section>
+  <!--End of Home-->
 
-    <!--Footer-->
-    <footer class="footer">
-      <h3>Thanks for checking out my page!</h3>
-      <p>Find more of my content:</p>
+  <main class="about" id="about">
+    <section>
+      <div class="aboutCols">
+        <div class="about-title">
+          <h2>About</h2>
+        </div>
 
-      <a href="https://github.com/RyanHarang" target="_blank"
-        ><button class="footer-links">
-          <img class="image-link" src="assets/images/github.png" /></button
-      ></a>
-      <a
-        href="https://www.linkedin.com/in/ryan-harang-a4461320a/"
-        target="_blank"
-        ><button class="footer-links">
-          <img class="image-link" src="assets/images/linkedin.png" /></button
-      ></a>
-    </footer>
-    <!--End Footer-->
+        <div class="about-content">
+          <p>
+            Hi, I'm Ryan, currently a junior at Western Washington University
+            majoring in Computer Science. My passion for Computer Science
+            sparked during my high school days when I took AP CS, and since
+            then it has only grown as I delve further into the field. Lately,
+            as I've progressed into major courses and become more active on
+            campus, my focus has revolved around front-end design, including
+            HTML and React, as well as object-oriented design using Java.
+          </p>
+        </div>
+        <div class="about-content">
+          <p>
+            While I spend a lot of my time on computer science related topics,
+            I like to try and lead a balanced life. Some of my hobbies
+            include:
+          </p>
+          <ul>
+            <li>
+              Playing board games: My deep interest in board games has driven
+              me to design one with friends during high school. This passion
+              often inspires me to undertake related projects, as board games
+              provide intriguing opportunities for computer science
+              applications. I am eager to continue designing and creating more
+              board games in the future!
+            </li>
+            <li>
+              Spending time outdoors: To take breaks and rejuvenate, I enjoy
+              venturing outdoors. Going on hikes and spending quality time
+              with others amidst nature are some of my favorite ways to unwind
+              and appreciate the world around me.
+            </li>
+            <li>
+              Working out: Since highschool, I have made significant efforts
+              to lead a healthier lifestyle. Regular workouts have become an
+              essential part of my routine, as they not only contribute to my
+              well-being but also provide a mental escape and valuable
+              personal time.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--End of About-->
 
-    <!--JS-->
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script src="assets/anime-master/lib/anime.min.js"></script>
-    <script type="text/javascript" script src="assets/js/script.js"></script>
-  </body>
-  <!--End of Body-->
+  <!--Project Waves-->
+  <svg class="project-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28 " preserveAspectRatio="none">
+    <defs>
+      <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+    </defs>
+    <g class="wave4">
+      <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)"></use>
+    </g>
+    <g class="wave2">
+      <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)"></use>
+    </g>
+    <g class="wave6">
+      <use xlink:href="#wave-path" x="50" y="9" fill="#fff"></use>
+    </g>
+  </svg>
+  <!--End of Project Waves-->
+
+  <section class="projects" id="projects">
+    <div class="proj-img" data-aos="fade-right">
+      <a href="https://weather-application-4245c.web.app/" target="_blank"><img src="assets/images/weather-app.png"
+          alt="Weather-App" /></a>
+    </div>
+    <div class="proj-description" data-aos="fade-left">
+      <h3>Weather-App</h3>
+      To enhance my proficiency in web development and React, I focused on a
+      project to design a weather data application. Initially, I leveraged the
+      <a href="https://openweathermap.org/" target="_blank" class="text-link">OpenWeatherMap</a>
+      API to access global weather data for cities around the world.
+      Simultaneously, I accessed data from
+      <a href="http://www.geonames.org/" target="_blank" class="text-link">GeoNames</a>
+      , which supplied a comprehensive text file containing the names of
+      cities worldwide with populations of at least 15,000. From here I parsed
+      the file to extract pertinent data and constructed the list of cities
+      that users can select for weather information. Given the vast amount of
+      initial data, I implemented a filtering mechanism, resulting in the
+      creation of a refined city list. This curated list exclusively included
+      cities with populations of at least 85,000, optimizing the user
+      experience. Furthermore, I employed virtualization techniques to enhance
+      the application's loading speed, ensuring swift and seamless
+      interactions. Throughout the development process, I utilized conditional
+      rendering to mitigate unnecessary resource consumption. Finally, I
+      deployed the application using Firebase, making it accessible to anyone
+      <a href="https://weather-application-4245c.web.app/" target="_blank" class="text-link">here</a>. This project
+      served as a valuable opportunity to expand my skill set,
+      encompassing API integration, data parsing, performance optimization,
+      and deployment, culminating in a functional and efficient weather data
+      application.
+    </div>
+    <div class="proj-img" data-aos="fade-right">
+      <a href="https://pente-31410.web.app/" target="_blank"><img src="assets/images/pente.png" alt="Pente Board" /></a>
+    </div>
+    <div class="proj-description" data-aos="fade-left">
+      <h3>Pente</h3>
+      Pente is an abstract strategy game for two players, bearing many
+      similarities to the popular game Go. In Pente, players take turns
+      placing stones onto a grid, aiming to achieve either five stones in a
+      row or capture five pairs of their opponents' stones for victory. For
+      this project, I initially implemented Pente in Java as a
+      text-user-interface. It served as an excellent starting point to build
+      my foundational Java skills while providing a project to showcase. As I
+      pushed further into my programming journey, I embraced React and saw an
+      opportunity to take my Pente project to the next level. I recreated the
+      entire game as a graphical-user-interface through React JSX, elevating
+      the game's presentation and accessibility. Moreover, I enhanced the
+      game's playability by adding restart and undo functionalities. These
+      features allow players to modify the game state by resetting the board
+      or undoing their moves, contributing to a more engaging and enjoyable
+      experience. Most recently I utilized Firebase to host the app, allowing
+      anyone to play it
+      <a href="https://pente-31410.web.app/" target="_blank" class="text-link">here</a>. Pente has been an invaluable
+      project in bolstering my programming
+      abilities, and serves as a testament to my progress in recent months.
+    </div>
+    <div class="proj-img" data-aos="fade-right">
+      <img src="assets/images/deadwood.png" alt="Deadwood GUI" />
+    </div>
+    <div class="proj-description" data-aos="fade-left">
+      <h3>Deadwood</h3>
+      In this project, my partner and I collaborated to implement a board game
+      called Deadwood in Java. We began by creating a text-user-interface and
+      later expanded it to include a graphical-user-interface using JavaFX.
+      Our work on the GUI involved leveraging JavaFX to deliver a seamless
+      user experience. Throughout the project, we practiced essential design
+      patterns like singleton, adapter, and observer, while honing our
+      teamwork abilities. Deadwood proved to be a significant catalyst for
+      enhancing my coding skills, as it reinforced crucial object-oriented
+      design principles, including SOLID principles. To ensure a comprehensive
+      approach, we created complete use-case diagrams, write-ups, sequence
+      diagrams, and class responsibility diagrams. A notable part of this
+      project was developing an XML Parser that converted XML data into game
+      objects. Overall, the project was both interesting and enjoyable,
+      especially given my passion for board games.
+    </div>
+    <div class="proj-img" data-aos="fade-right">
+      <img src="assets/images/parser.png" alt="Parser example" />
+    </div>
+    <div class="proj-description" data-aos="fade-left">
+      <h3>Racket Parser & Evaluator</h3>
+      This project was a part of Formal Languages and Functional Programming
+      (CS301) and aimed to create a parser and evaluator working together to
+      evaluate expressions in the procedure-first format utilized by Racket.
+      <ul>
+        <li>
+          Initially, I developed an evaluator capable of handling various
+          operations, from simple ones like addition, subtraction,
+          multiplication, and division, to more complex ones like
+          conditionals, mapping, and even lambdas.
+        </li>
+        <li>
+          Following the evaluator's creation, I created a parser that could
+          parse strings using a context-free grammar to properly format the
+          equations.
+        </li>
+        <li>
+          The parser provided the formatted equations to the evaluator which
+          would then map the characters to functions and process them to reach
+          a final answer.
+        </li>
+      </ul>
+      To explore the entire code and delve into the project's specifics, you
+      can visit my
+      <a href="https://github.com/RyanHarang/projects/tree/main/interpreter" target="_blank"
+        class="text-link">Github</a>
+      repository where I have uploaded everything, including a test file with
+      example inputs and their corresponding expected outputs.
+    </div>
+  </section>
+
+  <!--Home Waves-->
+  <svg class="home-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28 " preserveAspectRatio="none">
+    <defs>
+      <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+    </defs>
+    <g class="wave1">
+      <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)"></use>
+    </g>
+    <g class="wave2">
+      <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)"></use>
+    </g>
+    <g class="wave3">
+      <use xlink:href="#wave-path" x="50" y="9" fill="#fff"></use>
+    </g>
+  </svg>
+  <!--End Home Waves-->
+
+  <!-- Resume -->
+  <section class="resume" id="resume">
+    <h1>Work Experience</h1>
+    <div class="experience">
+      <div class="research-assistant">
+        <h4>Research Assistant</h4>
+        <p>
+          Since May 2023, I have been working as a research assistant for
+          <a href="https://index-in-bounds-research-lab.gitlab.io/plain-html/" class="text-link" target="_blank">Index
+            Inbounds Lab</a>
+          at Western Washington University. My focus has primarily been on
+          front-end related tasks, where I've been actively involved in
+          transferring the website's content to React.
+        </p>
+      </div>
+      <div class="ladder-intern">
+        <h4>Internship</h4>
+        <p>
+          From June to July of 2023, I interned at
+          <a href="https://uk.linkedin.com/company/the-ladder-rr" class="text-link" target="_blank">The Ladder</a>, a
+          non-profit based in Redruth, UK. During this time, we
+          collaborated on an audio-based project involving Cornish lore. The
+          project involved utilizing hyperaudio to enable vocal navigation of
+          interfaces through Alexa.
+        </p>
+      </div>
+      <div class="pca">
+        <h4>Personal Care Assistant</h4>
+        <p>
+          From September 2022 to May 2023, I worked as a personal care
+          assistant for an individual with cerebral palsy. During this period,
+          I provided assistance with tasks such as cooking, cleaning, and
+          exercise.
+        </p>
+      </div>
+      <div class="mod-pizza">
+        <h4>MOD Pizza Squad Member</h4>
+        <p>
+          During the summers of 2021 and 2022, from June to September, I
+          worked as a squad member at MOD Pizza for 30 to 40 hours a week. As
+          a squad member, my primary responsibility was to provide excellent
+          customer service and ensure a quality experience.
+        </p>
+      </div>
+    </div>
+    <div class="technical-skills">
+      <h1>Technical Skills</h1>
+      <p class="skills-list" data-aos="fade-down">
+        <b>Languages</b>: Java, Python, JavaScript, JavaFX, HTML/CSS, SQL,
+        LaTex, Assembly, Racket, XML, C, R <br />
+        <b>Frameworks</b>: React, Node.js, Bootstrap, Tailwind CSS <br />
+        <b>Developer Tools</b>: Git, Google Firebase, VS Code, Visual Studio,
+        jGrasp, Linux, WSL, MongoDB, EMACS
+      </p>
+    </div>
+    <button id="toggleButton" class="toggleButton">Show Resume PDF</button>
+    <iframe id="pdf-iframe" class="pdf-iframe" src="assets/pdf/Ryan_Harang_resume.pdf" width="100%" height="700">
+      <p>
+        It appears you don't have a PDF plugin for this browser. You can
+        <a href="assets/pdf/Ryan_Harang_resume.pdf">click here to download my resume as a PDF file.</a>
+      </p>
+    </iframe>
+  </section>
+  <!-- End Resume -->
+
+  <!--Project Waves-->
+  <svg class="project-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28 " preserveAspectRatio="none">
+    <defs>
+      <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+    </defs>
+    <g class="wave4">
+      <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)"></use>
+    </g>
+    <g class="wave5">
+      <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)"></use>
+    </g>
+    <g class="wave6">
+      <use xlink:href="#wave-path" x="50" y="9" fill="#fff"></use>
+    </g>
+  </svg>
+  <!--End of Project Waves-->
+
+  <div class="contact" id="contact" data-aos="fade-up">
+    <h2>
+      Phone
+      <img src="assets/images/phone.svg" alt="phone" class="contact-img" />
+    </h2>
+    <h2>
+      E-mail
+      <img src="assets/images/email.png" alt="email" class="contact-img" />
+    </h2>
+    <div class="contact-method">
+      <a href="tel:4252298206" class="text-link">(425) - 229 - 8206</a>
+    </div>
+    <div class="contact-method">
+      <a href="mailto: harangryan@gmail.com" class="text-link">harangryan@gmail.com</a>
+    </div>
+  </div>
+  <svg class="home-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28 " preserveAspectRatio="none">
+    <defs>
+      <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+    </defs>
+    <g class="wave1">
+      <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)"></use>
+    </g>
+    <g class="wave2">
+      <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)"></use>
+    </g>
+    <g class="wave3">
+      <use xlink:href="#wave-path" x="50" y="9" fill="#fff"></use>
+    </g>
+  </svg>
+  <!--End of Home Waves-->
+
+  <!--Footer-->
+  <footer class="footer">
+    <h3>Thanks for checking out my page!</h3>
+    <p>Find more of my content:</p>
+
+    <a href="https://github.com/RyanHarang" target="_blank"><button class="footer-links">
+        <img class="image-link" src="assets/images/github.png" /></button></a>
+    <a href="https://www.linkedin.com/in/ryan-harang-a4461320a/" target="_blank"><button class="footer-links">
+        <img class="image-link" src="assets/images/linkedin.png" /></button></a>
+  </footer>
+  <!--End Footer-->
+
+  <!--JS-->
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="assets/anime-master/lib/anime.min.js"></script>
+  <script type="text/javascript" script src="assets/js/script.js"></script>
+</body>
+<!--End of Body-->
+
 </html>
