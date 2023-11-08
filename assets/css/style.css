@@ -467,7 +467,7 @@ section {
   }
 
   .dropdown {
-    width: 73%;
+    width: 74%;
   }
 
   .dropdown ul {
@@ -476,7 +476,7 @@ section {
   }
 
   .dropdown li {
-    padding: 10px 0;
+    padding: 5px 0;
   }
 
   .dropdown li a {
