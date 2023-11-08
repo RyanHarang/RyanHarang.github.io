@@ -10,10 +10,10 @@ document.addEventListener("DOMContentLoaded", function () {
   toggleButton.addEventListener("click", function () {
     if (isVisible) {
       pdfIframe.style.display = "none";
-      toggleButton.textContent = "Show PDF";
+      toggleButton.textContent = "Show Resume PDF";
     } else {
       pdfIframe.style.display = "block";
-      toggleButton.textContent = "Hide PDF";
+      toggleButton.textContent = "Hide Resume PDF";
     }
     isVisible = !isVisible;
   });
