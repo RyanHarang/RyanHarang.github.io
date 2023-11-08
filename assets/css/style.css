@@ -418,6 +418,10 @@ section {
 }
 
 /* --- Mobile Dropdown --- */
+.dropdown {
+  display: none;
+}
+
 .bar {
   display: block;
   width: 25px;
