@@ -452,7 +452,6 @@ section {
   html,
   body {
     max-width: 780px;
-    /*overflow-x: hidden;*/
   }
 
   .logo {
