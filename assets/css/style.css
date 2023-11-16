@@ -37,7 +37,7 @@ body {
 }
 
 section {
-  padding: 40px 40px;
+  /*padding: 40px 40px;*/
   overflow: hidden;
 }
 
@@ -107,7 +107,9 @@ section {
 .home {
   font-family: "Raleway", sans-serif;
   width: 100%;
+  padding: 2vh 2vw;
   background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(42, 44, 57) 90%);
+  overflow: hidden;
   padding: 0;
 }
 
@@ -269,6 +271,7 @@ section {
   padding-top: 30px;
   font-size: 18px;
   background-color: #fff;
+  padding: 5vh 2vw;
 }
 
 .about-content ul {
