@@ -48,7 +48,6 @@ section {
   display: grid;
   grid-template-columns: 30% 43%;
   column-gap: 27%;
-  height: auto;
   transition: all 0.5s;
   z-index: 1000;
   background-color: rgba(44, 42, 57, 0.85);
@@ -59,7 +58,6 @@ section {
   font-family: "Raleway", sans-serif;
   color: #fff;
   font-size: 28px;
-  margin: 0;
   padding: 20px 0px 0px 20px;
   line-height: 1;
   font-weight: 700;
@@ -85,7 +83,6 @@ section {
 }
 
 .navbar li a {
-  width: auto;
   border-radius: 50px;
   display: block;
   padding: 8px 15px;
@@ -110,7 +107,6 @@ section {
 .home {
   font-family: "Raleway", sans-serif;
   width: 100%;
-  position: relative;
   background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(42, 44, 57) 90%);
   padding: 0;
 }
