@@ -468,9 +468,13 @@ body {
 
   .mobile-menu {
     display: none;
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
   }
 
   .mobile-menu li {
+    background-color: rgba(44, 42, 57, 0.85);
     border: #178582 solid 1px;
   }
 
