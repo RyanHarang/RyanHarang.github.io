@@ -247,9 +247,15 @@ section {
   }
 }
 
-/* End Wave Effects */
-
 /* --- About --- */
+.about {
+  font-family: "Raleway", sans-serif;
+  padding-top: 30px;
+  font-size: 18px;
+  background-color: #fff;
+  padding: 5vh 2vw;
+}
+
 .about-title {
   padding-bottom: 40px;
 }
@@ -266,21 +272,12 @@ section {
   font-family: "Poppins", sans-serif;
 }
 
-.about {
-  font-family: "Raleway", sans-serif;
-  padding-top: 30px;
-  font-size: 18px;
-  background-color: #fff;
-  padding: 5vh 2vw;
-}
-
 .about-content ul {
   list-style: none;
   padding: 0;
 }
 
 .about-content ul li {
-  font-family: "Raleway", sans-serif;
   font-weight: 100;
   padding-left: 28px;
   margin-top: 10px;
@@ -288,9 +285,11 @@ section {
 
 /* --- Projects --- */
 .projects {
+  font-family: "Raleway", sans-serif;
   display: grid;
   grid-template-columns: 53% 45%;
   column-gap: 2%;
+  padding: 2vh 2vw;
   color: #fff;
 }
 
