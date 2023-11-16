@@ -522,17 +522,13 @@ body {
     margin-top: 15px;
   }
 
-  .face-photos {
-    height: 100%;
-  }
-
   .projects {
     display: block;
     font-size: 14px;
   }
 
   .proj-img {
-    display: none;
+    margin-top: 5vh;
   }
 
   .skills-list {
