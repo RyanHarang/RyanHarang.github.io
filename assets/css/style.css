@@ -1,7 +1,7 @@
 /*
 Author: Ryan Harang
 Version: HTML5, CSS3
-Date: 11/07/2023
+Date: 11/15/2023
 Website: Ryan Harang's Portfolio
 */
 
@@ -102,10 +102,12 @@ body {
 .home {
   font-family: "Raleway", sans-serif;
   width: 100%;
-  padding: 2vh 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(42, 44, 57) 90%);
   overflow: hidden;
-  padding: 0;
 }
 
 .home h2 {
@@ -118,7 +120,7 @@ body {
 .intro {
   width: 70%;
   font-size: 19px;
-  margin: 0 auto 30px auto;
+  margin: 0 auto;
   color: #fff;
 }
 
@@ -126,7 +128,6 @@ body {
   width: 100%;
   color: #fff;
   text-align: center;
-  height: 15vw;
   padding-top: 30px;
 }
 
@@ -134,14 +135,15 @@ body {
 .read-more {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 1.2vw;
+  justify-content: center;
   letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 32px;
+  display: flex;
+  width: 8vw;
   border-radius: 50px;
   transition: 0.5s;
-  line-height: 1;
-  margin: 10px;
+  height: 100%;
+  margin: 30px auto 0 auto;
   color: #fff;
   border: 2px solid #178582;
   text-decoration: none;
@@ -155,16 +157,21 @@ body {
 
 /* --- Pictures --- */
 .face-photos {
-  display: grid;
+  /*display: grid;
   grid-template-columns: 30% 30%;
-  column-gap: 15%;
-  margin-left: 12.5%;
-  margin-right: 12.5%;
-  width: 100%;
+  column-gap: 15%;*/
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /*margin-left: 12.5%;
+  margin-right: 12.5%;*/
+  /*margin: 0 auto;*/
+  /*width: 100%;*/
 }
 
 .home-pics {
-  width: 100%;
+  width: 35%;
+  margin: 0 7%;
   border-radius: 5%;
 }
 
@@ -521,7 +528,6 @@ body {
 
   .face-photos {
     height: 100%;
-    margin-top: 50vw;
   }
 
   .projects {
