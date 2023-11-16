@@ -288,13 +288,14 @@ section {
   font-family: "Raleway", sans-serif;
   display: grid;
   grid-template-columns: 53% 45%;
+  overflow: hidden;
   column-gap: 2%;
   padding: 2vh 2vw;
   color: #fff;
 }
 
 .proj-img {
-  margin-bottom: 1%;
+  margin-bottom: 2%;
 }
 
 .proj-img img {
@@ -364,18 +365,20 @@ section {
 }
 
 /* --- Resume --- */
-.experience {
-  margin-left: 40px;
-}
-
 .resume {
+  font-family: "Raleway", sans-serif;
+  padding: 2vh 1vw;
   background-color: #fff;
   font-size: 19px;
 }
 
+.experience {
+  margin-left: 35px;
+}
+
 .skills-list {
   font-size: 20px;
-  margin-left: 40px;
+  margin-left: 35px;
 }
 
 /* --- PDF Frame --- */
