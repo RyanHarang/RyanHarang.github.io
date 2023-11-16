@@ -510,11 +510,6 @@ body {
     display: block;
   }
 
-  .home-content {
-    height: 45vh;
-    margin-bottom: 30%;
-  }
-
   .home h2 {
     margin-bottom: 10px;
     font-size: 38px;
@@ -523,7 +518,10 @@ body {
 
   /* Read More Button */
   .read-more {
-    margin-top: 0;
+    font-size: 14px;
+    width: 100px;
+    margin-bottom: 20px;
+    margin-top: 15px;
   }
 
   .face-photos {
