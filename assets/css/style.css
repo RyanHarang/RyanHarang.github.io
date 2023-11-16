@@ -17,11 +17,11 @@ Table of Contents
 08. Wave Effects
 09. About
 10. Projects
-11. Footer
-12. Links
-13. Resume
-14. PDF Frame
-15. Contact
+11. Links
+12. Resume
+13. PDF Frame
+14. Contact
+15. Footer
 16. Mobile Dropdown
 17. Mobile Media Query
 18. Wide Screen Media Query
@@ -305,30 +305,6 @@ body {
   margin-bottom: 2%;
 }
 
-/* --- Footer --- */
-.footer {
-  background: #fff;
-  color: #2a2c39;
-  text-align: center;
-  padding: 20px 0;
-}
-
-.footer h3 {
-  font-size: 20px;
-  font-weight: 700;
-  color: #000;
-  font-family: "Poppins", sans-serif;
-  padding: 0;
-  margin: 0 0 15px 0;
-}
-
-.footer p {
-  font-size: 14px;
-  font-style: italic;
-  padding: 0;
-  margin: 0 0 20px 0;
-}
-
 /* --- Links --- */
 .footer-links {
   border-radius: 50%;
@@ -418,6 +394,30 @@ body {
 
 .contact-img {
   max-width: 10%;
+}
+
+/* --- Footer --- */
+.footer {
+  background: #fff;
+  color: #2a2c39;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+.footer p {
+  font-size: 14px;
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 20px 0;
 }
 
 /* --- Mobile Dropdown --- */
