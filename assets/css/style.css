@@ -280,6 +280,11 @@ body {
 }
 
 /* --- Projects --- */
+.title {
+  padding-left: 2vw;
+  color: #fff;
+}
+
 .projects {
   font-family: "Raleway", sans-serif;
   display: grid;
@@ -531,6 +536,17 @@ body {
 
   .proj-img {
     margin-top: 5vh;
+  }
+
+  .proj-img img {
+    object-fit: contain;
+    object-position: center;
+    height: auto;
+    width: 100%;
+  }
+
+  .proj-description {
+    font-size: 19px;
   }
 
   .skills-list {
