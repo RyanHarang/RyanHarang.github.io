@@ -295,14 +295,16 @@ body {
 }
 
 .proj-img img {
+  object-fit: cover;
+  object-position: top;
+  height: 500px;
   width: 100%;
   border: solid #178582 5px;
 }
 
 .proj-description {
   width: 100%;
-  font-size: 20px;
-  margin-bottom: 2%;
+  /* font-size: 18px !important */
 }
 
 /* --- Links --- */
@@ -558,9 +560,14 @@ body {
 
   .proj-description {
     font-size: 1.25vw;
+    margin-bottom: 1%;
   }
 
   .proj-description h3 {
     font-size: 2vw;
+  }
+
+  .proj-img img {
+    height: 32vw;
   }
 }
