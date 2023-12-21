@@ -305,6 +305,11 @@ body {
   height: 500px;
   width: 100%;
   border: solid #178582 5px;
+  transition: transform 0.5s ease;
+}
+
+.proj-img img:hover {
+  transform: scale(1.05);
 }
 
 .proj-description {
