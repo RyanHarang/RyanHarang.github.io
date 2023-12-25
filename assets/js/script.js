@@ -38,7 +38,7 @@ anime({
 
 anime({
   targets: ".home-pics",
-  borderRadius: ["100%", "5%"],
+  borderRadius: ["100%", "8px"],
   easing: "easeInOutQuad",
   duration: 1000,
 });
