@@ -1,21 +1,394 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
   <meta name="description"
     content="Hi, I'm Ryan, and this is my personal portfolio. This site showcases my achievements and skills I've gain in my Computer Science journey." />
-  <title>Ryan's Portfolio</title>
+  <title>Ryan Harang</title>
+
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet" />
+
+  <!--CSS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <!--AOS-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!--Favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png" />
+  <link rel="manifest" href="assets/favicon_io/site.webmanifest" />
 </head>
+<!--End of Head-->
 
 <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
+  <!--Header-->
+  <header class="header">
+    <div class="logo">
+      <h1>Ryan Harang</h1>
+    </div>
+    <!--Dropdown-->
+    <div class="dropdown">
+      <button class="hamburger" onclick="dropDown()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <menu class="mobile-menu" id="mobile-menu">
+        <li>
+          <a class="nav-link" href="#home" onclick="dropDown()">Home</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#about" onclick="dropDown()">About</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#projects" onclick="dropDown()">Projects</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#resume" onclick="dropDown()">Resume</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#contact" onclick="dropDown()">Contact</a>
+        </li>
+      </menu>
+    </div>
+    <!--End of Dropdown-->
+
+    <div class="navbar">
+      <menu class="nav-links">
+        <li><a class="nav-link" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#resume">Resume</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </menu>
+    </div>
+    <!--End of Navbar-->
+  </header>
+  <!--End of Header-->
+
+  <!--Home-->
+  <div class="home" id="home">
+    <div class="home-content">
+      <h2 class="home-header">Welcome to my Portfolio</h2>
+      <p class="intro">
+        Welcome to my portfolio! This is where I'll be showcasing new projects and skills as I continue my journey into
+        computer science.
+      </p>
+      <a href="#about" class="read-more">Read More</a>
+    </div>
+
+    <div class="face-photos">
+      <img class="home-pics" src="assets/images/3May2023Short.jpg" />
+      <img class="home-pics" src="assets/images/2May2023Short.jpg" />
+    </div>
+
+    <!--Home Waves-->
+    <svg class="home-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)"></use>
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)"></use>
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#fff"></use>
+      </g>
+    </svg>
+    <!--End of Home Waves-->
+  </div>
+  <!--End of Home-->
+
+  <main class="about" id="about">
+    <div class="aboutCols">
+      <div class="about-title">
+        <h2>About</h2>
+      </div>
+
+      <div class="about-content">
+        <p>
+          Hi, I'm Ryan, currently a junior at Western Washington University
+          majoring in Computer Science. My passion for Computer Science
+          sparked during my high school days when I took AP CS, and since
+          then it has only grown as I delve further into the field. Lately I've been most interested in web developement
+          and have centered my personal projects around this.
+        </p>
+      </div>
+      <div class="about-content">
+        <p>
+          While I spend a lot of my time on computer science related topics,
+          I like to try and lead a balanced life. Some of my hobbies
+          include playing and designing board games, spending time outdoors and working out.
+        </p>
+      </div>
+    </div>
+  </main>
+  <!--End of About-->
+
+  <!--Project Waves-->
+  <svg class="project-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28 " preserveAspectRatio="none">
+    <defs>
+      <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+    </defs>
+    <g class="wave4">
+      <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)"></use>
+    </g>
+    <g class="wave2">
+      <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)"></use>
+    </g>
+    <g class="wave6">
+      <use xlink:href="#wave-path" x="50" y="9" fill="#fff"></use>
+    </g>
+  </svg>
+  <!--End of Project Waves-->
+
+  <h1 class="title">Projects</h1>
+  <div class="projects" id="projects">
+    <div class="proj-img" data-aos="fade-right">
+      <a href="https://game-rating.onrender.com/" target="_blank"><img src="assets/images/game-rating.png"
+          alt="Game-Rating Site" /></a>
+    </div>
+    <div class="proj-description" data-aos="fade-left">
+      <h3>Game-Rating Site</h3>
+      For this project, I explored uncharted territory in backend development, continuing my trend of
+      progressively raising the complexity of my projects. The result was a dynamic web application with
+      advanced capabilities, including user differentiation for guests and full-access users, dynamic data display drawn
+      from a MongoDB database, and posting of additional data to the backend via forms. Employing React for the
+      client-side interface, I taught myself and acquired expertise in Express, Node.js, and MongoDB for the
+      server-side architecture. The integration of a MongoDB database allows for an ever growing collections of games,
+      users, and ratings to be stored and utilized for a variety of site opereations. Notable operations include the
+      addition of games to the game list or ratings for games within this list that are then immediately rendered and
+      accessible. This project was a chance for me to both establish important backend skills and work further with
+      front-end skills that I've been developing with previous projects.
+    </div>
+    <div class="proj-img" data-aos="fade-right">
+      <a href="https://weather-application-4245c.web.app/" target="_blank"><img src="assets/images/weather-app.png"
+          alt="Game-Rating Site" /></a>
+    </div>
+    <div class="proj-description" data-aos="fade-left">
+      <h3>Weather-App</h3>
+      To enhance my proficiency in web development and React, I focused on a
+      project to design a weather data application. Initially, I leveraged the
+      <a href="https://openweathermap.org/" target="_blank" class="text-link">OpenWeatherMap</a>
+      API to access global weather data for cities around the world. Simultaneously, I accessed data from
+      <a href="http://www.geonames.org/" target="_blank" class="text-link">GeoNames</a>
+      , which supplied a comprehensive text file containing the names of cities worldwide. From here I parsed the file
+      and implemented a filtering mechanism to extract pertinent data, constructing the list that users can access for
+      weather information. Furthermore, I employed virtualization techniques and conditional rendering to enhance the
+      application's loading speed, ensuring swift and seamless interactions. Finally, I deployed the application using
+      Firebase, making it accessible to anyoneas a web-app <a href="https://weather-application-4245c.web.app/"
+        target="_blank" class="text-link">here</a>.
+    </div>
+    <div class="proj-img" data-aos="fade-right">
+      <a href="https://pente-31410.web.app/" target="_blank"><img src="assets/images/pente.png" alt="Pente Board" /></a>
+    </div>
+    <div class="proj-description" data-aos="fade-left">
+      <h3>Pente</h3>
+      Pente is an abstract strategy game for two players, bearing many similarities to the popular game Go. In Pente,
+      players take turns placing stones onto a grid, aiming to achieve either five stones in a row or capture five pairs
+      of their opponents' stones for victory. I first implemented Pente in Java as a text-user-interface, and later
+      recreated the entire game as a graphical-user-interface through React, elevating the game's presentation and
+      accessibility. Moreover, I enhanced the game's playability by adding restart and undo functionalities. Most
+      recently I utilized Firebase to host the app, allowing anyone to play it <a href="https://pente-31410.web.app/"
+        target="_blank" class="text-link">here</a>.
+    </div>
+    <div class="proj-img" data-aos="fade-right">
+      <a href="https://github.com/RyanHarang/deadwood" target="_blank"><img src="assets/images/deadwood.png"
+          alt="Deadwood GUI" /></a>
+    </div>
+    <div class="proj-description" data-aos="fade-left">
+      <h3>Deadwood</h3>
+      In this project, my partner and I collaborated to implement a board game called Deadwood in Java. We began by
+      creating a text-user-interface and later expanded it to include a graphical-user-interface using JavaFX.
+      Throughout the project, we practiced essential design crucial object-oriented design principles, including SOLID
+      principles, as well as patterns like singleton, adapter, and observer. I also developed an XML parser to convert
+      XML data to game objects. To ensure a comprehensive approach, we created complete use-case diagrams, write-ups,
+      sequence diagrams, and class responsibility diagrams.
+    </div>
+    <div class="proj-img" data-aos="fade-right">
+      <a href="https://github.com/RyanHarang/projects/tree/main/interpreter" target="_blank"><img
+          src="assets/images/parser.png" alt="Parser example" /></a>
+    </div>
+    <div class="proj-description" data-aos="fade-left">
+      <h3>Racket Parser & Evaluator</h3>
+      This project was a part of Formal Languages and Functional Programming (CSCI 301) involved creating a parser and
+      evaluator that worked together to evaluate expressions in the procedure-first format utilized by Racket.
+      Initially, I developed an evaluator capable of handling various operations, from basic addition, subtraction,
+      multiplication, and division, to more complex ones like conditionals, mapping, and lambdas. Following the
+      evaluator, I created a parser that could parse strings using a context-free grammar to format the equations. The
+      parser provided the formatted equations to the evaluator which would then map the characters to functions and
+      process them to reach an answer.
+    </div>
+  </div>
+
+  <!--Home Waves-->
+  <svg class="home-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28 " preserveAspectRatio="none">
+    <defs>
+      <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+    </defs>
+    <g class="wave1">
+      <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)"></use>
+    </g>
+    <g class="wave2">
+      <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)"></use>
+    </g>
+    <g class="wave3">
+      <use xlink:href="#wave-path" x="50" y="9" fill="#fff"></use>
+    </g>
+  </svg>
+  <!--End Home Waves-->
+
+  <!-- Resume -->
+  <div class="resume" id="resume">
+    <h1>Work Experience</h1>
+    <div class="experience">
+      <div class="teaching-assistant">
+        <h4>Teaching Assistant</h4>
+        <p>
+          Starting in September 2023, I have been working as a teaching assistant at
+          Western Washington University. I assist students with course work and grade
+          assignments for a lower level Computer Science class.
+        </p>
+      </div>
+      <div class="research-assistant">
+        <h4>Research Assistant</h4>
+        <p>
+          Since May 2023, I have been working as a research assistant for
+          <a href="https://index-in-bounds-research-lab.gitlab.io/plain-html/" class="text-link" target="_blank">Index
+            Inbounds Lab</a>
+          at Western Washington University. I first worked on transferring the website's
+          content to React and am now working on curating a backend for the site
+          utilizing Node.js and Express.
+        </p>
+      </div>
+      <div class="ladder-intern">
+        <h4>Internship</h4>
+        <p>
+          From June to July of 2023, I interned at
+          <a href="https://uk.linkedin.com/company/the-ladder-rr" class="text-link" target="_blank">The Ladder</a>, a
+          non-profit based in Redruth, UK. During this time, we
+          collaborated on an audio-based project involving Cornish lore. The
+          project involved utilizing hyperaudio to enable vocal navigation of
+          interfaces through Alexa.
+        </p>
+      </div>
+      <div class="pca">
+        <h4>Personal Care Assistant</h4>
+        <p>
+          From September 2022 to May 2023, I worked as a personal care
+          assistant for an individual with cerebral palsy. During this period,
+          I provided assistance with tasks such as cooking, cleaning, and
+          exercise.
+        </p>
+      </div>
+      <div class="mod-pizza">
+        <h4>MOD Pizza Squad Member</h4>
+        <p>
+          During the summers of 2021 and 2022, from June to September, I
+          worked as a squad member at MOD Pizza for 30 to 40 hours a week. As
+          a squad member, my primary responsibility was to provide quality
+          customer service.
+        </p>
+      </div>
+    </div>
+    <div class="technical-skills">
+      <h1>Technical Skills</h1>
+      <p class="skills-list" data-aos="fade-down">
+        <b>Languages</b>: Java, Python, JavaScript, JavaFX, HTML/CSS, SQL,
+        LaTex, C, Assembly, Racket, R <br />
+        <b>Frameworks</b>: React, Node.js, Express, Bootstrap, Tailwind CSS <br />
+        <b>Developer Tools</b>: Git, MongoDB, Google Firebase, Axios, Vite, AWS, Postman, VSCode, Visual Studio, Linux,
+        WSL
+      </p>
+    </div>
+    <button id="toggleButton" class="toggleButton">Show Resume PDF</button>
+    <iframe id="pdf-iframe" class="pdf-iframe" src="assets/pdf/Ryan_Harang_resume.pdf" width="100%" height="700">
+      <p>
+        It appears you don't have a PDF plugin for this browser. You can
+        <a href="assets/pdf/Ryan_Harang_resume.pdf">click here to download my resume as a PDF file.</a>
+      </p>
+    </iframe>
+  </div>
+  <!-- End Resume -->
+
+  <!--Project Waves-->
+  <svg class="project-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28 " preserveAspectRatio="none">
+    <defs>
+      <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+    </defs>
+    <g class="wave4">
+      <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)"></use>
+    </g>
+    <g class="wave5">
+      <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)"></use>
+    </g>
+    <g class="wave6">
+      <use xlink:href="#wave-path" x="50" y="9" fill="#fff"></use>
+    </g>
+  </svg>
+  <!--End of Project Waves-->
+
+  <div class="contact" id="contact" data-aos="fade-up">
+    <div class="contact-method">
+      <a href="mailto: harangryan@gmail.com" class="text-link">harangryan@gmail.com</a>
+    </div>
+  </div>
+  <svg class="home-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28 " preserveAspectRatio="none">
+    <defs>
+      <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+    </defs>
+    <g class="wave1">
+      <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)"></use>
+    </g>
+    <g class="wave2">
+      <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)"></use>
+    </g>
+    <g class="wave3">
+      <use xlink:href="#wave-path" x="50" y="9" fill="#fff"></use>
+    </g>
+  </svg>
+  <!--End of Home Waves-->
+
+  <!--Footer-->
+  <footer class="footer">
+    <h3>Thanks for checking out my page!</h3>
+    <p>Copyright &copy; 2024 Ryan Harang</p>
+    <a href="https://github.com/RyanHarang" target="_blank"><button class="footer-links">
+        <img class="image-link" src="assets/images/github.png" /></button></a>
+    <a href="https://www.linkedin.com/in/ryan-harang-a4461320a/" target="_blank"><button class="footer-links">
+        <img class="image-link" src="assets/images/linkedin.png" /></button></a>
+  </footer>
+  <!--End Footer-->
+
+  <!--JS-->
+  <!--Animate on Scroll-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!--Anime.js-->
+  <script src="assets/anime-master/lib/anime.min.js"></script>
+  <!--Script containing hambuger menu behavior as well as Anime.js usage-->
+  <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
+<!--End of Body-->
 
 </html>
