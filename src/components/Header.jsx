@@ -56,7 +56,7 @@ function Header() {
               />
             </div>
           )}
-          <span className="absolute -bottom-2 transform sm:-translate-x-36 -translate-x-28 mb-4 opacity-0 group-hover:opacity-100 dark:bg-dark-700 bg-dark-200 sm:text-lg text-sm px-2 py-1 rounded-md">
+          <span className="absolute bottom-0 transform sm:-translate-x-36 -translate-x-28 mb-4 opacity-0 group-hover:opacity-100 dark:bg-dark-700 bg-dark-200 sm:text-lg text-sm px-2 py-1 rounded-md">
             {darkMode ? "Light Mode" : "Dark Mode"}
           </span>
         </button>
