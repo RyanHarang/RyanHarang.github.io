@@ -71,18 +71,6 @@ export default function Skills() {
             <Card title="Languages" skills={languageSkills} />
             <Card title="General" skills={generalSkills} />
           </div>
-          {/* <div className="grid grid-cols-4 md:gap-16 gap-2 mt-12">
-            {skills.map((skill, index) => (
-              <div key={index} className="flex flex-col items-center">
-                <img
-                  src={skill.icon}
-                  alt={skill.name}
-                  className="xl:h-32 xl:w-32 lg:h-24 lg:w-24 md:h-20 md:w-20 h-16 w-16 mb-2"
-                />
-                <p className="xl:text-xl md:text-md text-sm">{skill.name}</p>
-              </div>
-            ))}
-          </div> */}
         </div>
       </div>
     </>

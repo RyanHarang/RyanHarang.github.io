@@ -23,7 +23,7 @@ export default function About() {
                 expanding my horizons and skillset through classwork, club and
                 research involvement as well as personal projects. Recently I
                 have become increasingly interested and passionate about web
-                developement and have been completeing projects to progressively
+                developement and have been completing projects to progressively
                 teach myself full-stack development, starting with frontend and
                 later enhancing my work with backend skills.
               </p>

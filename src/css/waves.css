@@ -27,11 +27,11 @@
 }
 
 .up-wave {
-    animation: move-up-wave 6s linear infinite;
+    animation: move-up-wave 5s linear infinite;
 }
 
 .down-wave {
-    animation: move-down-wave 6s linear infinite;
+    animation: move-down-wave 5s linear infinite;
     animation-delay: -4s;
     transform: rotate(180deg);
 }

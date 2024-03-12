@@ -1,7 +1,7 @@
 import React from "react";
 // Importing svg
 import email from "../assets/svg/email.svg";
-import phone from "../assets/svg/phone.svg";
+// import phone from "../assets/svg/phone.svg";
 import github from "../assets/svg/github.svg";
 import linkedin from "../assets/svg/linkedin.svg";
 
