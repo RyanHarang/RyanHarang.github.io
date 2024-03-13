@@ -67,8 +67,8 @@ const Card = ({ title, skills }) => {
                         className="h-10 w-10"
                       />
                       <span className="text-lg col-span-2">{skill.name}</span>
-                      <span className="col-span-3">
-                        Years Experience: {skill.years}
+                      <span className="col-span-3 truncate">
+                        Years: {skill.years}
                       </span>
                       <div className="w-full col-span-2 border border-dark-400">
                         <div
