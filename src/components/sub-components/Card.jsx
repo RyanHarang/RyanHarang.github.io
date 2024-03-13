@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+// Importing svg
+import info from "../../assets/svg/info.svg";
 
 const Card = ({ title, skills }) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -13,9 +15,16 @@ const Card = ({ title, skills }) => {
       <div className="relative mb-2">
         <div
           onClick={handleCardClick}
-          className="h-40 border dark:border-dark-200 border-dark-850 rounded-md p-4 shadow-md hover:scale-110 duration-500 ease-in-out"
+          className="h-40 border dark:border-dark-200 border-dark-850 cursor-pointer rounded-md p-4 shadow-md hover:scale-110 duration-500 ease-in-out"
         >
-          <h2 className="text-center text-lg font-semibold mb-4">{title}</h2>
+          <img
+            src={info}
+            alt="Click for more info"
+            className="h-6 w-6 absolute"
+          />
+          <h2 className="text-center text-lg font-semibold mb-4 w-9/12 mx-auto truncate">
+            {title}
+          </h2>
           <div className="duration-500 ease-in-out grid grid-cols-2 gap-2">
             {skills.slice(0, 4).map((skill, index) => (
               <img
