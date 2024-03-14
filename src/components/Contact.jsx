@@ -23,6 +23,7 @@ export default function Contact() {
                 src={github}
                 alt="https://github.com/RyanHarang"
                 title="View my Github profile"
+                loading="lazy"
                 className="lg:h-16 lg:w-16 h-10 w-10 group-hover:scale-110 transition-transform duration-500 ease-in-out"
               />
               <p className="lg:text-xl text-md px-2 group-hover:underline">
@@ -39,6 +40,7 @@ export default function Contact() {
                 src={linkedin}
                 alt="https://www.linkedin.com/in/ryan-harang-a4461320a/"
                 title="View my LinkedIn profile"
+                loading="lazy"
                 className="lg:h-16 lg:w-16 h-10 w-10 group-hover:scale-110 transition-transform duration-500 ease-in-out"
               />
               <p className="lg:text-xl text-md px-2 group-hover:underline">
@@ -56,6 +58,7 @@ export default function Contact() {
                 src={email}
                 alt="Email me"
                 title="Email me"
+                loading="lazy"
                 className="lg:h-16 lg:w-16 h-10 w-10 group-hover:scale-110 transition-transform duration-500 ease-in-out"
               />
               <p className="lg:text-xl text-sm px-2 group-hover:underline">
