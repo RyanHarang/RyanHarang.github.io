@@ -92,7 +92,8 @@ function Header() {
           leaveTo="opacity-0"
         >
           {(ref) => (
-            <div
+            <nav
+              aria-label="Navigation Menu"
               ref={(ref) => (divRef.current = ref)}
               className="absolute top-14 text-center xl:right-0 right-2 py-2 px-4 rounded bg-dark-100 dark:bg-dark-800"
             >
@@ -144,7 +145,7 @@ function Header() {
               >
                 Contact
               </Link>
-            </div>
+            </nav>
           )}
         </Transition>
       </div>
