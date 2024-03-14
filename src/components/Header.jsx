@@ -66,9 +66,19 @@ function Header() {
           className="p-1 text-lg focus:outline-none"
         >
           {isOpen ? (
-            <img src={hamburger} alt="Open menu" className="h-12 w-12" />
+            <img
+              src={line}
+              alt="Close menu"
+              title="Close menu"
+              className="h-12 w-12"
+            />
           ) : (
-            <img src={line} alt="Close menu" className="h-12 w-12" />
+            <img
+              src={hamburger}
+              alt="Open menu"
+              title="Open menu"
+              className="h-12 w-12"
+            />
           )}
         </button>
 

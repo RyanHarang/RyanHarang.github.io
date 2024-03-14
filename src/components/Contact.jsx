@@ -22,6 +22,7 @@ export default function Contact() {
               <img
                 src={github}
                 alt="https://github.com/RyanHarang"
+                title="View my Github profile"
                 className="lg:h-16 lg:w-16 h-10 w-10 group-hover:scale-110 transition-transform duration-500 ease-in-out"
               />
               <p className="lg:text-xl text-md px-2 group-hover:underline">
@@ -37,6 +38,7 @@ export default function Contact() {
               <img
                 src={linkedin}
                 alt="https://www.linkedin.com/in/ryan-harang-a4461320a/"
+                title="View my LinkedIn profile"
                 className="lg:h-16 lg:w-16 h-10 w-10 group-hover:scale-110 transition-transform duration-500 ease-in-out"
               />
               <p className="lg:text-xl text-md px-2 group-hover:underline">
@@ -53,6 +55,7 @@ export default function Contact() {
               <img
                 src={email}
                 alt="Email me"
+                title="Email me"
                 className="lg:h-16 lg:w-16 h-10 w-10 group-hover:scale-110 transition-transform duration-500 ease-in-out"
               />
               <p className="lg:text-xl text-sm px-2 group-hover:underline">
@@ -63,7 +66,8 @@ export default function Contact() {
             {/*  <a href="tel:42522982906" target="_blank" className="flex items-center group">
               <img
                 src={phone}
-                alt="Call me"
+                alt="Message me"
+                title="Message me"
                 className="lg:h-16 lg:w-16 h-10 w-10 group-hover:scale-110 transition-transform duration-500 ease-in-out"
               />
               <p className="lg:text-xl text-md px-2 group-hover:underline">425-229-8206</p>

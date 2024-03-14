@@ -34,6 +34,7 @@ export default function Project({ link, img, name, description }) {
               <img
                 src={img}
                 alt={name}
+                title="Click to visit"
                 className="object-cover object-top transition-transform duration-500 ease-in-out hover:scale-110 w-full"
               />
             </a>
