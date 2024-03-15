@@ -1,37 +1,53 @@
 @keyframes move-up-wave {
   0% {
-    transform: scaleX(100%);
+    transform: scaleX(100%) translateX(0%);
+  }
+
+  25% {
+    transform: scaleX(300%) translateX(20%);
   }
 
   50% {
-    transform: scaleX(500%);
+    transform: scaleX(500%) translateX(0%);
+  }
+
+  75% {
+    transform: scaleX(300%) translateX(-20%);
   }
 
   100% {
-    transform: scaleX(100%);
+    transform: scaleX(100%) translateX(0%);
   }
 }
 
 @keyframes move-down-wave {
   0% {
-    transform: scaleX(100%) rotate(180deg);
+    transform: scaleX(100%) rotate(180deg) translateX(0%);
+  }
+
+  25% {
+    transform: scaleX(300%) translateX(20%) rotate(180deg);
   }
 
   50% {
-    transform: scaleX(500%) rotate(180deg);
+    transform: scaleX(500%) rotate(180deg) translateX(0%);
+  }
+
+  75% {
+    transform: scaleX(300%) translateX(-20%) rotate(180deg);
   }
 
   100% {
-    transform: scaleX(100%) rotate(180deg);
+    transform: scaleX(100%) rotate(180deg) translateX(0%);
   }
 }
 
 .up-wave {
-  animation: move-up-wave 15s linear infinite;
+  animation: move-up-wave 18s linear infinite;
 }
 
 .down-wave {
-  animation: move-down-wave 15s linear infinite;
-  animation-delay: -5s;
+  animation: move-down-wave 18s linear infinite;
+  animation-delay: -6s;
   transform: rotate(180deg);
 }
