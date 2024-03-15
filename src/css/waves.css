@@ -1,37 +1,37 @@
 @keyframes move-up-wave {
-    0% {
-        transform: scaleX(230%);
-    }
+  0% {
+    transform: scaleX(100%);
+  }
 
-    50% {
-        transform: scaleX(700%);
-    }
+  50% {
+    transform: scaleX(500%);
+  }
 
-    100% {
-        transform: scaleX(230%);
-    }
+  100% {
+    transform: scaleX(100%);
+  }
 }
 
 @keyframes move-down-wave {
-    0% {
-        transform: scaleX(230%) rotate(180deg);
-    }
+  0% {
+    transform: scaleX(100%) rotate(180deg);
+  }
 
-    50% {
-        transform: scaleX(700%) rotate(180deg);
-    }
+  50% {
+    transform: scaleX(500%) rotate(180deg);
+  }
 
-    100% {
-        transform: scaleX(230%) rotate(180deg);
-    }
+  100% {
+    transform: scaleX(100%) rotate(180deg);
+  }
 }
 
 .up-wave {
-    animation: move-up-wave 5s linear infinite;
+  animation: move-up-wave 15s linear infinite;
 }
 
 .down-wave {
-    animation: move-down-wave 5s linear infinite;
-    animation-delay: -4s;
-    transform: rotate(180deg);
+  animation: move-down-wave 15s linear infinite;
+  animation-delay: -5s;
+  transform: rotate(180deg);
 }
