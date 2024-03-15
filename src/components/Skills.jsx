@@ -62,7 +62,7 @@ export default function Skills() {
   return (
     <section id="skills" className="dark:bg-dark-850 bg-dark-200 h-full">
       <div className="flex justify-center">
-        <h1 className="xl:text-6xl text-3xl">Skills</h1>
+        <h2 className="xl:text-6xl text-3xl">Skills</h2>
       </div>
       <div className="flex justify-center">
         <div className="w-full mx-9 md:grid md:grid-cols-3 md:gap-8 mt-12">

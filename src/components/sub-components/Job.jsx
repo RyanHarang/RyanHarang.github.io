@@ -28,9 +28,9 @@ export default function Job({ title, company, desc }) {
       variants={jobVariants}
     >
       <div className="flex flex-col items-center mt-5">
-        <h1 className="xl:text-4xl text-2xl my-2">
+        <h3 className="xl:text-4xl text-2xl my-2">
           {title} at {company}
-        </h1>
+        </h3>
         <p className="xl:text-2xl text-xl">{desc}</p>
       </div>
     </motion.div>

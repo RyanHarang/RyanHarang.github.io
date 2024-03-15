@@ -9,7 +9,7 @@ export default function Contact() {
   return (
     <section id="contact" className="dark:bg-dark-850 bg-dark-200">
       <div className="flex justify-center">
-        <h1 className="text-4xl">Contact me</h1>
+        <h2 className="text-4xl">Contact me</h2>
       </div>
       <div className="xl:mx-64 lg:mx-48 md:mx-20 sm:mx-12 mx-1 mt-3 grid grid-cols-2 justify-items-center">
         <ul className="grid grid-cols-1 gap-2">

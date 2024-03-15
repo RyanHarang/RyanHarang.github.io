@@ -52,9 +52,9 @@ const Card = ({ title, skills }) => {
                 transition={{ duration: 0.3 }}
                 className="dark:bg-dark-950 bg-dark-150 border border-dark-200 w-full rounded-md p-4 shadow-md"
               >
-                <h2 className="text-center text-xl font-semibold mb-4">
+                <h3 className="text-center text-xl font-semibold mb-4">
                   {title}
-                </h2>
+                </h3>
                 <ul className="mt-2 grid grid-cols-2 gap-4">
                   {skills.map((skill, index) => (
                     <li
@@ -70,6 +70,10 @@ const Card = ({ title, skills }) => {
                       <span className="col-span-3 truncate">
                         Years: {skill.years}
                       </span>
+                      {/* <progress
+                        max="100"
+                        value={`(${skill.years} + 3) / 8 * 100`}
+                      ></progress> */}
                       <div className="w-full col-span-2 border border-dark-400">
                         <div
                           className="h-2 w-full bg-theme-fill wave-animation"
