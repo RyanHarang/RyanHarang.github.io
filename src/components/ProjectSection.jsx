@@ -43,7 +43,7 @@ export default function ProjectSection() {
   ];
 
   return (
-    <>
+    <section>
       <div id="projects" className="flex justify-center">
         <h1 className="xl:text-6xl text-3xl">Projects</h1>
       </div>
@@ -59,6 +59,6 @@ export default function ProjectSection() {
           />
         ))}
       </div>
-    </>
+    </section>
   );
 }

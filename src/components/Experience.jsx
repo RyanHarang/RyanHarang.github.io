@@ -4,7 +4,7 @@ import Job from "./sub-components/Job";
 
 export default function Experience() {
   return (
-    <div className="flex flex-col items-center mb-28 mx-2">
+    <section className="flex flex-col items-center mb-28 mx-2">
       <h1 className="flex justify-center xl:text-6xl text-4xl">Experience</h1>
       <div id="experience" className="xl:w-9/12 w-11/12 flex flex-col">
         <Job
@@ -44,6 +44,6 @@ export default function Experience() {
             service."
         />
       </div>
-    </div>
+    </section>
   );
 }

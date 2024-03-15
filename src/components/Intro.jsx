@@ -32,7 +32,7 @@ export default function Intro() {
   };
 
   return (
-    <div id="intro" className="flex justify-center mb-48">
+    <section id="intro" className="flex justify-center mb-48">
       <div className="grid grid-cols-2 md:gap-10 gap-2">
         <div className="flex flex-col items-center">
           <h1 className="xl:text-6xl md:text-5xl text-3xl mb-6">Ryan Harang</h1>
@@ -110,6 +110,6 @@ export default function Intro() {
           </Link>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
