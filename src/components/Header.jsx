@@ -38,7 +38,11 @@ function Header() {
         Ryan Harang
       </h1>
       <div className="flex items-center">
-        <button onClick={toggleMode} className="group mr-5 focus:outline-none">
+        <button
+          onClick={toggleMode}
+          className="group mr-5 focus:outline-none"
+          aria-label="Toggle mode"
+        >
           {darkMode ? (
             <div>
               <img
