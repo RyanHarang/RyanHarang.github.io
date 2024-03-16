@@ -31,6 +31,7 @@ const Card = ({ title, skills }) => {
                 key={index}
                 src={skill.icon}
                 alt={skill.name}
+                title={skill.name}
                 className="h-10 w-10 mx-auto"
               />
             ))}
@@ -64,16 +65,13 @@ const Card = ({ title, skills }) => {
                       <img
                         src={skill.icon}
                         alt={skill.name}
+                        title={skill.name}
                         className="h-10 w-10"
                       />
                       <span className="text-lg col-span-2">{skill.name}</span>
                       <span className="col-span-3 truncate">
                         Years: {skill.years}
                       </span>
-                      {/* <progress
-                        max="100"
-                        value={`(${skill.years} + 3) / 8 * 100`}
-                      ></progress> */}
                       <div className="w-full col-span-2 border border-dark-400">
                         <div
                           className="h-2 w-full bg-theme-fill wave-animation"
@@ -88,6 +86,7 @@ const Card = ({ title, skills }) => {
                 <div className="flex justify-center">
                   <button
                     onClick={handleCardClick}
+                    aria-lable="Close card"
                     className="text-center hover:scale-90 duration-500 ease-in-out text-lg mt-4"
                   >
                     Close
