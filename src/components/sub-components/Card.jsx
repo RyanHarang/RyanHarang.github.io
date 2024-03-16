@@ -44,7 +44,7 @@ const Card = ({ title, skills }) => {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 1 }}
               transition={{ duration: 0.3 }}
-              className="absolute inset-0 flex justify-center items-center z-10 "
+              className="absolute inset-0 flex justify-center items-center z-10"
             >
               <motion.div
                 initial={{ opacity: 0, scale: 1 }}
