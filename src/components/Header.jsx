@@ -48,6 +48,7 @@ function Header() {
               <img
                 src={dark}
                 alt="Dark mode"
+                aria-labelledby="mode-tip"
                 className="h-9 w-9 transition-all duration-500 ease-in-out"
               />
             </div>
@@ -56,11 +57,15 @@ function Header() {
               <img
                 src={light}
                 alt="Light mode"
+                aria-labelledby="mode-tip"
                 className="h-9 w-9 transition-all duration-500 ease-in-out"
               />
             </div>
           )}
-          <span className="absolute bottom-0 transform sm:-translate-x-36 -translate-x-28 mb-4 opacity-0 group-hover:opacity-100 dark:bg-dark-700 bg-dark-200 sm:text-lg text-sm px-2 py-1 rounded-md">
+          <span
+            id="mode-tip"
+            className="absolute bottom-0 transform sm:-translate-x-36 -translate-x-28 mb-4 opacity-0 group-hover:opacity-100 dark:bg-dark-700 bg-dark-200 sm:text-lg text-sm px-2 py-1 rounded-md"
+          >
             {darkMode ? "Light Mode" : "Dark Mode"}
           </span>
         </button>
