@@ -40,7 +40,7 @@ function Header() {
       <div className="flex items-center">
         <button
           onClick={toggleMode}
-          className="group mr-5 focus:outline-none"
+          className="group mr-5 "
           aria-label="Toggle mode"
         >
           {darkMode ? (
@@ -70,10 +70,7 @@ function Header() {
           </span>
         </button>
 
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="p-1 text-lg focus:outline-none"
-        >
+        <button onClick={() => setIsOpen(!isOpen)} className="p-1 text-lg">
           {isOpen ? (
             <img
               src={line}
@@ -110,6 +107,8 @@ function Header() {
                 className="cursor-pointer text-2xl block py-1 hover:text-dark-400 dark:hover:text-dark-400"
                 onClick={() => setIsOpen(!isOpen)}
                 activeClass="active"
+                role="button"
+                tabIndex="0"
                 to="intro"
                 spy={true}
                 smooth={true}
@@ -122,6 +121,8 @@ function Header() {
                 className="cursor-pointer text-2xl block py-1 hover:text-dark-400 dark:hover:text-dark-400"
                 onClick={() => setIsOpen(!isOpen)}
                 activeClass="active"
+                role="button"
+                tabIndex="0"
                 to="about"
                 spy={true}
                 smooth={true}
@@ -134,6 +135,8 @@ function Header() {
                 className="cursor-pointer text-2xl block py-1 hover:text-dark-400 dark:hover:text-dark-400"
                 onClick={() => setIsOpen(!isOpen)}
                 activeClass="active"
+                role="button"
+                tabIndex="0"
                 to="projects"
                 spy={true}
                 smooth={true}
@@ -146,6 +149,8 @@ function Header() {
                 className="cursor-pointer text-2xl block py-1 hover:text-dark-400 dark:hover:text-dark-400"
                 onClick={() => setIsOpen(!isOpen)}
                 activeClass="active"
+                role="button"
+                tabIndex="0"
                 to="contact"
                 spy={true}
                 smooth={true}

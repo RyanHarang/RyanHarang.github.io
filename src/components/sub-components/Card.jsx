@@ -15,6 +15,8 @@ const Card = ({ title, skills }) => {
       <div className="relative mb-2">
         <div
           onClick={handleCardClick}
+          role="button"
+          tabIndex="0"
           className="h-40 border dark:border-dark-200 border-dark-850 cursor-pointer rounded-md p-4 shadow-md hover:scale-110 duration-500 ease-in-out"
         >
           <img

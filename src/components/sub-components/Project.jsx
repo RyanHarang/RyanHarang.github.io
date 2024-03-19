@@ -30,7 +30,7 @@ export default function Project({ link, img, name, description }) {
         <h3 className="text-center xl:text-3xl text-2xl mb-1">{name}</h3>
         <motion.div variants={projVariants}>
           <div className="lg:h-128 md:h-96 w-full overflow-hidden">
-            <a href={link} target="_blank">
+            <a href={link} target="_blank" role="button" tabIndex="0">
               <img
                 src={img}
                 alt={name}

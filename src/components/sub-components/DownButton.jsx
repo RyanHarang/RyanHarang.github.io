@@ -6,6 +6,8 @@ export default function DownButton() {
     <Link
       className="text-theme-fill border-2 rounded-full text-4xl p-5 h-12 w-8 flex place-content-center items-center cursor-pointer transition-all duration-500 ease-in-out hover:bg-theme-hover dark:hover:bg-theme-hover hover:translate-y-2"
       activeClass="active"
+      role="button"
+      tabIndex="0"
       to="about"
       spy={true}
       smooth={true}
