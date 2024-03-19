@@ -5,6 +5,8 @@ export default function UpWave() {
     <>
       <svg
         className="md:bg-repeat bg-no-repeat up-wave w-full dark:fill-dark-850 fill-dark-200"
+        alt="Wave effect"
+        aria-label="Wave effect"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 200"
       >
