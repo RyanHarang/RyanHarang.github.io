@@ -91,6 +91,8 @@ export default function Intro() {
             onMouseEnter={handleContactHover}
             onMouseLeave={handleContactHover}
             activeClass="active"
+            role="button"
+            tabIndex="0"
             to="contact"
             spy={true}
             smooth={true}
