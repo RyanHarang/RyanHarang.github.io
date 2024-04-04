@@ -17,6 +17,7 @@ export default function Contact() {
             <a
               href="https://github.com/RyanHarang"
               target="_blank"
+              rel="noopener"
               className="flex items-center group"
             >
               <img
@@ -36,6 +37,7 @@ export default function Contact() {
             <a
               href="https://www.linkedin.com/in/ryan-harang-a4461320a/"
               target="_blank"
+              rel="noopener"
               className="flex items-center group"
             >
               <img
@@ -56,6 +58,7 @@ export default function Contact() {
             <a
               href="mailto:harangryan@gmail.com"
               target="_blank"
+              rel="noopener"
               className="flex items-center group"
             >
               <img
@@ -75,6 +78,7 @@ export default function Contact() {
             <a
               href="tel:42522982906"
               target="_blank"
+              rel="noopener"
               className="flex items-center group"
             >
               <img
