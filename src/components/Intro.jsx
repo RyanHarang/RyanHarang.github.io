@@ -48,6 +48,7 @@ export default function Intro() {
           <a
             href="https://github.com/RyanHarang"
             target="_blank"
+            rel="noopener"
             className="border-2 rounded sm:w-64 w-44 h-16 mb-8 flex items-center overflow-hidden duration-1000 hover:bg-theme-hover"
             onMouseEnter={handleGithubHover}
             onMouseLeave={handleGithubHover}
@@ -68,6 +69,7 @@ export default function Intro() {
           <a
             href="https://www.linkedin.com/in/ryan-harang-a4461320a/"
             target="_blank"
+            rel="noopener"
             className="border-2 rounded sm:w-64 w-44 h-16 mb-8 flex items-center overflow-hidden duration-1000 hover:bg-theme-hover"
             onMouseEnter={handleLinkedinHover}
             onMouseLeave={handleLinkedinHover}
