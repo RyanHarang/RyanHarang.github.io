@@ -15,6 +15,7 @@ import mgdb from "../assets/svg/skills/mgdb.svg";
 import node from "../assets/svg/skills/node.svg";
 import rct from "../assets/svg/skills/rct.svg";
 import sql from "../assets/svg/skills/sql.svg";
+import djan from "../assets/svg/skills/djan.svg";
 import tlwd from "../assets/svg/skills/tlwd.svg";
 import vite from "../assets/svg/skills/vite.svg";
 
@@ -31,7 +32,8 @@ export default function Skills() {
     { name: "MongoDB", icon: mgdb, years: 1 },
     { name: "Node.js", icon: node, years: 1 },
     { name: "Express", icon: expr, years: 1 },
-    { name: "Tailwind CSS", icon: tlwd, years: 1 },
+    { name: "Django", icon: djan, years: 1 },
+    { name: "Tailwind", icon: tlwd, years: 1 },
     { name: "Vite", icon: vite, years: 1.5 },
     { name: "SQL", icon: sql, years: 1 },
     { name: "AWS", icon: aws, years: 1 },
@@ -47,7 +49,8 @@ export default function Skills() {
       "Express",
       "MongoDB",
       "SQL",
-      "Tailwind CSS",
+      "Django",
+      "Tailwind",
       "Vite",
     ].includes(skill.name)
   );
