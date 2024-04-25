@@ -33,11 +33,9 @@ export default function Header({ toggleSidebar, isSidebarOpen }) {
   return (
     <header
       id="header"
-      className="bg-dark-150 dark:bg-dark-800 py-4 sm:px-8 px-5 flex justify-between items-center fixed top-0 w-full z-50 h-16"
+      className="bg-dark-150 dark:bg-dark-800 py-4 sm:px-6 px-5 flex justify-between items-center fixed top-0 w-full z-50 h-16"
     >
-      <h1 className="xl:text-3xl sm:text-xl text-lg font-semibold">
-        Ryan Harang
-      </h1>
+      <h1 className="xl:text-3xl text-xl font-semibold">Ryan Harang</h1>
       <div className="flex items-center">
         <button
           onClick={toggleMode}
@@ -65,7 +63,7 @@ export default function Header({ toggleSidebar, isSidebarOpen }) {
           )}
           <span
             id="mode-tip"
-            className="absolute bottom-0 transform sm:-translate-x-36 -translate-x-28 mb-4 opacity-0 group-hover:opacity-100 dark:bg-dark-700 bg-dark-200 sm:text-lg text-sm px-1 py-1 rounded-md"
+            className="absolute w-28 bottom-0 transform -translate-x-36 mb-4 opacity-0 group-hover:opacity-100 dark:bg-dark-700 bg-dark-200 text-lg px-1 py-1 rounded-md"
           >
             {darkMode ? "Light Mode" : "Dark Mode"}
           </span>
