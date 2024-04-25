@@ -44,7 +44,6 @@ export default function Skills() {
       "React",
       "HTML",
       "CSS",
-      "JavaScript",
       "Node.js",
       "Express",
       "MongoDB",
@@ -55,7 +54,7 @@ export default function Skills() {
     ].includes(skill.name)
   );
   const languageSkills = skills.filter((skill) =>
-    ["Java", "Python", "C"].includes(skill.name)
+    ["Java", "JavaScript", "Python", "C"].includes(skill.name)
   );
   const generalSkills = skills.filter(
     (skill) =>
