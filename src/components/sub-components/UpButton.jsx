@@ -10,7 +10,7 @@ export default function UpButton() {
 
   return (
     <button
-      className="fixed right-10 bottom-6 text-theme-fill border-2 rounded-full text-4xl p-5 h-12 w-8 flex place-content-center items-center cursor-pointer transition-all duration-500 ease-in-out hover:bg-theme-hover dark:hover:bg-theme-hover hover:-translate-y-2"
+      className="z-50 fixed right-10 bottom-6 text-theme-fill border-2 rounded-full text-4xl p-5 h-12 w-8 flex place-content-center items-center cursor-pointer transition-all duration-500 ease-in-out hover:bg-theme-hover dark:hover:bg-theme-hover hover:-translate-y-2"
       onClick={handleScrollToTop}
       aria-label="Scroll to top"
     >
