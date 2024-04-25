@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 
 // Importing svg
@@ -8,6 +8,48 @@ import code from "../assets/svg/code.svg";
 import message from "../assets/svg/message.svg";
 
 export default function Sidebar({ isOpen }) {
+  const [activeLink, setActiveLink] = useState("intro");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Get current scroll position
+      const scrollPosition = window.scrollY;
+
+      // Define sections and corresponding offsets
+      const sections = [
+        { id: "intro", offset: -200 },
+        { id: "about", offset: -140 },
+        { id: "projects", offset: -140 },
+        { id: "contact", offset: -700 },
+      ];
+
+      // Find section currently in view
+      let inViewSection = null;
+      for (let i = 0; i < sections.length; i++) {
+        const section = sections[i];
+        if (
+          scrollPosition >=
+          document.getElementById(section.id).offsetTop + section.offset
+        ) {
+          inViewSection = section.id;
+        } else {
+          break;
+        }
+      }
+
+      // Update active link
+      setActiveLink(inViewSection);
+    };
+
+    // Attach scroll event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Remove scroll event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div
       className={`h-full sm:block hidden fixed top-16 right-0 z-40 ${
@@ -23,48 +65,61 @@ export default function Sidebar({ isOpen }) {
           <li className="mb-10">
             <Link
               to="intro"
-              spy={true}
+              role="button"
               smooth={true}
               offset={-200}
-              duration={500}
-              className="block px-6 py-3 cursor-pointer"
+              duration={300}
+              className={`block px-6 py-3 cursor-pointer ${
+                activeLink === "intro" &&
+                "border-theme-hover border-2 rounded-full"
+              }`}
             >
-              <img src={home} alt="Home" />
+              <img src={home} alt="Home" title="Home" />
             </Link>
           </li>
           <li className="mb-10">
             <Link
               to="about"
-              spy={true}
+              role="button"
               smooth={true}
               offset={-90}
-              duration={500}
-              className="block px-6 py-3 cursor-pointer"
+              duration={300}
+              className={`block px-6 py-3 cursor-pointer ${
+                activeLink === "about" &&
+                "border-theme-hover border-2 rounded-full"
+              }`}
             >
-              <img src={user} alt="About" />
+              <img src={user} alt="About" title="About" />
             </Link>
           </li>
           <li className="mb-10">
             <Link
               to="projects"
-              spy={true}
+              role="button"
               smooth={true}
               offset={-90}
-              duration={500}
-              className="block px-6 py-3 cursor-pointer"
+              duration={300}
+              className={`block px-6 py-3 cursor-pointer ${
+                activeLink === "projects" &&
+                "border-theme-hover border-2 rounded-full"
+              }`}
             >
-              <img src={code} alt="Projects" />
+              <img src={code} alt="Projects" title="Projects" />
             </Link>
           </li>
           <li className="mb-10">
             <Link
               to="contact"
-              spy={true}
+              role="button"
               smooth={true}
-              duration={500}
-              className="block px-6 py-3 cursor-pointer"
+              offset={-300}
+              duration={300}
+              className={`block px-6 py-3 cursor-pointer ${
+                activeLink === "contact" &&
+                "border-theme-hover border-2 rounded-full"
+              }`}
             >
-              <img src={message} alt="Contact" />
+              <img src={message} alt="Contact" title="Contact" />
             </Link>
           </li>
         </ul>
