@@ -63,7 +63,7 @@ export default function Skills() {
   );
 
   return (
-    <section id="skills" className="dark:bg-dark-850 bg-dark-200 h-full">
+    <section id="skills" className="dark:bg-dark-850 bg-dark-200">
       <div className="flex justify-center">
         <h2 className="xl:text-6xl text-3xl">Skills</h2>
       </div>
