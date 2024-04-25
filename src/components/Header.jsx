@@ -116,11 +116,9 @@ export default function Header({ toggleSidebar, isSidebarOpen }) {
               <Link
                 className="cursor-pointer text-2xl block py-1 hover:text-dark-400 dark:hover:text-dark-400"
                 onClick={() => setIsOpen(!isOpen)}
-                activeClass="active"
                 role="button"
                 tabIndex="0"
                 to="intro"
-                spy={true}
                 smooth={true}
                 offset={-300}
                 duration={500}
@@ -130,11 +128,9 @@ export default function Header({ toggleSidebar, isSidebarOpen }) {
               <Link
                 className="cursor-pointer text-2xl block py-1 hover:text-dark-400 dark:hover:text-dark-400"
                 onClick={() => setIsOpen(!isOpen)}
-                activeClass="active"
                 role="button"
                 tabIndex="0"
                 to="about"
-                spy={true}
                 smooth={true}
                 offset={-90}
                 duration={500}
@@ -144,11 +140,9 @@ export default function Header({ toggleSidebar, isSidebarOpen }) {
               <Link
                 className="cursor-pointer text-2xl block py-1 hover:text-dark-400 dark:hover:text-dark-400"
                 onClick={() => setIsOpen(!isOpen)}
-                activeClass="active"
                 role="button"
                 tabIndex="0"
                 to="projects"
-                spy={true}
                 smooth={true}
                 offset={-90}
                 duration={500}
@@ -158,11 +152,9 @@ export default function Header({ toggleSidebar, isSidebarOpen }) {
               <Link
                 className="cursor-pointer text-2xl block py-1 hover:text-dark-400 dark:hover:text-dark-400"
                 onClick={() => setIsOpen(!isOpen)}
-                activeClass="active"
                 role="button"
                 tabIndex="0"
                 to="contact"
-                spy={true}
                 smooth={true}
                 offset={100}
                 duration={500}
