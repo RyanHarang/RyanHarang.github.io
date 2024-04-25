@@ -65,7 +65,7 @@ export default function Header({ toggleSidebar, isSidebarOpen }) {
           )}
           <span
             id="mode-tip"
-            className="absolute bottom-0 transform sm:-translate-x-36 -translate-x-28 mb-4 opacity-0 group-hover:opacity-100 dark:bg-dark-700 bg-dark-200 sm:text-lg text-sm px-2 py-1 rounded-md"
+            className="absolute bottom-0 transform sm:-translate-x-36 -translate-x-28 mb-4 opacity-0 group-hover:opacity-100 dark:bg-dark-700 bg-dark-200 sm:text-lg text-sm px-1 py-1 rounded-md"
           >
             {darkMode ? "Light Mode" : "Dark Mode"}
           </span>
