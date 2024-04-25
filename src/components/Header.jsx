@@ -8,7 +8,7 @@ import light from "../assets/svg/light.svg";
 import hamburger from "../assets/svg/hamburger.svg";
 import line from "../assets/svg/line.svg";
 
-function Header() {
+export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(
     () => localStorage.getItem("darkMode") === "true"
@@ -166,5 +166,3 @@ function Header() {
     </header>
   );
 }
-
-export default Header;
