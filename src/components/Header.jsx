@@ -70,7 +70,10 @@ export default function Header() {
           </span>
         </button>
 
-        <button onClick={() => setIsOpen(!isOpen)} className="p-1 text-lg">
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="sm:hidden p-1 text-lg"
+        >
           {isOpen ? (
             <img
               src={line}
@@ -89,6 +92,7 @@ export default function Header() {
         </button>
 
         <Transition
+          className="sm:hidden"
           show={isOpen}
           enter="transition duration-200 ease-out"
           enterFrom="opacity-0"
