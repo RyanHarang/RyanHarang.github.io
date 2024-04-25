@@ -26,7 +26,7 @@ export default function App() {
     <>
       <div className="flex overflow-hidden bg-dark-100 dark:bg-dark-900 duration-300 text-dark-800 dark:text-dark-100">
         <Header toggleSidebar={toggleSidebar} isSidebarOpen={isSidebarOpen} />
-        <div className={`flex-grow mt-32 ${isSidebarOpen && "mr-20"}`}>
+        <div className={`flex-grow mt-32 sm:${isSidebarOpen && "mr-20"}`}>
           <Intro />
           <UpWave />
           <About />
