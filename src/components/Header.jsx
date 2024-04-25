@@ -113,7 +113,7 @@ export default function Header({ toggleSidebar, isSidebarOpen }) {
             <nav
               aria-label="Navigation Menu"
               ref={(ref) => (divRef.current = ref)}
-              className="absolute top-14 text-center lg:w-32 w-full right-0 py-2 px-4 rounded bg-dark-100 dark:bg-dark-800"
+              className="opacity-80 absolute top-14 text-center lg:w-32 w-full right-0 py-2 px-4 rounded bg-dark-150 dark:bg-dark-800"
             >
               <Link
                 className="cursor-pointer text-2xl block py-1 hover:text-dark-400 dark:hover:text-dark-400"
