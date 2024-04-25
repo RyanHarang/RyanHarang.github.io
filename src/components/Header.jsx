@@ -5,10 +5,11 @@ import { Link } from "react-scroll";
 // Importing svg
 import dark from "../assets/svg/dark.svg";
 import light from "../assets/svg/light.svg";
+import open from "../assets/svg/open.svg";
 import hamburger from "../assets/svg/hamburger.svg";
 import line from "../assets/svg/line.svg";
 
-export default function Header() {
+export default function Header({ toggleSidebar, isSidebarOpen }) {
   const [isOpen, setIsOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(
     () => localStorage.getItem("darkMode") === "true"
@@ -32,7 +33,7 @@ export default function Header() {
   return (
     <header
       id="header"
-      className="bg-dark-150 dark:bg-dark-800 text-white py-4 sm:px-8 px-5 flex justify-between items-center fixed top-0 w-full z-50 h-16 opacity-80"
+      className="bg-dark-150 dark:bg-dark-800 py-4 sm:px-8 px-5 flex justify-between items-center fixed top-0 w-full z-50 h-16"
     >
       <h1 className="xl:text-3xl sm:text-xl text-lg font-semibold">
         Ryan Harang
@@ -69,7 +70,14 @@ export default function Header() {
             {darkMode ? "Light Mode" : "Dark Mode"}
           </span>
         </button>
-
+        <button
+          onClick={() => toggleSidebar()}
+          className={`transition-all duration-400 sm:block hidden ${
+            !isSidebarOpen && "rotate-180"
+          }`}
+        >
+          <img src={open} alt="Toggle sidebar" className="w-10 h-8" />
+        </button>
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="sm:hidden p-1 text-lg"
@@ -116,7 +124,7 @@ export default function Header() {
                 to="intro"
                 spy={true}
                 smooth={true}
-                offset={-500}
+                offset={-300}
                 duration={500}
               >
                 Home
@@ -144,7 +152,7 @@ export default function Header() {
                 to="projects"
                 spy={true}
                 smooth={true}
-                offset={-100}
+                offset={-90}
                 duration={500}
               >
                 Projects

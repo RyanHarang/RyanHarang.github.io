@@ -24,24 +24,25 @@ export default function App() {
 
   return (
     <>
-      <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
-      <div className="overflow-hidden bg-dark-100 dark:bg-dark-900 duration-500 text-dark-800 dark:text-dark-100">
-        <Header />
-        <hr className="md:py-32 py-20" />
-        <Intro />
-        <UpWave />
-        <About />
-        <DownWave />
-        <ProjectSection />
-        <UpWave />
-        <Skills />
-        <DownWave />
-        <Experience />
-        <UpWave />
-        <Contact />
-        <DownWave />
-        <UpButton />
-        <Footer />
+      <div className="flex overflow-hidden bg-dark-100 dark:bg-dark-900 duration-300 text-dark-800 dark:text-dark-100">
+        <Header toggleSidebar={toggleSidebar} isSidebarOpen={isSidebarOpen} />
+        <div className={`flex-grow mt-32 ${isSidebarOpen && "mr-20"}`}>
+          <Intro />
+          <UpWave />
+          <About />
+          <DownWave />
+          <ProjectSection />
+          <UpWave />
+          <Skills />
+          <DownWave />
+          <Experience />
+          <UpWave />
+          <Contact />
+          <DownWave />
+          {/* <UpButton /> */}
+          <Footer />
+        </div>
+        <Sidebar isOpen={isSidebarOpen} />
       </div>
     </>
   );
