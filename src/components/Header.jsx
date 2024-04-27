@@ -109,7 +109,7 @@ export default function Header({ toggleSidebar, isSidebarOpen }) {
         >
           {(ref) => (
             <nav
-              aria-label="Navigation Menu"
+              aria-label="Navigation menu"
               ref={(ref) => (divRef.current = ref)}
               className="opacity-80 absolute top-14 text-center lg:w-32 w-full right-0 py-2 px-4 rounded bg-dark-150 dark:bg-dark-800"
             >
