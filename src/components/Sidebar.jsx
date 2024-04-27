@@ -15,7 +15,7 @@ export default function Sidebar({ isOpen }) {
       // Get current scroll position
       const scrollPosition = window.scrollY;
 
-      // Define sections and corresponding offsets
+      // Define sections and offsets
       const sections = [
         { id: "intro", offset: -200 },
         { id: "about", offset: -140 },
@@ -44,7 +44,7 @@ export default function Sidebar({ isOpen }) {
     // Attach scroll event listener
     window.addEventListener("scroll", handleScroll);
 
-    // Remove scroll event listener on component unmount
+    // Remove scroll event listener on unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -60,6 +60,7 @@ export default function Sidebar({ isOpen }) {
         className={`h-full text-dark-800 dark:text-dark-100 ${
           isOpen ? "w-20" : "w-0"
         }`}
+        aria-label="Navigation sidebar"
       >
         <ul className="flex flex-col justify-evenly h-full">
           <li className="mb-10">
