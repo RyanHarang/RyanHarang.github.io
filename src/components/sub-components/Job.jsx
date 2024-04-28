@@ -27,8 +27,8 @@ export default function Job({ title, company, desc }) {
       viewport={{ once: true, amount: 0.4 }}
       variants={jobVariants}
     >
-      <div className="flex flex-col items-center mt-5">
-        <h3 className="xl:text-4xl text-2xl my-2">
+      <div className="flex flex-col mt-5">
+        <h3 className="xl:text-3xl text-2xl my-2">
           {title} at {company}
         </h3>
         <p className="xl:text-2xl text-xl">{desc}</p>
