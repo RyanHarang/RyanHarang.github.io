@@ -9,7 +9,7 @@ export default function About() {
   return (
     <section id="about" className="dark:bg-dark-850 bg-dark-200 px-2">
       <div className="flex justify-center">
-        <h2 className="xl:text-6xl text-3xl">About Me</h2>
+        <h2 className="xl:text-6xl md:text-5xl text-3xl">About Me</h2>
       </div>
       <div className="flex justify-center">
         <div className="md:grid md:grid-cols-2 md:gap-8 sm:gap-2 md:mt-12">
@@ -18,6 +18,7 @@ export default function About() {
               src={western}
               alt="Western Washington University"
               title="Western Washington University"
+              className="max-h-96"
             />
           </div>
           <div className="flex flex-col items-center xl:w-128">

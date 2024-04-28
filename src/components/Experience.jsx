@@ -5,7 +5,9 @@ import Job from "./sub-components/Job";
 export default function Experience() {
   return (
     <section className="flex flex-col items-center mb-28 mx-2">
-      <h2 className="flex justify-center xl:text-6xl text-4xl">Experience</h2>
+      <h2 className="flex justify-center xl:text-6xl md:text-5xl text-3xl">
+        Experience
+      </h2>
       <div id="experience" className="xl:w-9/12 w-11/12 flex flex-col">
         <Job
           title="CS Teaching Assistant"
