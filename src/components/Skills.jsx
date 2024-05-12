@@ -22,12 +22,12 @@ import vite from "../assets/svg/skills/vite.svg";
 export default function Skills() {
   const skills = [
     { name: "React", icon: rct, years: 2 },
-    { name: "HTML", icon: html, years: 2.5 },
-    { name: "CSS", icon: css, years: 2.5 },
+    { name: "HTML", icon: html, years: 3 },
+    { name: "CSS", icon: css, years: 3 },
     { name: "Java", icon: java, years: 4 },
     { name: "JavaScript", icon: js, years: 2 },
-    { name: "Python", icon: pyth, years: 1.5 },
-    { name: "C", icon: c, years: 2 },
+    { name: "Python", icon: pyth, years: 2 },
+    { name: "C", icon: c, years: 3 },
     { name: "Linux", icon: lnx, years: 3 },
     { name: "MongoDB", icon: mgdb, years: 1 },
     { name: "Node.js", icon: node, years: 1 },
