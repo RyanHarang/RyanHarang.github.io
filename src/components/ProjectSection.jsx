@@ -2,12 +2,12 @@ import React from "react";
 // Importing Components
 import Project from "./sub-components/Project";
 // Importing Images
-import RatingSite from "../assets/images/game-rating.png";
-import WeatherApp from "../assets/images/weather-app.png";
-import PenteApp from "../assets/images/pente.png";
-import EdgeDetector from "../assets/images/edgeDetector.png";
-import Deadwood from "../assets/images/deadwood.png";
-import Interpreter from "../assets/images/parser.png";
+import RatingSite from "../assets/images/game-rating.webp";
+import WeatherApp from "../assets/images/weather-app.webp";
+import PenteApp from "../assets/images/pente.webp";
+import EdgeDetector from "../assets/images/edgeDetector.webp";
+import Deadwood from "../assets/images/deadwood.webp";
+import Interpreter from "../assets/images/parser.webp";
 
 export default function ProjectSection() {
   const projects = [
