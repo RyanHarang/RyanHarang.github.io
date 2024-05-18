@@ -61,7 +61,6 @@ export default function ProjectSection() {
             name={project.name}
             link={project.link}
             img={project.img}
-            loading="lazy"
             description={project.desc}
           />
         ))}

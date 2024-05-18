@@ -4,18 +4,18 @@ import { motion } from "framer-motion";
 export default function Project({ link, img, name, description }) {
   const projVariants = {
     offscreen: {
-      y: 300,
-      rotate: -20,
+      // y: 300,
+      // rotate: -20,
       opacity: 0,
     },
     onscreen: {
-      y: 0,
-      rotate: 0,
+      // y: 0,
+      // rotate: 0,
       opacity: 1,
       transition: {
-        type: "spring",
-        bounce: 0.3,
-        duration: 2.0,
+        // type: "spring",
+        // bounce: 0.3,
+        duration: 0.6,
       },
     },
   };
@@ -40,6 +40,7 @@ export default function Project({ link, img, name, description }) {
               <img
                 src={img}
                 alt={name}
+                loading="lazy"
                 title="Click to visit"
                 className="object-cover object-top transition-transform duration-500 ease-in-out hover:scale-110 w-full"
               />
