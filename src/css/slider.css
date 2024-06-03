@@ -1,0 +1,17 @@
+.slider-container {
+    width: 35vw;
+    max-width: 300px;
+}
+
+.slider,
+.arrow {
+    transition: all 0.6s ease-in-out;
+}
+
+.slider-container:hover .slider {
+    transform: translateX(calc(min(35.4vw, 303px) - 4rem));
+}
+
+.slider-container:hover .arrow {
+    transform: translateX(40px);
+}
