@@ -54,7 +54,7 @@ export default function ProjectSection() {
       <div id="projects" className="flex justify-center">
         <h2 className="xl:text-6xl md:text-5xl text-3xl">Projects</h2>
       </div>
-      <div className="p-2 xl:h-196 lg:h-164 h-128 overflow-y-scroll overflow-x-hidden bg-gradient-radial border border-1 rounded-md dark:from-dark-700 dark:to-dark-900 from-dark-150 to-dark-100 flex flex-col xl:mx-64 lg:mx-32 md:mx-16 sm:mx-8 mx-4 items-center mt-10 md:mb-28">
+      <div className="p-2 max-h-screen h-128 overflow-y-scroll overflow-x-hidden bg-gradient-radial border border-1 rounded-md dark:from-dark-700 dark:to-dark-900 from-dark-150 to-dark-100 flex flex-col lg:mx-32 md:mx-16 sm:mx-8 mx-4 items-center mt-10 md:mb-28">
         {projects.map((project, index) => (
           <Project
             key={index}
