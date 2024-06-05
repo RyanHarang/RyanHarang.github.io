@@ -13,5 +13,5 @@
 }
 
 .slider-container:hover .arrow {
-    transform: translateX(40px);
+    transform: translateX(45px);
 }
