@@ -62,7 +62,7 @@ export default function Sidebar({ isOpen }) {
         }`}
         aria-label="Navigation sidebar"
       >
-        <ul className="flex flex-col justify-evenly h-full">
+        <menu className="flex flex-col justify-evenly h-full">
           <li className="mb-10">
             <Link
               to="intro"
@@ -123,7 +123,7 @@ export default function Sidebar({ isOpen }) {
               <img src={message} alt="Contact" title="Contact" />
             </Link>
           </li>
-        </ul>
+        </menu>
       </nav>
     </div>
   );
