@@ -5,7 +5,6 @@ import Project from "./sub-components/Project";
 import RatingSite from "../assets/images/game-rating.webp";
 import WeatherApp from "../assets/images/weather-app.webp";
 import PenteApp from "../assets/images/pente.webp";
-import EdgeDetector from "../assets/images/edgeDetector.webp";
 import Deadwood from "../assets/images/deadwood.webp";
 import Interpreter from "../assets/images/parser.webp";
 
@@ -28,12 +27,6 @@ export default function ProjectSection() {
       link: "https://pente-31410.web.app/",
       img: PenteApp,
       desc: "I first implemented Pente in Java as a text-user-interface, and later recreated the game as a graphical-user-interface through React. The application is now deployed via Firebase.",
-    },
-    {
-      name: "Edge Detector",
-      link: "https://github.com/RyanHarang/Image-Edge-Detector/tree/main",
-      img: EdgeDetector,
-      desc: "This project utilizes a technique called edge detection to locate discontinuities in images, specifically for P6 images. My program applies the Laplacian filter to images, enhancing and highlighting edges.",
     },
     {
       name: "Deadwood",
