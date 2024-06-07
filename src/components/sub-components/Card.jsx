@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 // Importing svg
 import info from "../../assets/svg/info.svg";
 
-const Card = ({ title, skills }) => {
+export default function Card({ title, skills }) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const handleCardClick = () => {
@@ -88,7 +88,7 @@ const Card = ({ title, skills }) => {
                 <div className="flex justify-center">
                   <button
                     onClick={handleCardClick}
-                    aria-lable="Close card"
+                    aria-label="Close card"
                     className="text-center hover:scale-90 duration-500 ease-in-out text-lg mt-4"
                   >
                     Close
@@ -101,6 +101,4 @@ const Card = ({ title, skills }) => {
       </div>
     </>
   );
-};
-
-export default Card;
+}
