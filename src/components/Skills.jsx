@@ -5,6 +5,7 @@ import Card from "./sub-components/Card";
 import aws from "../assets/svg/skills/aws.svg";
 import css from "../assets/svg/skills/css.svg";
 import expr from "../assets/svg/skills/expr.svg";
+import git from "../assets/svg/skills/git.svg";
 import html from "../assets/svg/skills/html.svg";
 import java from "../assets/svg/skills/java.svg";
 import js from "../assets/svg/skills/js.svg";
@@ -37,6 +38,7 @@ export default function Skills() {
     { name: "Vite", icon: vite, years: 1.5 },
     { name: "SQL", icon: sql, years: 1 },
     { name: "AWS", icon: aws, years: 1 },
+    { name: "Git", icon: git, years: 4 },
   ];
 
   const webDevelopmentSkills = skills.filter((skill) =>
