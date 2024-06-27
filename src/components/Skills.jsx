@@ -49,7 +49,6 @@ export default function Skills() {
       "Node.js",
       "Express",
       "MongoDB",
-      "SQL",
       "Django",
       "Tailwind",
       "Vite",

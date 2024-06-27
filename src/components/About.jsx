@@ -7,7 +7,10 @@ import resume from "../assets/pdf/Ryan_Harang_resume.pdf";
 
 export default function About() {
   return (
-    <section id="about" className="dark:bg-dark-850 bg-dark-200 px-20">
+    <section
+      id="about"
+      className="dark:bg-dark-850 bg-dark-200 lg:px-32 md:px-16 sm:px-8 px-4"
+    >
       <div className="flex justify-center">
         <h2 className="xl:text-6xl md:text-5xl text-3xl">About Me</h2>
       </div>
