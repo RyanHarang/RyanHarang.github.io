@@ -46,7 +46,7 @@ export default function Card({ title, skills }) {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 1 }}
               transition={{ duration: 0.3 }}
-              className="absolute inset-0 flex justify-center items-center z-10"
+              className="overflow-y-scroll overflow-x-hidden absolute inset-0 z-10"
             >
               <motion.div
                 initial={{ opacity: 0, scale: 1 }}
@@ -55,9 +55,13 @@ export default function Card({ title, skills }) {
                 transition={{ duration: 0.3 }}
                 className="dark:bg-dark-950 bg-dark-150 border border-dark-200 w-full rounded-md p-4 shadow-md"
               >
-                <h3 className="text-center text-xl font-semibold mb-4">
-                  {title}
-                </h3>
+                <button
+                  onClick={handleCardClick}
+                  aria-label="Close card"
+                  className="h-6 w-6 absolute top-2 right-2"
+                >
+                  &#10006;
+                </button>
                 <ul className="mt-2 grid grid-cols-2 gap-4">
                   {skills.map((skill, index) => (
                     <li
