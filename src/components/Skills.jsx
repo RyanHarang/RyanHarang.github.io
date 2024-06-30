@@ -19,10 +19,12 @@ import sql from "../assets/svg/skills/sql.svg";
 import djan from "../assets/svg/skills/djan.svg";
 import tlwd from "../assets/svg/skills/tlwd.svg";
 import vite from "../assets/svg/skills/vite.svg";
+import vue from "../assets/svg/skills/vue.svg";
 
 export default function Skills() {
   const skills = [
     { name: "React", icon: rct, years: 2 },
+    { name: "Vue", icon: vue, years: 1 },
     { name: "HTML", icon: html, years: 3 },
     { name: "CSS", icon: css, years: 3 },
     { name: "Java", icon: java, years: 4 },
@@ -41,25 +43,24 @@ export default function Skills() {
     { name: "Git", icon: git, years: 4 },
   ];
 
-  const webDevelopmentSkills = skills.filter((skill) =>
-    [
-      "React",
-      "HTML",
-      "CSS",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "Django",
-      "Tailwind",
-      "Vite",
-    ].includes(skill.name)
+  const frontendSkills = skills.filter((skill) =>
+    ["React", "Vue", "HTML", "CSS", "Tailwind", "Vite"].includes(skill.name)
   );
+
+  const backendSkills = skills.filter((skill) =>
+    ["Node.js", "Express", "Django"].includes(skill.name)
+  );
+
+  const databaseSkills = skills.filter((skill) =>
+    ["MongoDB", "SQL"].includes(skill.name)
+  );
+
   const languageSkills = skills.filter((skill) =>
     ["Java", "JavaScript", "Python", "C"].includes(skill.name)
   );
-  const generalSkills = skills.filter(
-    (skill) =>
-      !webDevelopmentSkills.includes(skill) && !languageSkills.includes(skill)
+
+  const generalSkills = skills.filter((skill) =>
+    ["Linux", "AWS", "Git"].includes(skill.name)
   );
 
   return (
@@ -69,8 +70,10 @@ export default function Skills() {
       </div>
       <div className="flex justify-center">
         <div className="w-full mx-9 md:grid md:grid-cols-3 md:gap-8 mt-12">
-          <Card title="Web Development" skills={webDevelopmentSkills} />
+          <Card title="Frontend" skills={frontendSkills} />
+          <Card title="Backend" skills={backendSkills} />
           <Card title="Languages" skills={languageSkills} />
+          <Card title="Database" skills={databaseSkills} />
           <Card title="General" skills={generalSkills} />
         </div>
       </div>
