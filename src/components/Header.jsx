@@ -37,37 +37,28 @@ export default function Header({ toggleSidebar, isSidebarOpen }) {
     >
       <h1 className="xl:text-3xl text-xl font-semibold">Ryan Harang</h1>
       <div className="flex items-center">
-        <button
-          onClick={toggleMode}
-          className="group mr-5 "
-          aria-label="Toggle mode"
-        >
-          {darkMode ? (
-            <div>
-              <img
-                src={dark}
-                alt="Dark mode"
-                aria-labelledby="mode-tip"
-                className="h-9 w-9 transition-all duration-500 ease-in-out"
-              />
-            </div>
-          ) : (
-            <div>
-              <img
-                src={light}
-                alt="Light mode"
-                aria-labelledby="mode-tip"
-                className="h-9 w-9 transition-all duration-500 ease-in-out"
-              />
-            </div>
-          )}
-          <span
-            id="mode-tip"
-            className="absolute w-28 bottom-0 transform -translate-x-36 mb-4 opacity-0 group-hover:opacity-100 dark:bg-dark-700 bg-dark-200 text-lg px-1 py-1 rounded-md"
-          >
-            {darkMode ? "Light Mode" : "Dark Mode"}
-          </span>
-        </button>
+        <div className="flex items-center mr-5 group">
+          <img
+            src={light}
+            alt="Light mode"
+            className="h-7 w-7 transition-all duration-500 ease-in-out"
+          />
+          <input
+            type="checkbox"
+            id="darkModeToggle"
+            checked={darkMode}
+            onChange={toggleMode}
+            className="toggle-checkbox absolute opacity-0"
+          />
+          <label htmlFor="darkModeToggle" className="toggle-label mx-1">
+            <span className="toggle-ball"></span>
+          </label>
+          <img
+            src={dark}
+            alt="Dark mode"
+            className="h-7 w-7 transition-all duration-500 ease-in-out"
+          />
+        </div>
         <button
           onClick={() => toggleSidebar()}
           className={`transition-all duration-400 sm:block hidden ${
