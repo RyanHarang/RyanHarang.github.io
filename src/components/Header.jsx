@@ -38,26 +38,30 @@ export default function Header({ toggleSidebar, isSidebarOpen }) {
       <h1 className="xl:text-3xl text-xl font-semibold">Ryan Harang</h1>
       <div className="flex items-center">
         <div className="flex items-center mr-5 group">
-          <img
-            src={light}
-            alt="Light mode"
-            className="h-7 w-7 transition-all duration-500 ease-in-out"
-          />
           <input
             type="checkbox"
             id="darkModeToggle"
-            checked={darkMode}
+            checked={!darkMode}
             onChange={toggleMode}
             className="toggle-checkbox absolute opacity-0"
           />
           <label htmlFor="darkModeToggle" className="toggle-label mx-1">
-            <span className="toggle-ball"></span>
+            <span className="toggle-ball">
+              {darkMode ? (
+                <img
+                  src={dark}
+                  alt="Dark mode"
+                  className="transition-all duration-500 ease-in-out"
+                />
+              ) : (
+                <img
+                  src={light}
+                  alt="Light mode"
+                  className="transition-all duration-500 ease-in-out"
+                />
+              )}
+            </span>
           </label>
-          <img
-            src={dark}
-            alt="Dark mode"
-            className="h-7 w-7 transition-all duration-500 ease-in-out"
-          />
         </div>
         <button
           onClick={() => toggleSidebar()}
