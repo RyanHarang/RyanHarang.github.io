@@ -10,6 +10,11 @@ export default function Experience() {
       </h2>
       <div id="experience" className="xl:w-9/12 w-11/12 flex flex-col">
         <Job
+          title="Full Stack Software Engineer Intern"
+          company="Applied Medical"
+          desc="For ten weeks I worked at Applied Medical as an intern and contributed to the numerous projects. Details of my work can be found on my resume."
+        />
+        <Job
           title="CS Teaching Assistant"
           company="Western Washington University"
           desc="Starting in Fall 2023 I have been guiding students to a more

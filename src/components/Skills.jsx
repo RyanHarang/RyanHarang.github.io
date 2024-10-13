@@ -11,6 +11,7 @@ import java from "../assets/svg/skills/java.svg";
 import js from "../assets/svg/skills/js.svg";
 import pyth from "../assets/svg/skills/pyth.svg";
 import c from "../assets/svg/skills/c.svg";
+import cSharp from "../assets/svg/skills/cSharp.svg";
 import lnx from "../assets/svg/skills/lnx.svg";
 import mgdb from "../assets/svg/skills/mgdb.svg";
 import node from "../assets/svg/skills/node.svg";
@@ -31,6 +32,7 @@ export default function Skills() {
     { name: "JavaScript", icon: js, years: 2 },
     { name: "Python", icon: pyth, years: 2 },
     { name: "C", icon: c, years: 3 },
+    { name: "C#", icon: cSharp, years: 1 },
     { name: "Linux", icon: lnx, years: 3 },
     { name: "MongoDB", icon: mgdb, years: 1 },
     { name: "Node.js", icon: node, years: 1 },
@@ -56,7 +58,7 @@ export default function Skills() {
   );
 
   const languageSkills = skills.filter((skill) =>
-    ["Java", "JavaScript", "Python", "C"].includes(skill.name)
+    ["Java", "JavaScript", "Python", "C", "C#"].includes(skill.name)
   );
 
   const generalSkills = skills.filter((skill) =>
