@@ -56,7 +56,7 @@ export default function Contact() {
 
           <li>
             <a
-              href="https://www.linkedin.com/in/ryan-harang-a4461320a/"
+              href="https://www.linkedin.com/in/ryan-harang/"
               target="_blank"
               rel="noopener"
               className="flex items-center group"

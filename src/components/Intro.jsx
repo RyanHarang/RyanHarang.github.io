@@ -43,7 +43,7 @@ export default function Intro() {
           </a>
           <br />
           <a
-            href="https://www.linkedin.com/in/ryan-harang-a4461320a/"
+            href="https://www.linkedin.com/in/ryan-harang/"
             target="_blank"
             rel="noopener"
             className="slider-container border-2 rounded h-16 mb-8 flex items-center overflow-hidden duration-1000 hover:bg-theme-hover"
