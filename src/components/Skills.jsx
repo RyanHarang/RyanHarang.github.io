@@ -8,6 +8,7 @@ import expr from "../assets/svg/skills/expr.svg";
 import git from "../assets/svg/skills/git.svg";
 import html from "../assets/svg/skills/html.svg";
 import java from "../assets/svg/skills/java.svg";
+import spring from "../assets/svg/skills/spring.svg";
 import js from "../assets/svg/skills/js.svg";
 import pyth from "../assets/svg/skills/pyth.svg";
 import c from "../assets/svg/skills/c.svg";
@@ -29,6 +30,7 @@ export default function Skills() {
     { name: "HTML", icon: html, years: 3 },
     { name: "CSS", icon: css, years: 3 },
     { name: "Java", icon: java, years: 4 },
+    { name: "Java Spring Boot", icon: spring, years: 1 },
     { name: "JavaScript", icon: js, years: 2 },
     { name: "Python", icon: pyth, years: 2 },
     { name: "C", icon: c, years: 3 },
@@ -50,7 +52,7 @@ export default function Skills() {
   );
 
   const backendSkills = skills.filter((skill) =>
-    ["Node.js", "Express", "Django"].includes(skill.name)
+    ["Node.js", "Express", "Django", "Java Spring Boot"].includes(skill.name)
   );
 
   const databaseSkills = skills.filter((skill) =>
