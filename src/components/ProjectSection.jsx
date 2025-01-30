@@ -2,14 +2,21 @@ import React from "react";
 // Importing Components
 import Project from "./sub-components/Project";
 // Importing Images
+import ClassSync from "../assets/images/class-sync.webp";
+import Deadwood from "../assets/images/deadwood.webp";
+import PenteApp from "../assets/images/pente.webp";
 import RatingSite from "../assets/images/game-rating.webp";
 import WeatherApp from "../assets/images/weather-app.webp";
-import PenteApp from "../assets/images/pente.webp";
-import Deadwood from "../assets/images/deadwood.webp";
-import Interpreter from "../assets/images/parser.webp";
+// import Interpreter from "../assets/images/parser.webp";
 
 export default function ProjectSection() {
   const projects = [
+    {
+      name: "ClassSync",
+      link: "https://github.com/RyanHarang/ClassSync",
+      img: ClassSync,
+      desc: "Created a browser extension that interacted with the Canvas API to allow users to quickly view their schedule at any time and add it to external calendars.",
+    },
     {
       name: "Game Rating Site",
       link: "https://game-rating.onrender.com/",
@@ -26,7 +33,7 @@ export default function ProjectSection() {
       name: "Pente Web-App",
       link: "https://pente-31410.web.app/",
       img: PenteApp,
-      desc: "I first implemented Pente in Java as a text-user-interface, and later recreated the game as a graphical-user-interface through React. The application is now deployed via Firebase.",
+      desc: "I first implemented Pente in Java as a text-user-interface, and later recreated the game with a graphical-user-interface through React. The application is now deployed via Firebase.",
     },
     {
       name: "Deadwood",
@@ -34,12 +41,12 @@ export default function ProjectSection() {
       img: Deadwood,
       desc: "In this project, my partner and I collaborated to implement a board game called Deadwood in Java. We employed crucial object-oriented design principles, including SOLID principles, as well as patterns like singleton, adapter, and observer. I also developed an XML parser to convert XML data to game objects.",
     },
-    {
-      name: "Interpreter",
-      link: "https://github.com/RyanHarang/projects/tree/main/interpreter",
-      img: Interpreter,
-      desc: "Initially, I developed an evaluator capable of handling various operations, from basic addition, subtraction, multiplication, and division, to more complex ones like conditionals, mapping, and lambdas. Following the evaluator, I created a parser that could parse strings using a context-free grammar to format the equations. The parser provided the formatted equations to the evaluator which would then map the characters to functions.",
-    },
+    // {
+    //   name: "Interpreter",
+    //   link: "https://github.com/RyanHarang/projects/tree/main/interpreter",
+    //   img: Interpreter,
+    //   desc: "Initially, I developed an evaluator capable of handling various operations, from basic addition, subtraction, multiplication, and division, to more complex ones like conditionals, mapping, and lambdas. Following the evaluator, I created a parser that could parse strings using a context-free grammar to format the equations. The parser provided the formatted equations to the evaluator which would then map the characters to functions.",
+    // },
   ];
 
   return (
