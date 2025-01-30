@@ -8,7 +8,7 @@ export default function Footer() {
           Thanks for checking out my page!
         </h3>
         <p className="text-xs mb-1 text-dark-900 dark:text-dark-100">
-          &copy; 2024 Ryan Harang. All rights reserved
+          &copy; 2025 Ryan Harang. All rights reserved
         </p>
       </footer>
     </>
