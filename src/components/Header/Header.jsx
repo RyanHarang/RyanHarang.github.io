@@ -23,11 +23,11 @@ const Header = () => {
 
   return (
     <header className="bg-light-bg/70 dark:bg-dark-bg/70 fixed z-50 flex w-5/6 items-center justify-between border-b px-8 py-4 shadow-lg backdrop-blur-md">
-      <div className="flex items-center gap-8">
+      <div className="flex items-center gap-12">
         <div className="text-xl font-bold">
           <a href="#">Ryan Harang</a>
         </div>
-        <nav className="flex gap-4">
+        <nav className="flex gap-8">
           <a
             href="#projects"
             className="after:bg-accent relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:transition-all after:duration-300 hover:after:w-full"
