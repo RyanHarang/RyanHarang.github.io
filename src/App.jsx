@@ -1,49 +1,23 @@
-import React, { useState } from "react";
+import Header from "./components/Header/Header.jsx";
+import Intro from "./components/Intro/Intro.jsx";
+import Projects from "./components/Projects/ProjectList.jsx";
+import Experience from "./components/Experience/ExperienceList.jsx";
+import Skills from "./components/Skills/Skills.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 
-// Importing Components
-import UpWave from "./components/sub-components/UpWave";
-import DownWave from "./components/sub-components/DownWave";
-import UpButton from "./components/sub-components/UpButton";
-
-import Header from "./components/Header";
-import Sidebar from "./components/Sidebar";
-import Intro from "./components/Intro";
-import About from "./components/About";
-import ProjectSection from "./components/ProjectSection";
-import Skills from "./components/Skills";
-import Experience from "./components/Experience";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-
-export default function App() {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
-
-  const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
-  };
-
+function App() {
   return (
-    <>
-      <div className="flex overflow-hidden bg-dark-100 dark:bg-dark-900 duration-300 text-dark-800 dark:text-dark-100">
-        <Header toggleSidebar={toggleSidebar} isSidebarOpen={isSidebarOpen} />
-        <div className={`flex-grow mt-32 ${isSidebarOpen && "sm:mr-20"}`}>
-          <Intro />
-          <UpWave />
-          <About />
-          <DownWave />
-          <ProjectSection />
-          <UpWave />
-          <Skills />
-          <DownWave />
-          <Experience />
-          <UpWave />
-          <Contact />
-          <DownWave />
-          <UpButton />
-          <Footer />
-        </div>
-        <Sidebar isOpen={isSidebarOpen} />
-      </div>
-    </>
+    <div className="mx-auto w-5/6">
+      <Header />
+      <main className="pt-16">
+        <Intro />
+        <Projects />
+        <Experience />
+        <Skills />
+      </main>
+      <Footer />
+    </div>
   );
 }
+
+export default App;
