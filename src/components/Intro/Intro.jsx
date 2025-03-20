@@ -15,6 +15,7 @@ const Intro = () => {
         <a
           href="../../pdf/Ryan_Harang_resume.pdf"
           download
+          draggable="false"
           className="bg-accent hover:bg-accent/80 w-fit rounded-lg px-6 py-3 font-semibold text-white transition-colors duration-300"
         >
           Download Resume
@@ -24,6 +25,7 @@ const Intro = () => {
           href="https://github.com/RyanHarang"
           title="GitHub"
           target="_blank"
+          draggable="false"
           rel="noopener noreferrer"
         >
           <Github />
@@ -32,6 +34,7 @@ const Intro = () => {
           href="https://www.linkedin.com/in/ryan-harang/"
           title="LinkedIn"
           target="_blank"
+          draggable="false"
           rel="noopener noreferrer"
         >
           <Linkedin />
@@ -40,6 +43,7 @@ const Intro = () => {
           href="mailto:harangryan@gmail.com"
           title="Email"
           target="_blank"
+          draggable="false"
           rel="noopener noreferrer"
         >
           <Email />

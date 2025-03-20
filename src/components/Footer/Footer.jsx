@@ -11,6 +11,7 @@ const Footer = () => {
           href="https://github.com/RyanHarang"
           title="GitHub"
           target="_blank"
+          draggable="false"
           rel="noopener noreferrer"
         >
           <Github />
@@ -19,6 +20,7 @@ const Footer = () => {
           href="https://www.linkedin.com/in/ryan-harang/"
           title="LinkedIn"
           target="_blank"
+          draggable="false"
           rel="noopener noreferrer"
         >
           <Linkedin />
@@ -27,6 +29,7 @@ const Footer = () => {
           href="mailto:harangryan@gmail.com"
           title="Email"
           target="_blank"
+          draggable="false"
           rel="noopener noreferrer"
         >
           <Email />

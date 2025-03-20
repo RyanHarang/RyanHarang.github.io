@@ -32,23 +32,28 @@ const Header = () => {
     <header className="bg-light-bg/70 dark:bg-dark-bg/70 fixed z-50 flex w-full items-center justify-between border-b p-4 shadow-lg backdrop-blur-md sm:w-5/6 sm:px-8 sm:py-4">
       <div className="flex items-center gap-12">
         <div className="text-lg font-bold sm:text-xl">
-          <a href="#">Ryan Harang</a>
+          <a href="#" draggable="false">
+            Ryan Harang
+          </a>
         </div>
         <nav className="hidden gap-8 sm:flex">
           <a
             href="#projects"
+            draggable="false"
             className="after:bg-accent relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:transition-all after:duration-300 hover:after:w-full"
           >
             Projects
           </a>
           <a
             href="#experience"
+            draggable="false"
             className="after:bg-accent relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:transition-all after:duration-300 hover:after:w-full"
           >
             Experience
           </a>
           <a
             href="#skills"
+            draggable="false"
             className="after:bg-accent relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:transition-all after:duration-300 hover:after:w-full"
           >
             Skills
@@ -56,13 +61,25 @@ const Header = () => {
         </nav>
         {menuOpen && (
           <nav className="bg-light-bg/70 dark:bg-dark-bg/70 absolute top-full left-0 flex w-full flex-col items-center gap-4 py-2 shadow-md backdrop-blur-md sm:hidden">
-            <a href="#projects" onClick={() => setMenuOpen(false)}>
+            <a
+              href="#projects"
+              draggable="false"
+              onClick={() => setMenuOpen(false)}
+            >
               Projects
             </a>
-            <a href="#experience" onClick={() => setMenuOpen(false)}>
+            <a
+              href="#experience"
+              draggable="false"
+              onClick={() => setMenuOpen(false)}
+            >
               Experience
             </a>
-            <a href="#skills" onClick={() => setMenuOpen(false)}>
+            <a
+              href="#skills"
+              draggable="false"
+              onClick={() => setMenuOpen(false)}
+            >
               Skills
             </a>
           </nav>
