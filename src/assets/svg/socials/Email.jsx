@@ -7,6 +7,7 @@ const Email = () => {
       xmlns="http://www.w3.org/2000/svg"
       className="stroke-light-fg dark:stroke-dark-fg hover:stroke-light-fg3 dark:hover:stroke-dark-fg/70 h-6 w-6"
       role="img"
+      aria-label="Email"
       focusable="false"
     >
       <polyline

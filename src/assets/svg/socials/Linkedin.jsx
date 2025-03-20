@@ -7,6 +7,7 @@ const Linkedin = () => {
       xmlns="http://www.w3.org/2000/svg"
       className="fill-light-fg dark:fill-dark-fg hover:fill-light-fg3 dark:hover:fill-dark-fg/70 h-6 w-6"
       role="img"
+      aria-label="LinkedIn"
       focusable="false"
     >
       <path
