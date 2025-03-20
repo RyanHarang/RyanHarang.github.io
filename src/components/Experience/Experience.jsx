@@ -9,7 +9,12 @@ const Experience = ({ company, image, title, link, date, description }) => {
           className="mr-2 h-16 w-16 rounded-full border object-contain"
         />
         <h3 className="text-xl font-bold underline">
-          <a href={link} target="_blank" rel="noopener noreferrer">
+          <a
+            href={link}
+            target="_blank"
+            draggable="false"
+            rel="noopener noreferrer"
+          >
             {company}
           </a>
         </h3>
