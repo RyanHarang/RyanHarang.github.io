@@ -7,7 +7,6 @@ const Sun = () => {
       xmlns="http://www.w3.org/2000/svg"
       className="h-6 w-6 stroke-amber-400"
       role="img"
-      aria-label="Toggle dark mode"
       focusable="false"
     >
       <path
