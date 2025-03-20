@@ -1,12 +1,6 @@
-import data1 from "../../assets/images/projects/data1.webp";
-import classSync from "../../assets/images/projects/classSync.webp";
-import gameRating from "../../assets/images/projects/gameRating.webp";
-import weather from "../../assets/images/projects/weatherApp.webp";
-import pente from "../../assets/images/projects/pente.webp";
-
 const projects = [
   {
-    image: data1,
+    image: "/images/projects/data1.webp",
     name: "Data 1: Formula 1 Data Aggregator",
     link: "http://3.133.155.165:3000",
     description:
@@ -22,7 +16,7 @@ const projects = [
     ],
   },
   {
-    image: classSync,
+    image: "/images/projects/classSync.webp",
     name: "ClassSync",
     link: "https://github.com/RyanHarang/ClassSync",
     description:
@@ -30,7 +24,7 @@ const projects = [
     skills: ["HTML", "CSS", "JavaScript", "APIs"],
   },
   {
-    image: gameRating,
+    image: "/images/projects/gameRating.webp",
     name: "Game Rating Site",
     link: "https://game-rating.onrender.com/",
     description:
@@ -46,7 +40,7 @@ const projects = [
     ],
   },
   {
-    image: weather,
+    image: "/images/projects/weatherApp.webp",
     name: "Weather Website",
     link: "https://weather-application-4245c.web.app/",
     description:
@@ -54,7 +48,7 @@ const projects = [
     skills: ["React", "Firebase", "APIs"],
   },
   {
-    image: pente,
+    image: "/images/projects/pente.webp",
     name: "Pente Web-App",
     link: "https://pente-31410.web.app/",
     description:

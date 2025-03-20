@@ -13,9 +13,11 @@ const Intro = () => {
       </p>
       <div className="flex items-center gap-4">
         <a
-          href="../../assets/pdf/Ryan_Harang_resume.pdf"
+          href="/pdf/Ryan_Harang_resume.pdf"
           download
           draggable="false"
+          target="_blank"
+          rel="noopener noreferrer"
           className="bg-accent hover:bg-accent/80 w-fit rounded-lg px-6 py-3 font-semibold text-white transition-colors duration-300"
         >
           Download Resume
