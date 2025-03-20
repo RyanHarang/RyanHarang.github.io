@@ -8,7 +8,6 @@ const X = () => {
       xmlns="http://www.w3.org/2000/svg"
       className="fill-light-fg dark:fill-dark-fg h-6 w-6"
       role="img"
-      aria-label="Close hamburger menu"
       focusable="false"
     >
       <path

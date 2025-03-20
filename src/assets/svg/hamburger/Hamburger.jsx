@@ -8,7 +8,6 @@ const Hamburger = () => {
       xmlns="http://www.w3.org/2000/svg"
       className="fill-light-fg dark:fill-dark-fg h-6 w-6"
       role="img"
-      aria-label="Toggle hamburger menu"
       focusable="false"
     >
       <path d="M5 6.5H19V8H5V6.5Z" />
