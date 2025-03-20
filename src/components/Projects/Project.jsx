@@ -12,6 +12,7 @@ const Project = ({ image, name, link, description, skills }) => {
           src={image}
           alt={`${name} image`}
           draggable="false"
+          loading="lazy"
           className="h-48 w-full object-cover"
         />
       </a>

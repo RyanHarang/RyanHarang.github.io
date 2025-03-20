@@ -25,6 +25,7 @@ const Skills = () => {
                     src={skill.icon}
                     alt={skill.name}
                     draggable="false"
+                    loading="lazy"
                     className="h-5 w-5"
                   />
                   {skill.name}
