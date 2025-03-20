@@ -7,7 +7,7 @@ import Footer from "./components/Footer/Footer.jsx";
 
 function App() {
   return (
-    <div className="mx-auto w-5/6">
+    <div className="w-full sm:mx-auto sm:w-5/6">
       <Header />
       <main className="pt-16">
         <Intro />
