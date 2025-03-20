@@ -2,7 +2,7 @@ import skills from "./skills.js";
 
 const Skills = () => {
   return (
-    <section id="skills" className="px-4 py-10">
+    <section id="skills" className="scroll-m-[40px] px-4 py-10">
       <h2 className="mb-4 text-4xl font-bold">Skills</h2>
 
       <div className="grid w-full max-w-6xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
