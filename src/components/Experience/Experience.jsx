@@ -5,6 +5,7 @@ const Experience = ({ company, image, title, link, date, description }) => {
         <img
           src={image}
           alt={company}
+          draggable="false"
           className="mr-2 h-16 w-16 rounded-full border object-contain"
         />
         <h3 className="text-xl font-bold underline">

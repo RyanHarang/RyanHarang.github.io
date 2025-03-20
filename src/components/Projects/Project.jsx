@@ -5,11 +5,13 @@ const Project = ({ image, name, link, description, skills }) => {
         href={link}
         target="_blank"
         rel="noopener noreferrer"
+        draggable="false"
         className="transition-all duration-300 hover:scale-105"
       >
         <img
           src={image}
           alt={`${name} image`}
+          draggable="false"
           className="h-48 w-full object-cover"
         />
       </a>
