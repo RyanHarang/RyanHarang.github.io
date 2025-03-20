@@ -21,7 +21,12 @@ const Skills = () => {
                   key={idx}
                   className="bg-light-bg3 dark:bg-dark-bg3 flex items-center gap-2 rounded-lg px-3 py-1 text-sm"
                 >
-                  <img src={skill.icon} alt={skill.name} className="h-5 w-5" />
+                  <img
+                    src={skill.icon}
+                    alt={skill.name}
+                    draggable="false"
+                    className="h-5 w-5"
+                  />
                   {skill.name}
                 </li>
               ))}
