@@ -6,6 +6,7 @@ import csharp from "/svg/skills/csharp.svg";
 import css from "/svg/skills/css.svg";
 import cypress from "/svg/skills/cypress.svg";
 import django from "/svg/skills/django.svg";
+import electron from "/svg/skills/electron.svg";
 import express from "/svg/skills/express.svg";
 import figma from "/svg/skills/figma.svg";
 import git from "/svg/skills/git.svg";
@@ -29,6 +30,7 @@ import scss from "/svg/skills/scss.svg";
 import springboot from "/svg/skills/springboot.svg";
 import sql from "/svg/skills/sql.svg";
 import tailwind from "/svg/skills/tailwind.svg";
+import typescript from "/svg/skills/typescript.svg";
 import unity from "/svg/skills/unity.svg";
 import vite from "/svg/skills/vite.svg";
 import vscode from "/svg/skills/vscode.svg";
@@ -42,10 +44,12 @@ const skills = [
       { name: "Vue", icon: vue },
       { name: "Redux", icon: redux },
       { name: "Tailwind CSS", icon: tailwind },
+      { name: "TypeScript", icon: typescript },
       { name: "JavaScript", icon: javascript },
       { name: "HTML", icon: html },
       { name: "CSS", icon: css },
       { name: "SCSS", icon: scss },
+      { name: "Electron", icon: electron },
     ],
   },
   {
