@@ -1,5 +1,13 @@
 const projects = [
   {
+    image: "/images/projects/localMusicStreamer.webp",
+    name: "Local Music Streamer",
+    link: "https://github.com/RyanHarang/Local-Music-Streamer/tree/main",
+    description:
+      "Created a streaming platform for local audio files with similar capabilties to major streaming services. Actively developing and creating Electron based desktop application for easier use.",
+    skills: ["React", "Electron", "Node.js", "Tailwind"],
+  },
+  {
     image: "/images/projects/data1.webp",
     name: "Data 1: Formula 1 Data Aggregator",
     link: "http://3.133.155.165:3000",
