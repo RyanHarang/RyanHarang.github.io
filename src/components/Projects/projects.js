@@ -10,7 +10,7 @@ const projects = [
   {
     image: "/images/projects/data1.webp",
     name: "Data 1: Formula 1 Data Aggregator",
-    link: "http://3.133.155.165:3000",
+    link: "https://github.com/RyanHarang/Formula-1-Data-1",
     description:
       "Data 1 is a group project created to allow users to explore and compare historic data from Formula 1 races and drivers.",
     skills: [
