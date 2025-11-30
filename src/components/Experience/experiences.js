@@ -1,5 +1,14 @@
 const experiences = [
   {
+    image: "/images/experience/strivve.png",
+    company: "Strivve",
+    title: "Associate Software Engineer",
+    link: "https://strivve.com/",
+    date: "October 2025 - Present",
+    description:
+      "Working as an Associate Software Engineer at Strivve, contributing to the development of CardUpdatr, a platform that automates credit card updates for users.",
+  },
+  {
     image: "/images/experience/applied.png",
     company: "Applied Medical",
     title: "Full Stack Software Engineer Intern",
