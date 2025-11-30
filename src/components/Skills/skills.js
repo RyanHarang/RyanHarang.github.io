@@ -6,6 +6,7 @@ import csharp from "/svg/skills/csharp.svg";
 import css from "/svg/skills/css.svg";
 import cypress from "/svg/skills/cypress.svg";
 import django from "/svg/skills/django.svg";
+import docker from "/svg/skills/docker.svg";
 import electron from "/svg/skills/electron.svg";
 import express from "/svg/skills/express.svg";
 import figma from "/svg/skills/figma.svg";
@@ -72,17 +73,18 @@ const skills = [
   {
     category: "Testing / DevOps",
     items: [
+      { name: "AWS", icon: aws },
       { name: "JUnit", icon: junit },
       { name: "Jest", icon: jest },
       { name: "Cypress", icon: cypress },
       { name: "Gradle", icon: gradle },
-      { name: "AWS", icon: aws },
       { name: "Agile / Scrum", icon: agile },
     ],
   },
   {
     category: "Tools / Technologies",
     items: [
+      { name: "Docker", icon: docker },
       { name: "Git", icon: git },
       { name: "Figma", icon: figma },
       { name: "VS Code", icon: vscode },
