@@ -34,7 +34,7 @@ const projects = [
   {
     image: "/images/projects/gameRating.webp",
     name: "Game Rating Site",
-    link: "https://game-rating.onrender.com/",
+    link: "https://github.com/RyanHarang/game-rating",
     description:
       "Created a full-stack web application including user differentiation for guests, users and admins, dynamic data display drawn from a MongoDB database and AWS S3 bucket, and posting of additional data to the backend via forms. This project utilized the MERN stack for developement and is hosted via Render.",
     skills: [
